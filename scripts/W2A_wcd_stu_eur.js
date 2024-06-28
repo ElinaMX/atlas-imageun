@@ -1,5 +1,0 @@
-import {viewof select_W2A} from "126c3f60cbfdd337"
-import {viewof rotate_W2A} from "126c3f60cbfdd337"
-import {viewof nb_W2A} from "126c3f60cbfdd337"
-import {plot_W2A} from "126c3f60cbfdd337"
-import {wcd_W2A} from "126c3f60cbfdd337"

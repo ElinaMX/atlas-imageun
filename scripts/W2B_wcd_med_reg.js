@@ -1,6 +1,0 @@
-import {viewof select_W2B} from "90b110fea16bf260"
-import {viewof year_W2B} from "90b110fea16bf260"
-import {viewof rotate_W2B} from "90b110fea16bf260"
-import {viewof nb_W2B} from "90b110fea16bf260"
-import {plot_W2B} from "90b110fea16bf260"
-import {wcd_W2B} from "90b110fea16bf260"

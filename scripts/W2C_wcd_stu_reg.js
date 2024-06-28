@@ -1,5 +1,0 @@
-import {viewof select_W2C} from "dac79a00d1b1c9db"
-import {viewof rotate_W2C} from "dac79a00d1b1c9db"
-import {viewof nb_W2C} from "dac79a00d1b1c9db"
-import {plot_W2C} from "dac79a00d1b1c9db"
-import {wcd_W2C} from "dac79a00d1b1c9db"
