@@ -1,0 +1,435 @@
+---
+bibliography: bib/whereEurope.bib
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+```{ojs}
+{{< include ../scripts/wgt_import.js >}}
+```
+:::::::::: section
+:::::: para
+::::: paraContent
+# Where is Europe ?
+:::::
+:::::: 
+:::::::::: 
+
+:::::::::: section
+:::::: para
+::::: paraContent
+## Introduction
+### **‘Where is Europe ?’ : an existential question for EU**
+::::: 
+:::::: 
+
+::::::::: grid-container
+:::::::: grid-txt
+Dans son préambule, la version consolidée du traité de l'Union européenne affirme 
+
+> "L'importance historique de la fin de la division du continent européen et la nécessité de créer des bases solides pour la construction de l'Europe future".
+
+L'art. 49 précise que *"Tout Etat européen qui respecte les valeurs visées à l'article 2 et qui s'engage à les promouvoir peut demander à devenir membre de l'Union"*. Mais nulle part dans les traités n'est précisé ce qu'est un "Etat européen" et quelles sont les limites du " continent européen ". Si l'Union européenne n'offre pas de réponse à la question " Où est l'Europe ? ", elle offre une forme de jurisprudence à la question " Où n'est pas l'Europe ? ".  En 1987, le Maroc et la Turquie ont présenté une demande d'adhésion aux Communautés. À cette époque, la seule condition matérielle fixée par l'article O du traité de l'UE était que le demandeur soit un "État européen". 
+
+Les juristes se mirent donc au travail pour tenter de définir ce qu'était ou n'était pas un pays européen (Cf. document ci-contre)
+:::::::: 
+:::::::: grid-img
+::::::: grid-W5A
+#### What is a european state ? 
+
+>"There was  no unequivocal interpretation of that criterion. It could be read equally well in geographical, cultural or political terms». The application was rejected by the Council on the grounds that Morocco was not a European State. But In the case of Turkey, Article 28 of the Association Agreement signed in 1963 incudes the option of Turkey's eventually acceding to the Communities. Turkey in fact lodged an application to accede on 14 April 1987. Historically, Turkey has formed part of the so-called 'European concert'. Although part of Turkey's territory is located geographically in Asia, Parliament, the Council and the Commission have confirmed Turkey's eligibility. This example shows that the term 'European State' need not be interpreted in a strictly geographical sense. It is at all events a criterion subject to political assessment »^[[European Parliament, 1998, Legal questions of enlargement, Briefing n°23](https://www.europarl.europa.eu/enlargement/briefings/23a2_en.htm){target="_blank"}] 
+
+::::::: 
+:::::::: 
+::::::::: 
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+En novembre 2002, le président de la Convention sur l'avenir de l'Europe, Valéry Giscard d'Estaing, a apporté une réponse indirecte à la question " Où est l'Europe " à travers le cas de la Turquie. Posant les questions fondamentales de l'identité et du projet politique de l'Europe, il affirmait que la Turquie "n'est pas un pays européen". Pourquoi ? Parce que "sa capitale n'est pas en Europe", parce que "95% de sa population vit en dehors de l'Europe"^[Le Monde, 9 November 2004].  
+
+Le député français au Parlement européen Alain Lamassoure a été plus explicite lorsqu'il a déclaré en 1999 son opposition à l'élargissement à la Turquie au motif que " le moins mauvais des critères est la géographie. Le projet européen concerne l'ensemble de l'Europe, et rien que l'Europe".  
+
+L'Europe est donc censée être définie par des limites précises qui façonnent le destin de l'Union européenne. Ces limites ne doivent pas être dépassées sans un débat politique indique Giscard d'Estaing qui ajoute que "le lendemain de l'ouverture des négociations avec la Turquie, vous aurez une demande marocaine [d'adhésion à l'UE], le Roi du Maroc le dit depuis longtemps [...] si nous devons laisser le continent à l'est, pourquoi ne pas le laisser à l'ouest ?" 
+:::::::: 
+:::::::: grid-img
+![Source : Plantu, Le Monde, 9 Novembre 2002](../figures/whereEurope/plantu.png){width=30em}
+::::::::
+::::::::: 
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+La vision des frontières politiques de l'Europe proposée par Valery Giscard d'Estaing ou Alain Lamassourre invoque donc la géographie et plus précisément la géographie scolaire  comme preuve de leur démonstration. Mais cette géographie scolaire n'est pas à l'abri de critique des géographes eux-mêmes. Ainsi, @brennetot2013geographie A. Brennetot et M. Rosemberg peuvent écrire à la suite d'une analyse comparative internationale que :
+
+> "La plupart des manuels présentent l’Europe comme un « continent », c’est-à-dire un objet fini et évident, composé d’éléments divers (relief, climat, démographie, traditions populaires, activités économiques) dont le point commun primordial est d’être localisé à l’intérieur des frontières conventionnelles de ce continent. Cette approche tautologique, qui consiste à délimiter un ensemble géographique puis à caractériser son identité en fonction des éléments qu’il contient, laisse transparaître la persistance du vieux cadre épistémologique de la géographie régionale".
+
+:::::::: 
+:::::::: grid-img
+**L'europe dans un manuel scolaire**
+
+![Source : Brennetot, A., & Rosemberg, M. (2013). Géographie de l’Europe et géographie de la construction européenne. Les images contradictoires de l’Europe et de l’Union européenne dans quelques manuels de géographie contemporains. L’Espace Politique. Revue en ligne de géographie politique et de géopolitique, (19)](../figures/whereEurope/europe_manuel.png){width=30em}
+::::::::
+:::::::::
+::: separator
+:::
+::::::::: grid-container 
+:::::::: grid-txt
+La géographie a ainsi été appelée à témoigner dans un débat juridique sur l'existence des limites de l'Europe, qui n'a jamais été tranchée dans les traités de l'Union européenne.  Mais la majorité des géographes refusent d'assumer ce rôle. Pascal Clerc, entre autres, a déclaré que la géographie était un prétexte fallacieux : 
+
+>"Juge de paix, la géographie aurait donné à l'Europe ses limites intangibles, permettant de décider sans ambiguïté quels États peuvent prétendre faire partie de l'Union européenne et lesquels doivent rester en dehors. "Il refuse ce rôle et démontre par une enquête historique que "les frontières ne sont pas données par la nature, mais sont des productions culturelles. Etablies dans des contextes historiques spécifiques et pour servir des projets particuliers, ces frontières sont sujettes à des changements et doivent toujours être remises en question."(1) 
+
+*(1) Clerc P. ?, Turquie : la géographie-prétexte, Le Monde, 18 november 2002*
+:::::::: 
+:::::::: grid-img
+![Source : @didelon2008atlas](../figures/whereEurope/europe_perdu.png){width=30em}
+:::::::: 
+::::::::: 
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+Ce que la géographie et les géographes peuvent offrir n'est donc pas une définition normative et définitive des limites de l'Europe mais plutôt un inventaire de la diversité des points de vue sur la façon dont ces limites sont construites par une grande diversité d'acteurs et comment les imaginaires géographiques de l'Europe changent à travers le temps et selon le point de vue de l'observateur. Dans le projet Imageun, nous adoptons donc une perspective critique et présentons trois points de vue sur la réponse à la question " Où est l'Europe " :
+
+-   Vision des étudiants 
+-   Vision des parties prenantes
+-   Vision des médias 
+::::::::
+:::::::: grid-img
+![](../figures/whereEurope/intro_levels.png){width=30em; position=center}
+::::::::
+:::::::::
+:::::::::: 
+
+<!-- ---------- END SEC INTRO ---------- -->
+:::::::::: section 
+:::::: para
+::::: paraContent
+## L'Europe vue par les étudiants  : une géométrie variable ?
+::::: 
+:::::: 
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Des cartes mentales d'échelles variables
+Invités à délimiter et nommer "la région du Monde à laquelle ils ont le plus le sentiment d'appartenir", les étudiants des cinq lieux d'enquête ont apporté des réponses très différentes en Allemagne, Turquie, Tunisie, France métropolitaine et Antilles françaises. Sans reprendre ici en détail les analyses propre à chaque terrain on peut souligner tout d'abord la diversité de ces régions en terme d'échelles :
+
+-   Les **régions supranationales** qui englobent la totalité du territoire de plusieurs états sont les plus fréquentes en France métropolitaine (66%) et en Allemagne (49%) mais ne représentent qu'environ un tiers des réponses en Turquie ou en Tunisie. 
+-   Le choix du **niveau national** comme cadre de référence est particulièrement prégnant en Tunisie (62%) et en Turquie (61%) alors qu'il ne correspond qu'à un quart des réponses en France ou en Allemagne (26%) 
+-   Les **régions infranationale*s* sont une spécificité des étudiants allemands qui sont un quart (24%) à s'être donné comme territoire d'appartenance une fraction du territoire allemand correspond à un Land (e.g. Bavière), une région historique (e.g. Franconie) voire une simple ville ou agglomération urbaine (e.g. Erlangen). 
+-   Les **territoires transnationaux** sont finalement une spécificité des étudiants des Antilles françaises qui déclarent pour la moitié d'entre eux des territoires en forme d'archipel ne respectant pas les frontières internationales et associant une partie du territoire français (Martinique et Guadeloupe) à des états souverains (e.g. Grenade)  ou  des territoires dépendant d'autres pays (Porta Rico). 
+
+On retiendra de cette première analyse que l'Europe qui constitue un territoire d'échelle supranationale est structurellement absente des réponses de la plupart des étudiants qui préfère s'identifier à des échelles différentes de type national, transnational ou local. 
+:::::::: 
+:::::::: grid-img
+![](../figures/whereEurope/scale_mental.png){width=30em}
+:::::::: 
+::::::::: 
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+#### Les limites de l'Europe vue par les étudiants de France métropolitaine
+
+Lorsqu'ils tracent une carte mentale d'échelle  supranationale, les étudiants de France métropolitaine choisissent dans l'écrasante  majorité des cas de la nommer "Europe" (328 réponses) , même si une important minorité préfère tracer une région appelée  "Europe de l'Ouest" (91 réponses)  voire  plus rarement "Union Européenne" (41 réponses) 
+
+<a href="../documents/france.qmd" class="btn" target="_blank"><i class="bi bi-layout-text-sidebar-reverse"></i> Where is France Hexagonal</a>
+
+En ne retenant que les cartes des 328  étudiants ayant choisi l'appellation "Europe", on peut superposer l'ensemble des tracés afin de calculer sur une grille de points régulière  la probabilité  qu'un lieu ait été inclus ou non dans le tracé de l'Europe.  On voit alors très clairement apparaître un **cœur de pays ouest européens** systématiquement inclus dans le tracé par plus de 90% des étudiants (France, Espagne, Italie, Suisse, Benelux, Allemagne, Autriche, ...) s'opposant à des **espaces extérieurs  systématiquement exclus** par plus de 90% des étudiants (Afrique subsaharienne, Moyen Orient, Groënland) .
+
+Mais il existe également des **marges floues** plus ou moins étendues selon l'éloignement du cœur ouest européen où l'on passe plus ou moins rapidement de probabilité d'appartenance de plus de 90% à moins de 10%. On peut ainsi confirmer que le refus d'inclure les pays situés au sud de la Méditerranée est largement consensuel ce qui se traduit par une transition brutale de l'inclusion à l'exclusion. La situation et en revanche très différente dans les autres directions où plusieurs options coexistent selon que les étudiants incluent ou non la Turquie, l'Ukraine, la Biélorussie, la Russie, le Royaume-Uni ou l'Islande. 
+
+En somme, et contrairement à ce qu'affirmait Valery Giscard d'Estaing, la géographie des cartes mentales n'apporte pas de conclusion claire sur les limites de l'Europe et souligne la variété des options possibles dans l'univers des représentations. 
+:::::::: 
+:::::::: grid-img
+![](../figures/whereEurope/eur_fra.PNG){width=30em}
+:::::::: 
+::::::::: 
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+#### Les limites de l'Europe vue par les étudiants Allemands
+
+Lorsqu'ils tracent une carte mentale d'échelle  supranationale, les étudiants  interrogés en Allemagne choisissent également dans leur écrasante  majorité de la nommer "Europe" (195 réponses) , même si une important minorité préfère tracer une région appelée  "Europe centrale" (57 réponses)  voire  plus rarement "Union Européenne" (25 réponses) 
+
+<a href="../documents/germany.qmd" class="btn" target="_blank"><i class="bi bi-layout-text-sidebar-reverse"></i> Where is Germany </a>
+
+En ne retenant que les cartes des 191 étudiants allemand ayant choisi l'appellation "Europe", on peut superposer l'ensemble des tracés afin de calculer sur une grille de points régulière  la probabilité  qu'un lieu ait été inclus ou non dans le tracé de l'Europe.  On voit alors très clairement apparaître un cœur de pays centre-européens systématiquement inclus dans le tracé par plus de 90% des étudiants (France, Espagne, Italie, Suisse, Benelux, Allemagne, Autriche, Pologne, Tchéquie, Slovaquie, Hongrie, Danemark...) s'opposant à des espaces extérieurs  systématiquement exclus par plus de 90% des étudiants (Afrique subsaharienne, Moyen Orient, Groënland) .
+
+Mais comme dans le cas français, il existe également des marges floues plus ou moins étendues selon l'éloignement du cœur centre-européen où l'on passe plus ou moins rapidement de probabilité d'appartenance de plus de 90% à moins de 10%. On retrouve comme dans le cas des étudiants français le refus d'inclure les pays situés au sud de la Méditerranée et des marges floues dans les autres directions. Ces marges sont toutefois légèrement différentes de celle des étudiants français, notamment en direction du nord et du nord-ouest, comme nous allons le montrer par la suite.
+ 
+Il demeure en tous les cas clair que les étudiants allemands comme les étudiants français ne produisent pas de vision uniforme des limites de l'Europe et introduisent des variantes nombreuses dans leurs tracés. 
+:::::::: 
+:::::::: grid-img
+![](../figures/whereEurope/eur_deu.PNG){width=30em}
+:::::::: 
+::::::::: 
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+#### Divergences franco-allemandes dans le tracé des frontières de l'Europe ?
+
+Même si elles sont difficilement discernables sur les cartes précédentes, il existe de réelles différences dans la délimitation des frontières de l'Europe proposées par les étudiants français et allemands  interrogés dans le cadre du projet ANR-DFG IMAGEUN. Les résultats sont évidemment à prendre avec prudence car les échantillons demeurent assez faible et surtout la date d'enquête était légèrement différente. La majorité des étudiants français ont été interrogés avant le 22 février 2022 (invasion de l'Ukraine par la Russie) alors que plus de la moitié des étudiants allemands l'ont été après cette date.
+
+Les **étudiants allemands** ont tracé des Europe plus larges que les étudiants français en direction de l'ouest, du nord. Ils sont notamment plus nombreux que les étudiants français à inclure l'Islande et, du même coup, la totalité des Iles Britanniques et la plus grande partie de la Scandinavie. Ils sont proportionnellement  un peu plus nombreux à inclure la totalité de la Méditerranée au sud et à inclure au moins partiellement la frange littorale des pays du Maghreb. 
+
+Les **étudiants français** sont en revanche proportionnellement plus nombreux à inclure dans leur tracé une partie de la Russie et l'ensemble de la Biélorussie alors qu'il n'existe pas de différence avec les étudiants allemands dans l'inclusion ou non de l'Ukraine. On peut supposer que le soutien indirect de la Biélorussie à l'inclusion de l'Ukraine par la Russie explique cette divergence. Si les étudiants français avaient répondu avant le 22 février 2022, ils auraient sans doute été plus vigilant, à l'instar des étudiants allemands, dans la distinctionà faire  entre Ukraine et Biélorussie.
+
+Il n'en demeure pas moins que la perception des limites de l'Europe semble varier selon la localisation géographique et les enjeux géopolitiques des pays d'enquête à l'intérieur de l'Union européenne. 
+:::::::: 
+:::::::: grid-img
+![](../figures/whereEurope/eur_fra_deu.png){width=30em}
+:::::::: 
+::::::::: 
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-nocol
+#### Des lignes aux points : inclusion ou exclusion des capitales
+
+Dans l'univers des cartes mentales, les lignes ne sont pas nécessairement le seul élément structurant des représentations. Lorsque les étudiants ont tracé la limite de la région qu'ils estiment correspondre à "leur région", ils disposaient d'un fonds de carte  indiquant non seulement le nom des pays mais aussi les principales villes et la ville capitale. On peut donc imaginer qu'ils aient pour certain mobilisé ces repères symboliques  dans leurs tracés.   Un tableau indiquant le pourcentage d'étudiants français et allemands qui ont inclus la capitale d'un pays permet de précise la composition des pays qui composent les marges de l'Europe en examinant ceux qui sont situés dans la zone d'incertitude qui va de 5% à 95%
+
+La capitale du Royaume-Uni, **Londres**  est par exemple incluse dans 88.7% des Europe tracés par les étudiants français et 93.7% des étudiants allemands. C'est moins que **Bucarest** (92.9 et 95.3) mais davantage que **Dublin** (87.7 et 91.6), **Athènes** (84 et 89.5) ou **Lisbonne** (87.1 et 84.3). 
+
+L'appartenance à l'Europe de la capitale d'Ukraine **Kiev** ne suscite pas de divergence entre les étudiants français (85%)  et allemands (86%) et il en va de même pour la capitale de Russie, Moscou (42 et 43%).  Il existe en revanche des différences importantes pour **Minsk** qui est davantage incluse par les étudiants français  (88.7) que les étudiants allemands (82,2), sans doute en relation avec la différence de calendrier des enquêtes dans les deux pays. 
+
+Sur le versant méditerranéen, la capitale de Turquie, **Ankara**, elle est davantage incluse en Europe par les étudiants allemands (27.7%) que les étudiants français (27.7%) ce qui correspond à des scores plus faibles qu'**Alger** ou **Tunis** qui ont sans doute  pu bénéficier de l'incertitude des tracés du fait de leur position littorale. On remarque que les capitales de Chypre et Malte, pourtant membres de l'Union Européenne, plus ou moins exclus du tracé de l"Europe du fait de leur position à l'ouest ou à l'est la mer Méditerranée. **La Valette** est ainsi incluse par 38.3% des étudiants français et 44.5 % des étudiants allemands alors que **Nicosie** n'est incluse que par moins d'un étudiant sur six dans les deux échantillons. 
+:::::::: 
+:::::::::
+::::::::::
+
+:::::::::: section
+::::: para
+:::: paraContent
+## L'EUrope dans la presse internationale
+Analyse des flux RSS de 4 quotidiens de 2013 à 2023
+::::
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Union Européenne ou Europe ? 
+
+Contrairement aux étudiants qui privilégient clairement l'Europe par rapport à l'Union européenne  dans leurs réponses à la question de savoir dans quelle partie du Monde ils se situent, les quatre journaux de presse quotidienne étudiées sur la période 2013-2023  semblent à première vue mélanger les deux concepts  et emploient fréquemment un terme pour l'autre ou les mélangent à l'intérieur d'une même phrase. 
+
+Comme le montrent les quatre exemples ci-contre, la confusion s'opère en général à sens unique dans la mesure où on emploie fréquemment "Europe" en lieu et place d'"Union Européenne" mais beaucoup plus rarement l'inverse.   Les journaux ne font ainsi que restituer l'ambiguïté fondamentale du traité de l'Union Européenne que nous avons pointé en introduction. 
+
+:::::::: 
+:::::::: grid-img
+:::: grid-W5A
+#### Sélection de nouvelles de presse mélangeant UE et Europe
+
+::: {.panel-tabset}
+## **Le Figaro (FRA) , 25-11-2013**
+
+"À la veille du sommet de Vilnius, l'Europe des États doit parler d'une seule voix, laisser la porte ouverte à l'Ukraine et rassurer la Géorgie et la Moldavie qui comptent toujours se rapprocher de l'UE ..."
+
+----
+
+*On the eve of the Vilnius summit, the Europe of States must speak with one voice, leave the door open to Ukraine and reassure Georgia and Moldova, which are still planning to move closer to the EU..."*
+
+## **Süddeutsche Zeitung (DEU) , 02-12-2021**
+
+"Europa auf der Parallelstraße; Von der Leyen präsentiert ein EU-Projekt, das Chinas Seidenstraße Konkurrenz machen soll..."
+
+----
+
+*Europe on the parallel road; Von der Leyen presents an EU project to compete with China's Silk Road.*
+
+
+## **Dunya (TUR) , 11-08-2020**
+
+"Avrupa Birliği (AB) ekonomisine ilişkin beklentilerin sert bir şekilde aşağı çekilmesine neden olan COVID-19 pandemisinin Avrupa’nın çelik sektörü üzerindeki ağır etkilerini atlatması kolay olmayacak gibi gözüküyor."
+
+----
+
+*It seems that it will not be easy for Europe to overcome the severe effects of the COVID-19 pandemic on the European steel industry, which has led to a sharp downward revision of expectations for the European Union (EU) economy*
+
+## **African Manager (TUN), 21-07-2022**
+
+"La Russie a rouvert le robinet du gaz vers l’Europe en redémarrant jeudi le gazoduc Nord Stream mais Moscou garde la main sur cette «arme» dont dépend la sécurité énergétique de l’UE cet hiver."
+
+----
+
+*Russia reopened the gas tap to Europe by restarting the Nord Stream pipeline on Thursday, but Moscow is keeping a tight grip on this "weapon" on which the EU's energy security depends this winter.*
+:::
+::::
+:::::::: 
+:::::::::
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+Lorsque l'on procède à un inventaire du vocabulaire de l'ensemble des nouvelles mentionnant une entité macro régionale de géographique (Asie, Amérique, Méditerranée, ...) ou une organisation politique  régionale (UE, OTAN,ASEAN, ...) , on voit clairement que l'Europe et Union Européenne dominent fortement le lexique dans trois des journaux étudiés : le Figaro (France), Süddeutsche Zeitung (Allemagne) et Dunya (Turquie).  Seule le journal économique tunisien African Manager place en tête l'Afrique , mais suivi de près par l'Union Européenne et – nettement plus loin – par l'Europe.
+
+Il semble donc arbitraire de dissocier dans l'analyse les nouvelles qui parlent d'Europe de celles qui parlent d'Union Européenne. Il vaut mieux les étudier simultanément, quitte à examiner ensuite si elles se différencient sur le plan thématique ou géographique.
+:::::::: 
+:::::::: grid-img
+![](../figures/whereEurope/eu_eur_wcd.PNG){width=30em}
+:::::::: 
+:::::::::
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+#### Dis moi de quelles régions du Monde parlent les journaux de ton pays ....
+
+... je te dirais où tu habites !
+
+Ce graphique d'analyse factorielle qui a déjà été présentée dans les analyses par lieu d'enquête  permet de voir pour chaque media les macrorégions qui lui sont les plus spécifiques et les medias qui en sont proches ou éloignés.
+
+**Axe horizontal :** Cet axe oppose clairement le journal tunisien African Manager aux trois autres journaux turcs, allemande et français du corpus. L'originalité du journal tunisien est clairement lié à sa volonté de couverture de l'actualité en Afrique et au Proche-Orient qui se traduit par une moindre importance accordée aux nouvelles relatives à l'Union Européenne et au reste du Monde.
+
+**Axe vertical :** Ce deuxième axe oppose davantage le journal turc Dunya aux journaux français (Figaro) et allemands (Süddeutsche Zeitung). Cette fois-ci, c'est la focalisation plus grande du journal turc Dunya sur la Méditerranée, la Mer Noire, l'Asie et les Balkans qui instaure une difference avec les journaux français et allemands qui apparaissent très proches. A noter que la BERD est située à mi-chemin entre Tunisie et Turquie ce qui est logique au vu de sa mission. 
+
+**Où sont l'Europe et l'UE ?** Dans l'espace sémantique les deux mots occupent des positions très proches et apparaissent très clairement spécifiques aux deux journaux français et allemands.  Ils sont associés à des macro-régions plus lointaines comme l'Amérique latine et à des organisations spécifiques telles que l'OTAN ou l'UEFA. Même si les journaux tunisiens et africains mentionnent également fréquemment l'UE ou l'Europe, ils le font en association avec d'autres macro-régions et d'autres organisation.
+:::::::: 
+:::::::: grid-img
+```{r}
+{{< include ../scripts/W3B_afc_med_reg.R >}}
+```
+:::::::: 
+:::::::::
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+#### Délimiter l'Europe et son voisinage à travers les co-citations de lieux.
+
+L'analyse des co-citations de lieux à l'intérieur d'une même nouvelle de presse offre une méthode inédite de d'exploration des limites de l'Europe et de son voisinage. En effet, si l'on admet que la presse quotidienne rapport des événements  localisés dans l'espace et le temps, alors toute association entre le nom d'un pays et les mots "Europe" ou "Union Européenne" définit une forme de proximité dans l'espace non pas géographique mais sémantique à l'intérieur de l'agenda médiatique international d'un journal.
+
+Sans entrer dans des détails méthodologiques, on retiendra ici l'idée que l'intensité de la relation entre un pays et l'Europe ou l'UE peut être mesurée soit de façon brute (nombre de phrase ou un pays est associé à l'Europe ou l'UE) soit de façon spécifique (écart entre le nombre observé et attendu de phrase où un pays est associé à l'Europe ou l'UE).
+
+Si l'on prend l'exemple du journal français Le Figaro , on constate que sur l'ensemble de la période 2013-2023, les Etats-Unis d'Amérique ont été associés à peu près autant de fois à l'Europe (941) qu'à l'Union Européenne (947). Mais si l'on tient compte du fait que l'Union Européenne est beaucoup plus mentionnée que l'Europe dans le Figaro, on aboutit à la conclusion que la liaison EU-USA n'est pas vraiment spécifique (elle correspond à une distribution des liaisons au hasard) alors que celle qui associe les USA à l'Europe est véritablement spécifique et deux fois plus élevée que ce que donnerait un modèle aléatoire. 
+
+Une délimitation de l'Europe et de son voisinage par les co-citations sera donc plus pertinente si elle privilégie la représentation des liaisons spécifiques sous la forme de cartes ou de graphe. 
+:::::::: 
+:::::::: grid-img
+::: grid-net
+{{< include ../scripts/W6B_net_med_reg_res_figaro.html >}}
+:::
+:::::::: 
+:::::::::
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+#### L'Europe et l'Union Européenne vues de l'intérieur
+
+Une cartographie des pays associés à l'Europe ou à l'Union européenne dans les nouvelles de presse permet de mettre en valeur les à la fois les plus cités (taille des cercles) mais aussi les plus spécifiquement européen (couleur des cercles). On retrouve sans surprise beaucoup de mentions de pays membres de l'UE, notamment l'Italie, la Grèce, la Pologne ou la Hongrie qui ont été – pour des raisons différentes – des points de focalisation des débats politiques et économiques à l'intérieur de l'UE  entre 2013 et 2023. Mais des pays voisins et des grandes puissances sont également fréquemment associées à l'UE ou l'Europe. 
+
+Le Royaume-Uni est sans conteste le pays le plus "européen" dans les nouvelles de presse publiées par les deux grands quotidiens nationaux français et allemand. La période d'observation retenue (2013-2023) est en effet fortement marquée par les rebondissement successifs de la crise du Brexit. La Turquie apparaît tout autant "européenne" dans les deux journaux en raison de son rôle stratégique dans les crises migratoire ou géopolitiques qui concernent l'UE au cours de la période.  Il en va de même pour l'Ukraine dont le conflit avec la Russie suscite des flux de nouvelles important en 2013-2014 et en 2022-23. Mais la spécificité est moindre car beaucoup de ces nouvelles font intervenir d'autres acteurs régionaux comme l'OTAN.
+
+Les grandes puissances mondiales (USA, Chine, Russie) sont également fréquemment associées à l'Europe dans les nouvelles de presse, mais avec une spécificité plus faible car ils sont également associés à d'autres régions mondiales (Asie, Amérique, Moyen-Orient, ...) ou à d'autres organisations régionales (ALENA, ASEAN, CEI, ...). L'Europe ou l'UE servent ici fréquemment d'acteur collectif dans des nouvelles où le poids géopolitique ou économique de chacun des états membres serait trop faible pris individuellement. Les journaux de l'UE participent donc à la construction narrative d'un récit où  l'EUrope (mélange d'Europe et d'UE) serait un acteur incontournable. 
+:::::::: 
+:::::::: grid-img
+![](../figures/whereEurope/eur_inte.png){width=30em}
+:::::::: 
+:::::::::
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+#### L'Europe et l'Union Européenne vues de l'extérieur
+
+L'application de la même méthode à deux quotidiens de presse économique situés en Turquie (Dunya) et en Tunisie (African Manager)  permet d'offrir un regard extérieur sur la façon dont l'Europe et l'Union Européenne sont perçus par les acteurs économiques des pays voisins au cours de la même période 2013-2023. 
+
+Le quotidien turc **Dunya** offre à première vue une distribution des nouvelles sur l'Europe assez proche de celles des deux quotidiens français et allemands. On y retrouve en effet la même focalisation sur le **Royaume-Uni** en relation avec la crise du Brexit. On observe la même tendance à associer l'Europe ou l'UE aux trois grandes puissances mondiales (**Chine**, **Russie**, **USA**). L'**Ukraine** est également présente mais moins spécifiquement européenne car associée davantage à l'OTAN qu'à l'UE ou l'Europe. Mais ce journal concentre davantage ses nouvelles sur les principales puissances économiques de l'UE (**France**, **Allemagne**, *Italie*) et introduit d'autres divisions du Monde comme la Méditerranée ou le Proche-orient lorsqu'il rend compte de nouvelles relatives au sud de l'Europe. Il cité également beaucoup plus l'Europe ou l'UE en relation avec l'**Iran** ou les pays du Caucase (**Arménie**, **Géorgie**, **Azebaïdjan**).
+
+Le quotidien tunisien **African Manager** offre en revanche une image radicalement différente des pays associés à l'UE ou l'Europe dans ses nouvelles. En dehors du **Royaume-Uni** et de l'**Ukraine** qui demeurent fortement cités en relation avec l'Europe, d'autres pays membres tels que la **France** sont cités autant avec l'Europe qu'avec d'autres régions du Monde telles que l'Afrique ou le Sahel. Quant aux pays voisins (**Maroc**, **Algérie**, **Libye**, **Egypte**), ils font l'objet de nouvelles qui renvoient aussi bien à l'Europe qu'à d'autres divisions du Monde telles que la *Méditerranée*, le *Maghreb*, le *Monde arabo-musulman*, ... A la différence de la Turquie, l'Europe ou l'UE deviennent des éléments moins structurant des imaginaires géographiques véhiculés par le journal. 
+ 
+:::::::: 
+:::::::: grid-img
+![](../figures/whereEurope/eur_exte.png){width=30em}
+:::::::: 
+::::::::: 
+::::::::::
+
+:::::::::: section
+
+::::: para
+:::: paraContent
+## L'Europe dans les réseaux sociaux
+Analyse des tweets publiés par les parlementaires français et allemands
+
+*By Hannah Boetacher and Georg Glasze*
+::::
+:::::
+
+::::::::: grid-container
+
+:::::::: grid-txt
+```{ojs}
+md`#### Ensemble des pays cités dans les tweets des ${htl.html`<button onclick=${() => set(viewof select_W4D, "Assemblee Nationale all")}>parlementaires français</button>`}`
+```
+
+La visualisation des États mentionnés dans les tweets du parlementaire français montre un discours géographiquement diversifié. Les résultats montrent que l'accent est mis sur les États d'Europe occidentale, comme le Portugal et l'Espagne, alors que l'Europe du Sud-Est est moins représentée. Les pays d'Europe du Nord et les États baltes sont également moins mentionnés, tandis que l'Allemagne et la Pologne apparaissent fréquemment. 
+
+Les États non membres de l'UE les plus cités sont le Belarus et la Turquie, qui sont des voisins directs de l'Union européenne. En outre, l'accent est mis sur la région méditerranéenne définie par une frontière commune avec la mer Méditerranée. Il s'agit des États ibériques susmentionnés, de l'Italie et de la Grèce. À l'est, la région méditerranéenne est bordée par la Turquie, la Syrie, le Liban et Israël, ce qui peut être résumé comme le groupe de l'Asie occidentale. Souvent mentionnés dans les tweets, le Maroc, l'Algérie et la Tunisie - et, dans une moindre mesure, la Libye et l'Égypte - bordent la région méditerranéenne au sud. À l'échelle mondiale, l'Afrique de l'Ouest, en particulier le Mali, forme un autre groupe d'États. 
+
+En comparaison, les États du sud de l'Afrique et de l'Amérique latine sont moins souvent mentionnés, de même que les États d'Asie centrale, à l'exception de l'Afghanistan. Contrairement aux mentions fréquentes des grands acteurs que sont les États-Unis, la Chine et, dans une moindre mesure, la Russie et le Canada, les parlementaires français mentionnent également des États insulaires tels que les Îles Salomon.
+::::::::
+
+:::::::: grid-img
+```{ojs}
+viewof select_W4D
+map_W4D
+```
+::::::::
+
+:::::::: grid-txt
+```{ojs}
+md`#### Pays cités en association avec ${htl.html`<button onclick=${() => set(viewof select_W4D, "Assemblee Nationale Europe")}>l'Europe</button>`} par les parlementaires français`
+```
+
+La visualisation de tous les pays mentionnés dans le contexte de l'Europe contraste avec la carte précédente dans la mesure où les résultats se concentrent désormais principalement sur le Nord mondial et l'Europe en particulier. 
+
+Sur le plan international, les parlementaires français mentionnent les Etats-Unis, le Canada et la Russie avec un faible degré de spécialisation positive, tandis que la Chine, l'Afghanistan et le Maroc apparaissent avec un degré de spécialisation négative. Le groupe de l'Asie occidentale persiste dans une moindre mesure, tandis que le groupe méditerranéen se dissout. De manière assez frappante, l'Inde apparaît avec un degré de spécialisation élevé dans le contexte de l'Europe. 
+
+En Europe, l'Allemagne et la Pologne dominent, suivies du Portugal, de la Suisse, de l'Autriche et de la Hongrie, avec des fréquences plus faibles mais une spécialisation plus élevée. Les États mentionnés situés en Europe représentent principalement l'Europe occidentale et centrale, tandis que l'Europe du Sud-Est est à peine représentée. Le Belarus et l'Ukraine sont également présents à la frontière de l'Union européenne.
+::::::::
+
+:::::::: grid-txt
+```{ojs}
+md`#### Ensemble des pays cités dans les tweets des ${htl.html`<button onclick=${() => set(viewof select_W4D, "Bundestag all")}>parlementaires allemands</button>`}`
+```
+
+L'analyse de tous les États mentionnés dans les tweets du parlementaire allemand montre que l'accent est mis sur les États européens, quelle que soit leur appartenance à l'Union européenne. 
+
+Tant les pays non membres de l'UE, comme le Belarus, la Turquie ou le Royaume-Uni, que les pays membres de l'UE, comme la France, la Pologne ou l'Autriche, sont mentionnés. Les États d'Europe du Nord ou d'Europe du Sud-Est sont moins fréquents. En dehors de l'Europe, l'Afghanistan et les États-Unis dominent, suivis par la Chine et la Russie. En outre, un groupe d'Asie occidentale semble se former autour d'Israël, de la Syrie, du Liban et de l'Irak. 
+
+En comparaison, les pays d'Afrique et surtout d'Amérique du Sud sont sous-représentés. Les résultats concernant la "Jamaïque" doivent être interprétés avec prudence, car il s'agit également d'un terme synonyme pour les coalitions politiques formées par les conservateurs allemands (CDU/CSU), les libéraux (FDP) et les verts (Bündnis 90/Die Grünen).
+::::::::
+
+:::::::: grid-txt
+```{ojs}
+md`#### Pays cités en association avec ${htl.html`<button onclick=${() => set(viewof select_W4D, "Bundestag Europe")}>l'Europe</button>`} par les parlementaires allemands`
+```
+
+La carte suivante présente tous les États mentionnés dans le contexte de l'Europe dans les tweets des membres du Bundestag et le degré de spécialisation de chacun d'entre eux. L'accent mis sur l'Europe réapparaît, mais de manière beaucoup plus différenciée. 
+
+Dans l'ensemble de l'Europe, la France est l'État le plus mentionné, ce qui souligne l'amitié franco-allemande. D'autres États membres de l'UE réapparaissent également, comme la Pologne, l'Autriche ou l'Italie. Les États situés à la frontière extérieure de l'UE, comme le Belarus, l'Ukraine ou la Turquie, sont également présents, bien qu'un peu moins souvent que dans l'ensemble du corpus. 
+En dehors de l'Europe et de l'Union européenne, les États-Unis, la Chine et la Russie dominent, tandis que l'Afghanistan semble perdre de sa pertinence dans le contexte européen, respectivement semble avoir plus d'importance dans le discours politique général des parlementaires allemands sur Twitter/X. Il en va de même pour le groupe de l'Asie de l'Ouest, qui apparaît toujours mais avec un degré de spécialisation moindre. La majorité des États d'Amérique du Sud et d'Afrique disparaissent par rapport à la carte globale affichant tous les États mentionnés dans les tweets des membres du Bundestag. 
+
+Dans l'ensemble, la contextualisation avec l'Europe a pour effet de réduire le nombre d'États représentés, qui se situent pour la plupart dans le nord de la planète, et plus précisément sur le continent européen.
+::::::::
+
+:::::::: grid-txt
+```{ojs}
+md`#### Comparaison des visions du Monde des parlementaires ${htl.html`<button onclick=${() => set(viewof select_W4D, "French/German coverage of the world")}>français et allemands</button>`}`
+```
+
+La combinaison des mentions allemandes et françaises offre un aperçu de la façon dont les parlementaires des deux États conçoivent le monde. 
+
+Le continent africain, en particulier l'Afrique de l'Ouest, est principalement mentionné par les parlementaires français. En revanche, les États considérés comme des acteurs mondiaux, tels que les États-Unis, la Russie ou la Chine, sont plus fréquemment mentionnés par les membres du Bundestag. L'Asie occidentale est représentée de manière presque égale dans les deux parlements, les parlementaires allemands se concentrant davantage sur Israël et leurs homologues français sur le Liban. 
+
+Dans le groupe européen, les parlementaires allemands semblent se concentrer sur leurs États voisins, mais l'Ukraine est également mentionnée par les politiciens du Bundestag. Lorsqu'il s'agit du Royaume-Uni, de la Pologne ou de l'Italie, mais aussi de la Turquie, de la Libye et de l'Egypte en tant qu'Etats non membres de l'UE, ces pays sont représentés à parts égales par les parlementaires allemands et français. D'une manière générale, les parlementaires allemands se concentrent sur les États d'Europe centrale, septentrionale et méridionale, tandis que les parlementaires français parlent plus fréquemment des États d'Europe occidentale.
+::::::::
+:::::::::
+::::::::::
+
+
+
+

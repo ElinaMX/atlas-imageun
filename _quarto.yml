@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: public
+  output-dir: docs
   render: 
     - "*.qmd"
     - "!maquettes/"
@@ -15,32 +15,32 @@ website:
   navbar:
     collapse: false
     left:
-      - href: docs/macroregion.qmd
+      - href: documents/macroregion.qmd
         text: Imaginaires macrorégionaux
       - text: Terrains d'enquêtes
         menu: 
-          - href: docs/france.qmd
+          - href: documents/france.qmd
             text: Where is France
-          - href: docs/germany.qmd
+          - href: documents/germany.qmd
             text: Where is Germany
-          - href: docs/antilles.qmd
+          - href: documents/antilles.qmd
             text: Where is French Caribbean
-          - href: docs/tunisia.qmd
+          - href: documents/tunisia.qmd
             text: Where is Tunisia
-          - href: docs/turkey.qmd
+          - href: documents/turkey.qmd
             text: Where is Turkey
       - text: Sur l'europe et l'UE
         menu: 
-          - href: docs/whereEurope.qmd
+          - href: documents/whereEurope.qmd
             text: Where is Europe
       - href: widgets.qmd
         text: Widgets
     right: 
       # - href: docs/about.qmd
       #   text: A propos
-      - href: docs/legal.qmd
+      - href: documents/legal.qmd
         text: Mentions légales
-      - href: docs/usage.qmd
+      - href: documents/usage.qmd
         text: Conditions d'utilisation
 
           
