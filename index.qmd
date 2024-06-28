@@ -1,0 +1,72 @@
+:::::: section
+::::: para
+:::: paraContent
+# Cartographier les imaginaires macrorégionaux
+![](figures/hero/anr-dfg.jpg){width=10em} ![](figures/hero/logo-imageun.png){width=15em} ![](figures/hero/cist.png){width=5em}
+::::
+:::::  
+:::::: 
+
+:::::::: section
+::::::: grid-container
+:::::: grid-nocol
+
+:::: para
+::: paraContent
+### Le projet Imageun
+:::
+::::
+
+Plus grandes que les états mais plus petites que le Monde, les macrorégions constituent des formes géographiques et sémantiques qui structurent les représentations des individus et des acteurs internationaux et transnationaux. Qu’elles soient fondées sur des réalités « naturelles » (Méditerranée, Atlantique, Alpes…), sur des traditions historique et pédagogique (Europe, Asie, Afrique…) ou sur des périmètres d’organisations (OTAN, Union européenne…), elles se fondent toujours sur des imaginaires dont les caractéristiques fondamentales sont la variabilité et le flou.
+
+Associant des chercheurs d’Allemagne, France, Irlande, Turquie et Tunisie, le projet de recherche Imageun a cherché à mieux comprendre ces imaginaires en interrogeant tour à tour les représentations produites par les acteurs géopolitiques, les étudiants d’université et les journaux de presse quotidienne. 
+
+Les résultats obtenus à partir de ces trois corpora ont été rassemblés dans un atlas interactif qui sera présenté au cours de cette journée de clôture sous la forme de narrations (stories) soumises à discussion par un panel d’experts invités. La journée se clôturera par une table-ronde portant sur les politiques macrorégionales.
+
+#### Organisateurs
+Claude Grasland (Géographie-cités)  
+Antoine Laporte (EVS)  
+Étienne Toureille (IDEES)
+
+:::: para
+::: paraContent
+### Evénement final du projet Imageun, Paris, 28 juin 2024
+Université Paris Cité, Grands Moulins, salle des conseils (510a)
+:::
+::::
+
+13h00 Café d’accueil
+
+**13h30 Le projet Imageun**
+
+-   Macrorégion : concepts et hypothèses
+-   Données : 3 corpora et 5 lieux d’enquête
+-   L’atlas interactif Imageun
+
+**14h30	 Imaginaires nationaux**  
+*Chair : Ségolène Débarre*  
+-   Où sont la France et l’Allemagne ?
+-   Où sont les Antilles françaises ?
+-   Où est la Tunisie ?
+-   Où est la Turquie ?
+
+16h00 Pause café
+
+**16h30 Imaginaires européens**  
+*Chair : Sophie de Ruffray*  
+-   Où est l’Europe ?
+-   Qu’est-ce que l’Europe ?
+-   La région Afrique Méditerranée Europe (JeanLouis Guigou)
+
+**17h30 Débat**
+
+19h30 Dîner à la Brasserie Mollard (Saint-Lazare)
+
+![](figures/hero/geocite.jpg){width=5em}
+![](figures/hero/idees.png){width=5em} ![](figures/hero/evs.jpg){width=5em} ![](figures/hero/ucd.png){width=5em} ![](figures/hero/irmc.png){width=5em} ![](figures/hero/khas.png){width=5em} ![](figures/hero/frankfort.png){width=5em} ![](figures/hero/fau.png){width=5em}
+::::::
+:::::::
+:::::::: 
+
+
+

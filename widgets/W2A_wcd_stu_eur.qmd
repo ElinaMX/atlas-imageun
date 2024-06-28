@@ -1,0 +1,38 @@
+---
+title: Wordcloud students europe
+image: ../figures/widgets/W2A.png
+categories: [Workshop students, wordcloud]
+about:
+  template: jolla
+  image-width: 18em
+  image-shape: rounded
+
+title-block-categories: false
+
+format: 
+  html:
+    theme: [cerulean, ../style.scss] 
+---
+
+Wordcloud explorant les mots utilisés par les étudiants pour décrire l'europe
+
+:::::::::: section
+::::::::: grid-container
+:::::::: grid-nocol
+
+```{ojs}
+{{< include ../scripts/W2A_wcd_stu_eur.js >}}
+```
+
+```{ojs}
+viewof select_W2A
+plot_W2A
+viewof rotate_W2A
+viewof nb_W2A
+wcd_W2A
+```
+
+::::::::  
+::::::::: 
+:::::::::: 
+  

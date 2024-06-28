@@ -1,0 +1,38 @@
+::::: grid-container
+:::: grid-nocol
+##  Mentions légales
+
+### Éditeur
+
+Le site est géré par la FR2007 Collège international des sciences territoriales (CIST) UPC - UFR GHES, case 7001 75205 Paris cedex 13
+
+Directeur de publication : Claude Grasland, Etienne Toureille, Antoine Laporte
+
+Comité de rédaction : Elina Marveaux, Claude Grasland, Marion Gentilhomme
+
+Webmaster : Elina Marveaux
+
+### Hébergement
+
+Hébergeur : GitHub
+
+### Protection des informations nominatives
+
+Conformément au RGPD (Règlement général sur la protection des données) n° 2016/679, vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant, en ligne sur ce site. Vous pouvez exercer vos droits auprès du(de la) webmaster ou du(de la) délégué(e) à la protection des données [par email](mailto:info@cist.cnrs.fr).
+
+#####  Déléguée à la protection des données (DPO)
+
+Marion Gentilhomme, chargée de communication et d'édition du CIST
+
+### Liens hypertextes
+
+La mise en place de liens hypertextes par des tiers vers des pages ou des documents diffusés sur le site de l'Atlas Intéractif IMAGEUN est autorisée sous réserve que les liens ne contreviennent pas aux intérêts du projet ANR-DFG IMAGEUN et qu'ils garantissent la possibilité pour l'utilisateur d'identifier l'origine et l'auteur du document.
+
+### Crédits photographiques
+
+Les photos et visuels du site proviennent de diverses sources *(listing en cours)*.
+
+Ce site web de service public a un but non commercial. L'utilisateur est invité -- sous sa propre responsabilité -- à vérifier que la réutilisation des images dans le cas de son activité est licite.
+
+::::
+:::::

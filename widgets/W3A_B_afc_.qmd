@@ -1,0 +1,28 @@
+---
+title: Correspondance Analysis
+image: ../figures/widgets/W3AB.png
+categories: [Workshop medias, Workshop students, afc]
+about:
+  template: jolla
+  image-width: 18em
+  image-shape: rounded
+title-block-categories: false
+
+format: html
+---
+
+Plan factoriel résultant de l'AFC faite sur les mots des média et ceux des régions dessinées étudiants
+
+#### Pour les étudiants et les mots de l'europe
+```{r}
+{{< include ../scripts/W3A_afc_stu_eur.R >}}
+```
+
+
+#### Pour les médias et les région nommées
+
+```{r}
+{{< include ../scripts/W3B_afc_med_reg.R >}}
+```
+
+

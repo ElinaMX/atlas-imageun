@@ -1,0 +1,656 @@
+---
+bibliography: bib/caribbean.bib
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{ojs}
+{{< include ../scripts/wgt_import.js >}}
+```
+
+::::: section
+:::: para
+::: paraContent
+# Where is the French Caribbean ?
+
+Camille Dabestani
+:::
+::::
+:::::
+
+::::::::: grid-container
+:::::::: grid-nocol
+Now, we are going to change the focus.
+
+The aim is to consider imaginaries on and by the French Caribbean on macroregions (see. Story 1 – see. Story 2).
+
+The Caribbean is an area of interstice in representations of the world's regions. It may be forgotten, considered as a margin of the American continent, not knowing if it is in North, South or central America [@didelon-loiseau_mental_2018].
+
+Martinique, Guadeloupe, Saint-Martin and Saint-Barthélémy are located in the Caribbean : at the interface of major regional groupings of the American continent, but also as and institutional and administrative links and statuses with France and the European Union.
+
+There are a lot of macroregional imaginations that are at play in that context.
+
+We are going to see how proximities, links, nuances, differences and distances are important in expressing imaginaries in the French Caribbean.
+::::::::
+:::::::::
+
+<!-- --------- SECTION Martinique and Guadeloupeincar space---- -->
+
+::::: section
+:::: para
+::: paraContent
+## Martinique and Guadeloupe in the Caribbean space
+
+### A **special status** within the Caribbean region :
+:::
+::::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Martinique and Guadeloupe are **« Départements et régions d’outremer »** or DROM in the France
+
+They are French territories, qualified as overseas in the **French institutional framework**. Martinique has had the status of territorial collectivity (in place of regional and departmental status) since 2015, and Guadeloupe the status of region.
+
+![](../figures/antilles/logo_mar.png){width=5em} ![](../figures/antilles/logo_gua.png){width=5em}
+:::::::: 
+
+:::::::: grid-img
+![](../figures/antilles/loc.png){width=30em}
+
+:::::::: 
+
+:::::::: grid-txt
+#### Martinique and Guadeloupe are **« Région UltraPériphériques »** or RUP in the European Union
+
+They are **member of the EU with the status of Outermost Regions.**
+
+There are 9 European territories with this status due to there associations with EU member states.
+
+![](../figures/antilles/logo_rup.png){width=5em}
+:::::::: 
+
+:::::::: grid-txt
+That status consider that they are facing issues because of their “ultraperiphericity” to the European continent, of their insularity (not for French Guyana), their insertion into another regional grouping …
+
+That ultraperiphericity is defined on the point of view of EU and Europe. In the point of view of the territory, it is different.
+:::::::: 
+
+:::::::: grid-txt
+#### Martinique and Guadeloupe are associated with regional organizations.
+
+They participate in regional economic and trade organizations in the Caribbean, notably the OECS, the ACS or the Caricom [@galy_adhesion_2019; @galy_gestion_2018].
+
+![](../figures/antilles/logo_ecs.png){width=5em} ![](../figures/antilles/logo_acs.png){width=5em} ![](../figures/antilles/logo_caricom.png){width=4em}
+:::::::: 
+
+:::::::: grid-txt
+They tend to have some distance from those organizaitons: Martinique and Guadeloupe are associate members of OECS and ACS (not full members) and in the case of the latter institution, the two collectivities are represented by the French state (and not on their own behalf). They are candidates to the Caricom.
+:::::::: 
+::::::::: 
+
+::::::::: grid-container
+:::::::: grid-nocol
+The Caribbean is therefore an area of contact between American and overseas spaces.
+
+It is a complex ensemble, a construct influenced by geographical, political and institutional structure, mobilities as well as social and postcolonial relations [@audebert__2022, @cruse_geographie_2014].
+
+For Martinique and Guadeloupe, the superimposition and interweaving of statuses, constructions, heritages and hierarchies produce a set of complex and multiple macro-regional imaginaries.
+
+The production of geographical imaginaries thus appears to be an implicit and explicit political process, multiscalar and involving several actors (EU/Europe, State, community) [@piantoni_marquages_2009].
+:::::::: 
+::::::::: 
+:::::::::: 
+
+<!-- THE CARIB HEART -->
+
+:::::::::: section
+::::: para
+:::: paraContent
+## The Caribbean at the heart of imaginaries
+### Lets focus on the main macroregions that make sense for students in the French Caribbean, Martinique and Guadeloupe
+:::: 
+::::: 
+
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`#### The Caribbean appears to be the space that most appeals to ${htl.html`<button onclick=${() => set(viewof select_W1A, "France Antilles")}>students'</button>`} imaginations.`
+```
+
+Of the 275 regions traced by students, 90% include Caribbean island areas.
+
+However, its definitions is variable, vague and the space is often segmented and/or associated with other macro-regional groupings in complex relationships.
+::::::::
+:::::::: grid-img
+```{ojs}
+{{< include ../scripts/W1A_map_stu_reg.js >}}
+```
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`Indeed, a third of people represented more than two spaces in their mental maps, producing, for example, internal divisions within a region (e.g., a ${htl.html`<button onclick=${() => set(viewof region_W1A, "carrib")}>“Caribbean”</button>`} region integrating all island areas, and two regions separating the region into ${htl.html`<button onclick=${() => set(viewof region_W1A, "antil")}>“Lesser Antilles” and “Greater Antilles”</button>`}), two regions intersecting at the level of their territory of residence, or discontinuous and distinct spaces associated administratively or from a personal point of view by representing their migratory routes or family origins.`
+```
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`It is also the case in the names given to the regions in the mental maps by the  ${htl.html`<button onclick=${() => set(viewof select_W2C, "France Antilles")}>Antilles students</button>`}.`
+```
+
+Here, we look at the 10 most frequently given names: 1/3 of regions named directly Caribbean.
+
+If we include the West Indies and associated subdivisions (Lesser and Greater Antilles : 40%) and the two territories surveyed (Martinique/Guadeloupe : 12%), it represents around 85% of responses in this Caribbean regional space.
+::::::::
+
+:::::::: grid-img
+```{ojs}
+viewof select_W2C
+plot_W2C
+viewof rotate_W2C
+viewof nb_W2C
+wcd_W2C
+``` 
+::::::::
+:::::::::
+
+
+::::: para
+:::: paraContent
+## A multitude of representations of the Caribbean
+:::: 
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+### Cuba in the Caribbean
+
+```{ojs}
+md`The size of their Caribbean region change a lot. For some ${htl.html`<button> Antilles students</button>`}, their Caribbean stops at Cuba.
+
+The imaginaries mobilized are based on three main elements:
+
+- cultural, historical and political proximity to the United States, rather than to other Caribbean states and territories (through migratory links, for example) 
+
+- the absence of French or Creole languages
+
+- differences in regimes appear to create distances
+
+#### See some examples :  
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_2, "8hc2o7bvw3z6")}> ID : 8hc2o7bvw3z6</button>`}   ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_2, "882osw6mv496")}> ID : 882osw6mv496</button>`}  ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_2, "7u7s36vn8wz7")}> ID : 7u7s36vn8wz7</button>`}`
+```
+::::::::
+
+:::::::: grid-img
+```{ojs}
+//| output: false
+
+Inputs.bind(viewof stu_sel_W1B_2, viewof nextResp_W1B_2)
+```
+
+```{ojs}
+{{< include ../scripts/W1B_2_ant.js >}}
+```
+::::::::
+
+:::::::: grid-txt
+### Haiti in the Caribbean
+
+For others, their Caribbean region interrogate links to Haiti.
+
+Haiti also appears as a node, an evoked frontier of the Caribbean space perceived by certain students.
+ 
+Discourses on the lack of consideration for Haiti in the Caribbean region and in French territories, including references to racism and the migratory context relating to the situation of political instability.
+
+With Haiti, there is a paradoxical relationship of both historical and cultural proximity and distance from the political and economic image [@audebert_regionalisme_2011].
+
+```{ojs}
+md`#### See some examples :  
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_2, "9eb9rbi98do7")}> ID : 9eb9rbi98do7</button>`}   ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_2, "7ur8ol79chp8")}> ID : 7ur8ol79chp8</button>`}`
+```
+::::::::
+:::::::: grid-txt
+#### Island Caribbean or Continental Caribbean
+
+A lot of representation correspond to an “Island Caribbean”. But some of them integrate a “Continental Caribbean”.
+
+Florida and more particularly Miami are important here.
+
+They are a major location for Caribbean diasporas [@audebert_miami_2016] and a major transport hub between the Caribbean and the world (Paris and Miami were the obligatory transport hubs for air travel outside the region) [@ranely_verge-depre_desserte_2014].
+
+Proximity to the USA remains on the bangs of representations, but when this country is evoked, it's under the prism of Miami and Florida: the borders of the Caribbean integrate cultural, linguistic and geographical proximities with this key space.
+
+```{ojs}
+md`#### See some examples : 
+
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_2, "83n8yph8uw43")}> ID : 83n8yph8uw43</button>`}   ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_2, "2si67yr6fzk7")}> ID : 2si67yr6fzk7</button>`}   ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_2, "3isk4kup6hf4")}> ID : 3isk4kup6hf4</button>`}   ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_2, "3r9bjw2mee43")}> ID : 3r9bjw2mee43</button>`}`
+```
+::::::::
+:::::::: grid-txt
+#### Places of the seas in Caribbean macroregional imaginaries
+
+As the Caribbean is often associated to seas, insularity, etc., what places have seas in their representations?
+
+Whether insular or continental for students, the Caribbean often takes the Caribbean Sea, the Caribbean basin, as the anchor point for its definition [@cruse_definir_2013; @begot_position_nodate].
+
+Insularity and maritimity are among the elements that characterize the Caribbean [@rodriguez_quest_2013; @roth_decoupage_nodate].
+
+For the majority of representations, it is the islands that constitute the routes taken.
+
+But for some students, maritime spaces figure prominently in the definitions of their regions.
+
+```{ojs}
+md`#### See some examples : 
+
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_2, "8f34whf3ivh8")}> ID : 8f34whf3ivh8</button>`}   ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_2, "3zm8d7vx92c9")}> ID : 3zm8d7vx92c9</button>`}   ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_2, "3isk4kup6hf4")}> ID : 3isk4kup6hf4</button>`}`
+```
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### “Antilles” or “Caraïbe” ? “West Indies or Caribbean ?
+
+A major ambiguity that emerges from both mental maps and discourse is based on the terms "Antilles" and "Caraïbe".
+It is reflected both in the meanings given to the two words and in the associated spatial representations.
+
+Those words appears as synonyms in different languages (Spanish, Dutch, English). In French, the definition of “Antilles” is narrower: it groups mainly Martinique and Guadeloupe (and Guyane in some definitions) [@cruse_introduction_2013].
+
+Even if the Caribbean region is often distinguished as larger than the Antilles region (the former encompassing the latter), questions persist around the spatial definitions, delimitations and uses of the two terms.
+::::::::
+:::::::: grid-img
+```{ojs}
+md`#### Antilles`
+map_W1C
+```
+
+```{ojs}
+md`#### Caraibes`
+map_W1D
+```
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+For some people, "Antilles" and "Caraïbe" are synonyms, both spatially and semantically, and in the mental maps we have seen the two terms sometimes used interchangeably.
+
+For others, the question of the difference, of the boundary between the two terms, intrinsically contains a notion of vagueness.
+
+```{ojs}
+md`#### See some examples : 
+
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_3, "7rl388j2n9r7")}> ID : 7rl388j2n9r7</button>`}   ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_3, "9pz7pgv2nwz8")}> ID : 9pz7pgv2nwz8</button>`}   ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_3, "97r7ktm64cea")}> ID : 97r7ktm64cea</button>`}`
+```
+::::::::
+:::::::: grid-img
+```{ojs}
+{{< include ../scripts/W1B_3_ant.js >}}
+```
+::::::::
+:::::::: grid-txt
+Differences expressed are spatial but mainly administrative or cultural for some students. For example, Antilles refer to French territories, or to French speaking Creole territories in the Caribbean (Sainte-Lucie, Dominique, Haiti).
+
+For others, the differences expressed are spatial, but more a matter of point of view than definition. The term "Antilles" is also seen by some as an exogenous, a colonial denomination, given from France hexagonale.
+
+```{ojs}
+md`#### See some examples : 
+
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_3, "882osw6mv496")}> ID : 882osw6mv496</button>`}   ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_3, "3w4lof9fdv48")}> ID : 3w4lof9fdv48</button>`}   ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_3, "4mh8f2zul2pg")}> ID : 4mh8f2zul2pg</button>`}`
+```
+::::::::
+:::::::::
+::::::::::
+<!-- ____ END SEC______ -->
+:::::::::: section
+::::: para
+:::: paraContent
+## Americas: between North and South, cultures, identities and politics
+
+### Relations between Caribbean and South America
+:::: 
+::::: 
+
+::::::::: grid-container
+:::::::: grid-txt
+In some representations, the Caribbean is also linked with South America, firstly thanks to French Guiana.
+
+For some students, French Guiana is positioned as a link, a bridge between the Caribbean and South America.
+
+Contexts are quite different in many sense (localization, neighborhood, economy, socio-cultural, etc.), but French Guiana, Guadeloupe and Martinique have indeed a common national situation, share a relative geographical proximity and common political and institutional stakes with their relation to France and EUrope.
+::::::::
+
+:::::::: grid-img
+```{ojs}
+{{< include ../scripts/W1B_4_ant.js >}}
+```
+::::::::
+:::::::: grid-txt
+Some students express their proximities with French Guiana, especially since there are students mobilities between those three territories (and commun university until 2014, now split in two universities: Université des Antilles and Université de Guyane).
+
+```{ojs}
+md`#### See some examples including **French Guyana** : 
+
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_4, "6jvt2fvm67w6")}> ID : 6jvt2fvm67w6</button>`}
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_4, "9znw8hh2xcm7")}> ID : 9znw8hh2xcm7</button>`}`
+```
+::::::::
+:::::::: grid-txt
+There are also links with the whole South American continent.
+
+The Caribbean and South America are linked for some students even beyond French Guiana. They tend to associate more the Caribbean to South America rather than North America.
+
+That proximity may be based on socio-cultural aspect, but also through urbanization and architecture [@audebert_regionalisme_2011].
+
+South America is also perceived and associated with the expression of a political position, critical of colonialism and imperialism of the United States or Europe states, a belonging to the South [@belaise_mondialisation_2007; @dubesset_penser_2012].
+
+```{ojs}
+md`#### See some examples including **South America** : 
+
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_4, "2g4cx8cfo383")}> ID : 2g4cx8cfo383</button>`}
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_4, "3r9bjw2mee43")}> ID : 3r9bjw2mee43</button>`}
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_4, "6hf46ijv9fs8")}> ID : 6hf46ijv9fs8</button>`}
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_4, "3r9bjw2mee43")}> ID : 3r9bjw2mee43</button>`}
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_4, "6hf46ijv9fs8")}> ID : 6hf46ijv9fs8</button>`}
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_4, "3r9bjw2mee43")}> ID : 3r9bjw2mee43</button>`}
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_4, "7gzz3y6mfs78")}> ID : 7gzz3y6mfs78</button>`}
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_4, "83n8yph8uw43")}> ID : 83n8yph8uw43</button>`}
+${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_4, "87i7p6y3stt7")}> ID : 87i7p6y3stt7</button>`}`
+```
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Relations between Caribbean and North America: Canada and mobilities
+:::: 
+::::: 
+
+::::::::: grid-container
+:::::::: grid-txt
+We have seen that Florida and Miami may be included in the Caribbean. But students also see North America as a macroregion in relation to their Caribbean, particularly when they project of student mobility.
+
+Institutional membership of the EU and the measures put in place direct student mobility, whether achieved or desired, towards Europe. However, belonging to the Caribbean and the American continent has created other prospects for mobility, towards North America, and more specifically Canada and Quebec [@chevallier_mobilite_2017]. The interests of both students and institutions are shifting.
+
+On an institutional level, these student mobilities are promoted by the Canadian state and the Quebec region by creating exchange partnerships with French overseas communities such as Guadeloupe. The aim: to attract foreign students from a socio-economic and demographic perspective, away from major urban centers [@gagnon_etre_2019].
+
+Among students, Canada enjoys a very positive image of openness towards immigrant populations, and Quebec is identified by some as the “United States in French” [@chevallier_mobilite_2017].
+::::::::
+:::::::: grid-img
+```{ojs}
+plot_W7C
+```
+::::::::
+:::::::::
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`When we compare the places  ${htl.html`<button onclick=${() => set(viewof select_W4B, "France Antilles")}> West indies</button>`}students want to visit with those they want to work in, two main areas emerge.`
+```
+
+As discussed earlier for attractive places to study, North America is the most professionally attractive area, particularly Canada. In Europe, the United Kingdom stands out.France and Spain, for example, stand out for both tourism and work.
+
+The Caribbean states and territories are largely associated with tourism.
+::::::::
+:::::::: grid-img
+```{ojs}
+viewof select_W4B
+map_W4B
+```
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Relations between Caribbean and North America
+:::: 
+::::: 
+
+::::::::: grid-container
+:::::::: grid-txt
+One element that came up is the in-between position, between two areas, between two continents. 
+
+Positions of in-betweenness [@rey_concepts_2013] or multi-affiliation [@pourchez_metissage_2014] with all or part of the spaces evoked are expressed in the discourses as well as in the mapping exercise through different strategies.
+
+In the mental maps, this may involve the representation of several nested spaces and/or proposals for intermediate spaces, semantically or spatially, between North America, South America and Central America.
+
+```{ojs}
+md`This is the case, for example, of a proposal made by a ${htl.html`<button onclick=${() => set(viewof stu_sel_W1B_5, "38lfi8kf8wj4")}>student</button>`} who represented a region called the “Greater Near American Basin”, an extended region stretching from the northern United States to Paraguay, incorporating Central America, the insular Caribbean and half the Atlantic Ocean.`
+```
+::::::::
+:::::::: grid-img
+```{ojs}
+{{< include ../scripts/W1B_5_ant.js >}}
+```
+::::::::
+:::::::::
+::::::::::
+<!-- ____ END SEC______ -->
+:::::::::: section
+::::: para
+:::: paraContent
+## Relations with EU, Europe: a secondary imaginary
+### France and Europe in mental maps: external representations
+:::: 
+::::: 
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`Unsurprisingly, ${htl.html`<button onclick=${() => set(viewof region_W1A_2, "europe")}>Europe</button>`} and the EU are rarely represented and named in ${htl.html`<button onclick=${() => set(viewof select_W1A_2, "France Antilles")}>West Indies</button>`} students’ mental maps.`
+```
+
+European regions appeared on around of the mental maps, either alone or in combination with Caribbean regions. Names relating to Europe (e.g. EU, European Union) were also given in the same proportion.
+
+Confusions between Europe and the EU are also important, as Europe is mobilized to express administrative and institutional status within the EU (see. Story 4).
+::::::::
+
+:::::::: grid-img
+```{ojs}
+{{< include ../scripts/W1A_2_mapAnt.js >}}
+```
+::::::::
+
+:::::::: grid-txt
+```{ojs}
+md`Mental maps using France are quite rare. They are always associated with other spaces.`
+```
+
+In mental maps, there is no mention of RUP status or the notion of ultraperipherality. Rare references to the category “outremer” appear in the mental maps (“région d'outre-mer”, “France + outre mer” or “DROM”), mainly from students born in France hexagonale. That category regroup a very large range of contexts and questions. More than a practiced category, it is a political one [@beauvallet_etat_2016].
+
+When France and EUrope are drawn in mental maps, it often comes from students doing academic mobilities in Martinique and Guadeloupe through Campus France or Erasmus framework for example.
+
+France and EU are institutions with which these students in mobility have to interact, and which define the territories where they are coming to study [@bertile_ou_2014].
+::::::::
+:::::::::
+
+:::: para
+::: paraContent
+### EUrope as margins ?
+:::
+::::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### EU and Europe appear as margin in their representations.
+
+Geographical remoteness, separation by an ocean and association with another continent are predictable elements in this distancing. The scale and size of the European space are also highlighted in the imaginations associated by students in the questionnaire.
+
+Europe is also associated to EU institutions, domains and values (« schengen », « economy », « solidarity »).
+
+Ambiguity in the relationship with Europe is central. Europe can be perceived as a distant entity, to be maintained as such, and associated with colonial ideologies.
+
+(see. Story 1 – see. Story 2).
+::::::::
+:::::::: grid-img
+Words associated with Europe by students at the University of the West Indies (2814 occurrences, 853 different words)
+```{ojs}
+viewof select_W2A
+plot_W2A
+
+viewof rotate_W2A
+viewof nb_W2A
+wcd_W2A
+```
+::::::::
+:::::::::
+
+:::: para
+::: paraContent
+### EUrope: pragmatic representations
+:::
+::::
+
+::::::::: grid-container
+:::::::: grid-txt
+The vocabulary used to describe Europe in Martinique and Guadeloupe is quite similar to that in mainland France.
+
+There is little idealization of Europe among the students: the critical dimension of the colonial heritage associated with Europe can be found at the margins, but it is above all the absence of economic or other idealization of Europe that emerges. In contrast to the responses to the survey in Tunisia and Turkey, the economically attractive dimension (towards the right of the graph) that Europe can represent appears only very rarely among students in Martinique and Guadeloupe.
+
+Instead, the pragmatic and materialistic attributes of the European Union (to the left) are more prevalent (top of graph).
+(see. Story 1 – see. Story 2).
+::::::::
+
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+Le graphique d'analyse factorielle permet de voir pour chaque lieu d'enquête  les mots qui lui sont les plus spécifiques et les lieux qui en sont proches ou éloignés.
+:::
+
+```{r}
+{{< include ../scripts/W3A_afc_stu_eur.R >}}
+```
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+When asking about the opinion on EU specifically, nearly half of students indicate a “neutral” opinion.
+
+For students, references to the EU are often associated with regional aid funds and schemes, but above all with student mobility programs for incoming students (Erasmus) and those wishing to undertake mobility.
+
+Over the past thirty years, public action in these territories has been organized around three dynamics: decentralization, regionalization and Europeanization (Daniel, 2018). As a result, the EU and its funds are particularly visible in the public arena and therefore identified [@piantoni_marquages_2009; @daniel_quoi_2018].
+
+(see. Story 1 – see. Story 2).
+::::::::
+
+:::::::: grid-img
+#### West Indies student's opinion about Europe
+```{ojs}
+opiEU = "opiEU"
+survey_opiEU = "France Antilles"
+
+import {plot_W7B as plot_opiEU} with {opiEU as indic_W7B, survey_opiEU as select_W7B} from "8212ef38b27b1816"
+
+plot_opiEU
+```
+::::::::
+:::::::::
+::::::::::
+<!-- ____ END SEC______ -->
+:::::::::: section
+::::: para
+:::: paraContent
+## Students who participate in that survey
+:::: 
+::::: 
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`The 231 ${htl.html`<button onclick=${() => set(viewof select_W7B, "caribbean students")}>caribbean students</button>`} who took part in the survey were enrolled at the Université des Antilles in 2021.
+
+Most of the respondents were ${htl.html`<button onclick=${() => set(viewof indic_W7B, "sex")}>women</button>`}, at 80%. This is in line with their university's ratio, albeit higher (67% women studying at the Université des Antilles in 2021/22, DataESR).`
+```
+
+```{ojs}
+md`Nearly two-thirds of the students were enrolled in ${htl.html`<button onclick=${() => set(viewof indic_W7B, "level")}>bachelor's programs</button>`} (64%), one-third in master's programs (33%) and, marginally, in doctoral programs (1.7%, 3% of doctoral students enrolled at the Université des Antilles in the year of the survey, DataESR).`
+```
+
+```{ojs}
+md`Nearly a third of the responses were from students in the ${htl.html`<button onclick=${() => set(viewof indic_W7B, "field")}>Humanities</button>`}, Languages, Arts and Social Sciences (the same proportion as at university). All other disciplines tend to be under-represented compared to the university of enrolment (between 5 and 7 points difference).`
+```
+::::::::
+:::::::: grid-img
+Graphiques descriptifs : pole de l’université, genre, disciplines, niveaux (L1, etc.)
+```{ojs}
+viewof select_W7B
+viewof indic_W7B
+plot_W7B
+```
+::::::::
+:::::::::
+::::::::::
+<!-- ____ END SEC______ -->
+:::::::::: section
+
+::::: para
+:::: paraContent
+## To sum up
+:::: 
+::::: 
+
+::::::::: grid-container
+:::::::: grid-nocol
+In Martinique and Guadeloupe, macro-regional imaginaries are mainly concentrated in the Caribbean. However, they reveal a wide diversity of representations within this space, as well as relationships with the world.
+
+The eastern part of the Caribbean is particularly prominent, due to its proximity.
+
+We also see the emergence of plural definitions of a Greater Caribbean, at the heart of ambiguities and debates [@dubesset_penser_2012].
+
+Proximity, attachment or rejection towards a space or a group that may or may not be associated with its part of the world are expressed on socio-cultural or political levels, discussed around a number of divisive figures.
+
+These macro-regions give expression to identities, through mobilities, practices and representations of an in-between, a multi-affiliation position or circulatory [@audebert_constructions_2010; @puig_franceetats-uniscaraibe_2018].
+
+Secondly, the transatlantic space and social field [@audebert_antilles_2011; @condon_migrants_1996] figures in the expression of spaces and links evoked with French or European spaces, territories and institutions. But beyond these dynamics, the territorialities represented and/or desired are articulated more within the Caribbean region or the American whole.
+:::::::: 
+:::::::::
+::::::::::
+<!-- ------------- -->
+:::::::::: section
+::::: para
+:::: paraContent
+## For further information (in French)
+:::: 
+::::: 
+
+::::::::: grid-container
+:::::::: grid-nocol
+
+#### On France Culture radio:
+
+-   Emission radio [“Tours et détours de la langue française (4/4) - Des Caraïbes à Montréal :la créolisation des langues”. Cultures Monde, France Culture, 2017, 59 min.](https://www.franceculture.fr/emissions/culturesmonde/tours-et-detours-de-la-langue-francaise-44-des-caraibes-montreal-la)
+-   Emission radio [“Le territoire français : bien au-delà de l’Hexagone”. Géographie à la carte, France Culture, 2021, 58min ](https://www.franceculture.fr/emissions/geographie-a-la-carte/le-territoire-francais-bien-au-dela-de-l-hexagone)
+
+
+#### Other media:
+-   Podcast [“Comment renouer le lien entre l’Hexagone et les Outre-mer ?”. Nouvelles écoutes, Splash Politique, 2022, 20min](https://podcasts.google.com/feed/aHR0cHM6Ly9yc3MuYXJ0MTkuY29tL3NwbGFzaA/episode/Z2lkOi8vYXJ0MTktZXBpc29kZS1sb2NhdG9yL1YwLzBsOUo1WENWQUtYTUZ3cTFZZDZFOHh6RTQtdUQwdDhtcDBtTkxQamNmQnM?ep=14)
+-   Emission [“Les Antillais·es VS Clichés”. France TV Slash, 2022, 30min,](https://www.youtube.com/watch?v=V0lXpyc2n6s)
+-   Podcast [“Outre-mer : décoloniser l’espace public”. Kiffe ta race, Binge Audio, 2020, 36min](https://www.binge.audio/podcast/kiffetarace/outre-mer-decoloniser-lespace-public)
+-   Bande dessinée de Jessica Oublié et Marie-Ange Rousseau “Peyi an nou”, Steinkis, 2017.
+
+
+#### On the Oliwon Lakarayib platform, a digital platform dedicated to the Caribbean (videos and podcasts in SHS)”:
+-   Podcast [“Migrations et diasporas dans la Caraïbe avec Cédric AUDEBERT”. Oliwon Lakarayib, 41min.](https://oliwonlakarayib.com/podcast-4-migrations-et-diasporas-dans-la-caraibe/)
+-   Podcast [“Les enjeux des transports aux Antilles françaises, une analyse à toutes les échelles avec Colette RANÉLY – VERGÉ – DÉPRÉ”. Oliwon Lakarayib, 28min](https://oliwonlakarayib.com/les-enjeux-des-transports-aux-antilles-francaises-une-analyse-a-toutes-les-echelles-avec-colette-ranely-verge-depre/)*
+-   Podcast [“Les Petites Antilles : objets de recherche en géographie avec Maurice Burac”. Oliwon Lakarayib, 33min](https://oliwonlakarayib.com/podcast-31-les-petites-antilles-objets-de-recherche-en-geographie-avec-maurice-burac/)
+-   Podcast [“Une autre géographie de la Caraïbe : populaire et culturelle avec Romain Cruse”. Oliwon Lakarayib, 25min](https://oliwonlakarayib.com/une-autre-geographie-de-la-caraibe-populaire-et-culturelle-avec-romain-cruse/)
+:::::::: 
+:::::::::
+::::::::::

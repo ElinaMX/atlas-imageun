@@ -1,0 +1,27 @@
+---
+title: Map macroregrion students
+image: ../figures/widgets/W1A.png
+categories: [Workshop students, maps]
+about:
+  template: jolla
+  image-width: 18em
+  image-shape: rounded
+title-block-categories: false
+
+format: html
+
+---
+
+Exploration des macrorégions dessinées par les étudiants 
+
+:::::::::: section
+::::::::: grid-container 
+:::::::: grid-nocol
+
+```{ojs}
+{{< include ../scripts/W1A_map_stu_reg.js >}}
+```
+
+:::::::: 
+:::::::::
+::::::::::

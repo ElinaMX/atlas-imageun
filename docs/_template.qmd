@@ -1,0 +1,232 @@
+
+---
+bibliography: bib/caribbean.bib
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+```{ojs}
+{{< include ../scripts/wgt_import.js >}}
+```
+:::::::::: section 
+::::: para
+:::: paraContent
+# Where is Turkey ?
+Murat Guvenç, Etienne Toureille, Claude Grasland, Elina Marveaux
+::::
+::::: 
+::::::::::
+
+<!-- ------------- -->
+<!-- ------------- -->
+
+INSERER UNE SECTION AVEC UNE SEULE COLONNE CENTRALE
+:::::::::: section
+
+::::: para
+:::: paraContent
+:::: 
+::::: 
+
+
+::::::::: grid-container
+:::::::: grid-nocol
+:::::::: 
+:::::::::
+::::::::::
+
+<!-- ------------- -->
+INSERER UNE SECTION AVEC DEUX COL : TXT + IMG
+
+<!-- --- SEC ---------- -->
+:::::::::: section
+::::: para
+:::: paraContent
+:::: 
+::::: 
+
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+::::::::
+
+:::::::: grid-img
+::::::::
+
+:::::::: grid-txt
+::::::::
+
+:::::::: grid-txt
+::::::::
+
+:::::::: grid-txt
+::::::::
+
+:::::::::
+::::::::::
+<!-- ____ END SEC______ -->
+
+::: {.separator}
+:::
+
+
+<!-- --- sous-SEC ---------- -->
+<!-- ------------- -->
+
+::: {.separator}
+:::
+
+::::: para
+:::: paraContent
+:::: 
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+::::::::
+
+:::::::: grid-img
+::::::::
+:::::::::
+
+<!-- ____ END SEC______ -->
+
+usefull
+
+WIDGETS <i class="bi bi-hand-index-thumb"></i>
+PAGES <i class="bi bi-layout-text-sidebar-reverse"></i>
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+:::
+
+${htl.html`<button onclick=${() => set(viewof select_W4D, "French/German coverage of the world")}>français et allemands</button>`}
+
+:::::::::: section (10)
+::::: para (5)
+:::: paraContent (4)
+# Where is Europe ?
+::::
+::::: 
+:::::::::: 
+
+
+:::::::::: section (10)
+::::: para
+:::: paraContent
+## Introduction
+
+##### **‘Where is Europe ?’ : an existential question for EU**
+:::: 
+::::: 
+
+::::::::: grid-container (9)
+:::::::: grid-nocol (8)
+In his preamble, the consolidated version of the treaty of European Union[^whereeurope-1] claims
+
+> "The historic importance of the ending of the division of the ***European continent*** and the need to create firm bases for the construction of the ***future Europe***".
+
+:::::::: 
+::::::::: 
+
+
+::::: para
+:::: paraContent
+##### **‘Where is Europe ?’ : an existential question for EU**
+:::: 
+::::: 
+
+::::::::: grid-container (9)
+Geography was thus called in as a witness in a legal debate on the existence of the limits of Europe, which had never been settled in the treaties of European Union. But the majority of geographers refused to assume this role. Pascal Clerc, among others declared that geography was a fallacious pretext : 
+
+::::::::: 
+:::::::::: 
+
+[^whereeurope-1]: Consolidated version of the treaties of EU, https://eur-lex.europa.eu/
+
+<!-- STU - INTRO -->
+
+:::::::::: section (10)
+::::: para (5)
+:::: paraContent (4)
+## Students Visions
+
+##### Internal and external limits of Europe
+::::
+:::::
+
+
+::::::::: grid-container (9)
+### Titre 3 para
+
+:::::::: grid-txt (8)
+
+The survey realized by the IMAGEUN projects on students from five countries (see. Details) offers an exceptional answer to the question "Where is Europe ?" taking the forms of limits drawn on a map. Students has been indeed asked to "draw the limit of 
+
+::: callout-tip
+Ceci eest un teste tjesetou
+:::
+
+::: btn-secondary
+Cliquer
+:::
+::::::::
+
+:::::::: grid-img (8)
+### Partie 1
+
+#### Interactiv Plot
+
+``` {r}
+# PCT
+plot(c(2,10))
+```
+::::::::
+<!-- (___f-img___) -->
+:::::::::
+<!-- (___f-contain___) -->
+::::::::::
+<!-- (___f-section___) -->
+
+<!-- STU - Cartes -->
+
+:::::::::: section
+::::: para
+:::: paraContent
+##### External limits of European region
+:::: 
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+The fact to live in a part of the world called "Europe" appears as an evidence for the majority of students living in Ireland (66.7%) and Germany (58.5%). In the case of 
+::::::::::
+
+:::::::::: grid-img
+### Explorer les régions par répondant·es
+
+Ici vous pouvez sélectionner un sous-corpus par pays de réponse puis explorer les géométries de chaque étudiant·e de ce sous-corpus.
+
+{{< include ../scripts/mapTest.qmd >}}
+
+::::::::::
+
+:::::::::: grid-txt
+Also observable in the names given to the regions in the mental maps, we look at the 10 most frequently given names: 1/3 of regions named directly Caribbean. If we include ::::::::::
+
+:::::::::: grid-txt
+### 1.2. Seas in the Caribbean?
+
+Vestibulum sit amet consectetur nisi. Proin tincidunt odio diam, quis ultricies mauris sagittis in. Proin sollicitudin est tellus, non tristique lacus finibus in.
+:::::::::: 
+
+:::::::::: grid-txt
+Vestibulum sit amet consectetur nisi. Proin tincidunt odio diam, quis ultricies mauris sagittis in. Proin sollicitudin est tellus, non tristique lacus finibus in.
+:::::::::: 
+
+:::::::::: grid-txt
+Sed fringilla tellus ut sollicitudin congue. Vestibulum sed fermentum massa. Fusce suscipit nunc at quam pretium finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum egestas leo nec sem feugiat
+:::::::::: 
+:::::::::::
+:::::::::::: 
+
+::: {.separator}
+:::

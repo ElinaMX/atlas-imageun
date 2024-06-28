@@ -1,0 +1,448 @@
+---
+bibliography: bib/france.bib
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+```{ojs}
+{{< include ../scripts/wgt_import.js >}}
+```
+:::::::::: section 
+::::: para
+:::: paraContent
+# Where is France ?
+Claude Grasland, Elina Marveaux
+::::
+::::: 
+:::::::::: 
+<!-- --- SEC ---------- -->
+:::::::::: section
+::::: para
+:::: paraContent
+## Students Survey
+:::: 
+::::: 
+::::: para
+:::: paraContent
+### Cartes mentales 
+:::: 
+::::: 
+
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+#### Noms et échelles d'appartenance
+```{ojs}
+md`Confirmant une étude antérieure réalisée en 2009 dans le cadre du projet EuroBroadMap, les étudiants ${htl.html`<button onclick=${() => set(viewof select_W2C, "France Metropolitan")}>français</button>`} se sont majoritairement identifiés à une macro région qu’ils ont baptisé Europe (43%), Europe de l’Ouest (12%) ou plus rarement Union Européenne (3.4%) , continent européen (0.7%) ou Europe francophone (0.5%).`
+```
+Plus rarement, ils ont défini leur macro région d’appartenance sous le nom de Méditerranée ou bassin méditerranéen (1.4%) ainsi que sous les noms d’Occident ou hémisphère Nord (1%).[@didelon2014internal]
+
+Le niveau national demeure prégnant puisqu’environ un quart des étudiants ont tracé une région désigné comme France (19%) ou France métropolitaine (5%). Mais c’est un niveau beaucoup plus faible que celui observé dans d’autres pays comme la Turquie ou la Tunisie.
+
+Quant au niveau infra-national, il apparaît dans moins de 10% des cartes en référence aux lieux d’enquête (Ile de France, Paris, Auvergne-Rhône Alpes) mais aussi fréquemment à propos des départements et territoires d’Outre-Mer pour les étudiants qui en sont originaires (Nouvelle Calédonie, Polynésie française, Guyane française, Martinique, Guadeloupe, Réunion …) 
+::::::::
+:::::::: grid-img
+```{ojs}
+viewof select_W2C
+
+plot_W2C
+
+viewof rotate_W2C
+viewof nb_W2C
+wcd_W2C
+```
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`La superposition de l’ensemble des macro régions tracées par les étudiants de ${htl.html`<button onclick=${() => set(viewof select_W1A, "France Metropolitan")}>France métropolitaine</button>`} aboutit à une couverture complète de l’ensemble des terres émergées liée au fait que quelques étudiants isolés se sont donnés comme territoire l’ensemble du globe tandis que d’autres ont inclus dans quelques rares cas les Amériques, l’Afrique, l’Asie ou l’Océanie.`
+```
+
+Il n’en demeure pas moins que le cœur très net des carte mentales est centré sur une Europe limité au sud par la Méditerranée, incluant à l’ouest l’Islande mais n’intégrant que partiellement la Russie. Autour de ce cœur on voit apparaître des franges tournées selon le cas vers l’Ouest (Occident), vers le Sud (Méditerranée) ou vers l’Est (Europe de l’Atlantique à l’Oural). 
+::::::::
+:::::::: grid-img
+```{ojs}
+{{< include ../scripts/W1A_map_stu_reg.js >}}
+```
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Focus 1 : ${htl.html`<button onclick=${() => set(viewof region_W1A, "europe")}>Europe </button>`}`
+```
+
+Les étudiants de France métropolitaine qui ont nommé « Europe » la partie du Monde à laquelle ils pensent appartenir ne sont pas tous d’accord sur la délimitation de cette région du Monde, ce qui apparaît clairement lorsque l’on superpose leurs tracés pour faire apparaître les convergences et divergences.
+
+Si l’on excepte quelques étudiants nostalgiques d’une Europe des 6 ou des 9, la grande majorité des étudiants incluent dans l’Europe l’ensemble de l’Union Européenne à 27 ainsi que les pays qui en ont été membre (Royaume-Uni), qui ont été candidats avant d’y renoncer (Suisse, Norvège) ou qui souhaitent le devenir (ensemble des Balkans).  Ce qui est plus remarquable est l’inclusion presque systématique de l’Ukraine et de la Biélorussie, l’ajout de cette dernière étant sans doute liée à une recherche de compacité spatiale et au contexte géopolitique de la période d’enquête.
+Autour de ce noyau mental privilégié, s’ajoute pour un part variable des étudiants la Turquie, les pays du Caucase et  l’Ouest de la Russie. La recherche de compacité territoriale joue sans doute encore puisque l’ajout de ces pays ou portion de pays est en général simultané (peu de Turquie sans Russie et réciproquement). 
+
+En ce qui concerne les marges maritimes, l’Islande est souvent incluse mais pas le Groënland. Quant à Chypre, une partie seulement des étudiants pense à l’ajouter ainsi que, plus rarement, Israël. La Méditerranée n’est franchie que par très peu d’étudiants qui constituent alors de plus vastes tracés de type euro-méditerranéen. 
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Focus 2 ${htl.html`<button onclick=${() => set(viewof region_W1A, "europe_ouest")}>Western Europe</button>`}`
+```
+
+Une partie non négligeable des étudiants interrogés en France métropolitaine (10%) a préféré choisir l’Europe de l’Ouest plutôt que l’Europe dans son ensemble comme territoire d’identification. L’espace correspondant à ce choix semble à première vue correspondre à l’Union Européenne avant le grand élargissement. Mais elle en diffère néanmoins clairement puisqu’elle inclue la Suisse et exclue le plus souvent la Norvège, la Suède ou la Finlande et n’inclue que pour une partie des étudiants seulement le Danemark. La Grèce est également exclue dans la majorité des cas, ce qui confirme que la définition est ici davantage topographique que politique. 
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Focus 3 ${htl.html`<button onclick=${() => set(viewof region_W1A, "union_europ")}>European Union</button>`}`
+```
+Le choix de l’Union Européenne comme territoire d’appartenance dans le Monde est retenu par beaucoup moins d’étudiant (26) que celui de  l’Europe (328) ou l’Europe de l’Ouest (91). Les étudiants qui ont opéré ce choix se calent dans la majorité des cas sur le tracé officiel des 27 pays membres de l’UE au moment de l’enquête. Mais ils incluent toujours la Suisse (peut-être en raison de l’outil d’enquête qui rendait difficile son exclusion) alors qu’ils oublient parfois l’Irlande et Chypre. 
+Plus intéressant, une moitié d’entre eux a choisi d’ajouter l’Ukraine, accompagné le plus souvent du Belarus. Vu le moment de l’enquête – juste avant ou après le déclenchement de la guerre de 2022 – ce choix est à l’évidence un geste politique de solidarité avec ce pays voisin. 
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Focus 4 ${htl.html`<button onclick=${() => set(viewof region_W1A, "medit")}>Mediterranean</button>`}`
+```
+Les quelques étudiants qui ont tracé une région nommée Méditerranée ont inclus l’ensemble des rives de cette mer, en excluant toutefois la Mer Noire. Ils incluent souvent la totalité de la France et des pays côtiers dans cet espace mais pour ainsi dire jamais l’Allemagne et les pays non côtiers de l’Union européenne. 
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Focus 5 ${htl.html`<button onclick=${() => set(viewof region_W1A, "western")}>The Western</button>`}`
+```
+Encore moins nombreux que ceux qui ont opté pour la Méditerranée, seuls 8 étudiants ont choisi de représenter une région nommée Occident qui regroupe l’Europe avec les Etats-Unis d’Amérique et le Canada. Cette vision géopolitique du Monde est donc très rare chez les étudiants de France métropolitaine (1%) comme d’ailleurs d’Allemagne. Elle semblait plus fréquente en Irlande mais l’échantillon recueilli dans ce pays était trop faible pour en tirer des conclusions. 
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Pays visités ou attractifs
+:::: 
+::::: 
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+#### Pays visités par les étudiants
+
+```{ojs}
+md`Les pays que les étudiants de ${htl.html`<button onclick=${() => set(viewof select_W4A, "France Metropolitan")}>France Métropolitaine</button>`} déclarent avoir visité sont dans leur écrasante majorité des pays voisins d’Europe de l’ouest dans lesquels ils ont pu se rendre à l’occasion de vacances ou, plus rarement, d’un échange Erasmus. Il n’est donc pas étonnant d’y retrouver par ordre décroissant d’importance le Royaume-Uni (14%), l’Italie (13%), l’Espagne (12%)  et l’Allemagne (9%) , suivis de loin par la Grèce (4%) , la Suisse (3%) , l’Irlande, les Pays Bas et l’Autriche (2% chacun). L’Europe du Nord et l’Europe de l’est sont en revanche très peu mentionnés, ce qui coincide avec les cartes mentales d’Europe de l’Ouest analysées précédemment.`
+```
+
+
+En dehors de l’Union Européenne, les principaux pays cites sont les Etats-Unis (4%) et le Canada (2%), d’une part, le Maroc (2%) et la Tunisie (1%) d’autre part. De nombreux autres pays du monde ont été cites mais par un nombre trop faible d’étudiants pour être retenus. Le fait que les étudiants interrogés soit en fin de licence peut expliquer cette mobilité internationale encore limitée.
+::::::::
+:::::::: grid-img
+```{ojs}
+viewof select_W4A
+viewof indic_W4A
+map_W4A
+```
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Où les étudiants souhaitent ${htl.html`<button onclick=${() => set(viewof indic_W4A, "work")}>travailler</button>`}`
+```
+Interrogés sur les pays où ils aimeraient travailler après la fin de leurs étuddes, les étudiants de France Métropolitaine mentionnent des pays plus éloignés que ceux qu’ils ont déjà visit et plus souvent situés en dehors de l’Union Européenne. Le Brexit, intervenu pourtant juste avant l’enquête, n’empêchepas les étudiants de placer le Royaume-Uni en première position (15%) suivi par le Canada (11%) et les Etats-Unis (9%).
+
+Les grands pays voisins de l’Union européenne affichent des scores nettement plus faibles, soit de 6 à 7% pour l’Allemagne, l’Italie ou l’Espagne. Les petits pays riches d’Europe du Nord (Suède, Norvège, Danemark) ou d’Europe de l’Ouest (Suisse, Irlande, Pays Bas) affichent tous des scores de 2 à 3% des étudiants ce qui en fait des destinations attractives relativement à leur taille. Les pays riches mais  éloignés d’Asie (Japon, Corée) et d’Océanie (Australie, Nouvelle Zélande) sont également bien mentionnés ainsi que – plus rarement – la Chine, la Russie ou l’Argentine.
+En résumé, ce sont les pays riches et leurs métropoles globales qui suscitent la plus forte attraction en matière de perspective d’emploi pour les étudiants français. 
+::::::::
+:::::::::
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`#### Dissociation des lieux visités et des lieux attractifspour les ${htl.html`<button onclick=${() => set(viewof select_W4B, "France Metropolitan")}>Français</button>`}`
+```
+L’analyse conjointe des deux indicateurs met ainsi en evidence une claire dissociation entre les pays visités que les étudiants ont connu à travers leurs études ou leurs vacances et les pays faisant l’objet d’un projection future en matière d’emploi.
+
+La carte de l’indice d’attractivité qui pemet d’évaluer cette dissociation entre experience et projet permet de distinguer quatre types de pays
+
+-   Les pays visités mais peu attractifs en matière d’emploi : Grèce, Espagne, Italie, ….
+-   Les pays également visités et attractifs : Irlande, Royaume-Uni, Allemagne, Pays-Bas
+-   Les pays attractifs mais peu visités car éloignés : Amérique du Nord, Scandinavie, Asie-Pacifique.
+-   Les pays ignorés car ni visités, ni attractifs : ils composent la plus grande partie du Monde …
+::::::::
+:::::::: grid-img
+```{ojs}
+viewof select_W4B
+map_W4B
+```
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Les mots de l'Europe
+:::: 
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Fréquence et spécificité des mots utilises pour qualifier l'Europe
+```{ojs}
+md`Les mots les plus employés pour caractériser l'Europe sont présentés dans le tableau-ci-contre. La fréquence indique le nombre d'étudiants de ${htl.html`<button onclick=${() => set(viewof select_W2A, "France Metropolitan")}>France métropolitaine</button>`} qui ont cite un mot. On leur a ajouté un indice de spécificité qui permet de repérer leur originalité par rapport à l'ensemble des étudiants du corpus`
+```
+::::::::
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+- : mot moins employé (ex. Union)
++ : mot plus employé  (ex. Euro)
+++ : mot deux fois  plus employé  (ex. Culture)
++++ : mots trois fois plus employé (ex. Job)
+:::
+```{ojs}
+viewof select_W2A
+plot_W2A
+
+viewof rotate_W2A
+viewof nb_W2A
+wcd_W2A
+```
+::::::::
+:::::::: grid-txt
+#### Les mots associés au terme « Europe » par les étudiants
+
+Pour les étudiants de France métropolitaire invités à fournir 5 mots associés à l’Europe, celle-ci est avant tout un continent et une organisation politique, l’Union Européenne. A la difference des étudiants allemands qui mentionnent beaucoup les valeurs symboliques de l’Europe, les étudiants français on une lecture plus économique (argent, richesse, économie, libre échange, …) et plus géopolitique (Occident, Brexit, Schengen, alliance, force, pouvoir, frontière …) de ce qui fonde l’identité de ce territoire. S’y ajoute une dimension historique qui apparaît notamment à travers l’emploi des mots histoire, culture et vieux continent. 
+
+Même si quelques étudiants mentionnent les valeurs plus symboliques de paix, communauté; liberté, diversité  ou démocratie, c’est dans des proportions bien moindre que les étudiants tucs ou allemands. Quand à la dimension critique (colonialisme, exploitation, capitalisme, …) elle est à peine présente dans les réponses. 
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Position de la France métropolitaine  par rapport aux autres lieux d'enquête
+
+**Axe horizontal :** Cet axe oppose les pays qui définissent l'Europe par les attributs propres à l'Union Européenne (à gauche) à ceux qui y voient advantage un espace d'opportunité économique et de développement caractérisé par sa modernité mais aussi son heritage colonial (à droite). La Turquie et la Tunisie se positionnent logiquement  dans cette seconde vision qui fait de l'Europe une partie du "Nord global", sans doute attractif mais aussi égoïste et refermé sur lui-même
+
+**Axe vertical :** Ce deuxième axe oppose advantage une vision matérialiste de l'Europe (en haut) à une vision idéaliste (en bas). De ce point de vue, les étudiants tunisiens se rapprochent des étudiants français qui voient d'abord dans l'Europe un instrument économique et politique source de richesse et puissance. Les étudiants allemands et turcs insistent plus sur les aspects de démocratie, liberté, modernité et progress.  
+::::::::
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+Le graphique d'analyse factorielle permet de voir pour chaque lieu d'enquête  les mots qui lui sont les plus spécifiques et les lieux qui en sont proches ou éloignés.
+:::
+```{r}
+{{< include ../scripts/W3A_afc_stu_eur.R >}}
+```
+::::::::
+:::::::::
+::::::::::
+<!-- ____ END SEC STUDENTS______ -->
+
+:::::::::: section
+::::: para
+:::: paraContent
+## Media Analysis
+:::: 
+::::: 
+::::: para
+:::: paraContent
+### Pays les plus cités par le Figaro
+:::: 
+::::: 
+
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`Pays les plus cités par  ${htl.html`<button onclick=${() => set(viewof select_W4C, "Le Figaro (FRA)")}>Le Figaro</button>`} (2013-2023)
+`
+```
+Conformément aux theories de l’agenda médiatique international, le Figaro cite en priorité les pays les plus puissants politiquement ou économiquement  et les plus proches spatialement et culturellement [@grasland2020international]. Il n’est donc pas surprenant de voir arrive en tête les membres permanent du conseil de sécurité des Nations Unies (Russie, Chine,Etats-Unis, Royaume-Uni) ainsi que les autres  pays du G20 éloignés  (Japon, Corée, Brésil) et surtout proches (Allemagne, Italie, Espagne). Mais cette dimension structurelle de l’agenda est perturbé par les grandes crises géopolitiques de la période 2013-2023 qui vont notamment metre en valeur le Proche-Orient (Iran, Irak, Syrie,Yemen, …), les deux crises russo-ukrainiennes ou le Brexit. 
+
+Si on raisonne non plus en terme de volume mais de spécificité par rapport aux trois autres medias du corpus, la singularité du Figaro reside dans une couverture significativement plus élevée des pays éloignés du Sud (Amérique latin, Afrique subsaharienne) et des grands lieux de crise mondiale que sont le Moyen Orient et la façade Asie-Pacifique. A contrario, le Figaro couvre moins les nouvelles relatives à l’Afrique du Nord que le journal tunisien  African Manager, moins l’Europe orientaleet l’Asie centrale  et le journal allemand  Süddeutsche Zeitung ou le journal turc Dunya. 
+::::::::
+:::::::: grid-img
+```{ojs}
+viewof select_W4C
+viewof year_W4C
+map_W4C
+```
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Comparaison du ${htl.html`<button onclick=${() => set(viewof select_W4C, "Le Figaro (FRA)")}>Figaro</button>`} et du ${htl.html`<button onclick=${() => set(viewof select_W4C, "Süddeutsche Zeitung (DEU)")}>Süddeutsche Zeitung</button>`} (2013-2023)`
+```
+
+Illustrant les remarques précédentes, la comparaison des deux quotidiens ouest européens que sont le Figaro et le Süddeutsche Zeitung met en valeur leur ressemblance globale (focalisation sur l’Europe et les grandes puissances mondiales) mais aussi leurs spécificités. En termes relatifs, le Figaro s'intéresse moins à la Russie, aux USA, à l’Ukraine ou à la Turquie que son homologue allemande. Il est en revanche beaucoup plus sensible aux informations en provenance de l’hémisphère sud et, plus généralement des pays éloignés de l’Europe. 
+
+::::::::
+
+:::::::: grid-txt
+```{ojs}
+md` #### Evolution de la couverture du ${htl.html`<button onclick=${() => set(viewof select_W4C, "Le Figaro (FRA)")}>Figaro</button>`} entre 2014 et 2022`
+```
+
+Les analyses  précédentes portant sur l’ensemble de la période décennale 2013-2023 définissent une situation moyenne quipeut être complete par une analyse plus precise de chacune des années afin d’examiner les effets de crises ponctuelles et les tendances plus généraleg au changement.  La comparaison des années 2014 et 2022 qui correspondent aux deux crises russo-ukrainiennes consitue à cet égard un bon test. 
+
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof year_W4C, "2014")}>En 2014</button>`} : un pic d’intérêt pour les deux pays belligérants est bien visble mais de nombreux autres événements polarisent l’attention du journal, notamment vers la Syrie et l’Irak (Etat Islamique) ou vers l’Afrique de l’Ouest (épidémie d’Ebola).`
+```
+
+
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof year_W4C, "2022")}>En 2022</button>`} : le pic d’intérêt pour la Russie et l’Ukraine est sensiblemnt plus élevé que celui de 2014 en raison de la menace beaucoup plus directe qu’il fait peser sur l’union Européenne. Du coup, on observe une forte reduction des nouvelles  consacrés aux autres pays du Monde, en particulier les pays d’Afrique et d’Amérique latine. La chine est également plus présente, notamment avec la montée en puissance des situations de crise avec Tawan.`
+```
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Macrorégions les plus cités par Le Figaro
+:::: 
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`#### Fréquence et spécificité des macrorégions citées par ${htl.html`<button onclick=${() => set(viewof select_W2B, "Le Figaro (FRA)")}>Le Figaro</button>`}`
+```
+
+Les mots les plus employés par le Figaro pour caractériser des macrorégions sont présentés dans le tableau-ci-contre. La fréquence indique le nombre de nouvelles qui ont utilisé ce mot. On leur a ajouté un indice de spécificité qui permet de repérer leur originalité par rapport aux trois autres medias du corpus 
+::::::::
+
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+-   "-" : mot moins employé (ex. Méditerranée)
+-   "+" : mot plus employé  (ex. OTAN)
+
+Le Figaro constituant le corpus de Nouvelles le plus important, il affiche moins de deviations importantes  à la moyenne que les trois autres journaux. 
+:::
+
+```{ojs}
+viewof select_W2B
+viewof year_W2B
+
+plot_W2B
+
+viewof rotate_W2B
+viewof nb_W2B
+wcd_W2B
+```
+::::::::
+:::::::: grid-txt
+#### Quelles sont les macrorégions les plus cités et les plus spécifiques du media 
+
+Les macrorégions les plus cites  par le Figaro sont très clairement l’Union Européenne (36%) et l’Europe (23%) qui rassemblent  près des deux tiers de citation. Loin derrière on trouve l’OTAN (6%) dont l’importance a été réactivée par les guerre russo-ukrainiennes et les crises du Proche-Orient (3%). Elles sont toutes spécifiques au journal par comparaison avec les relevés équivalents effectués dans les journaux turcs ou tunisiens.
+
+Les autres continents (Afrique, Asie) et la Méditerranée totalisent 2 à 3% des citations d’entités macro régionale citées par le Figaro. Elles sont également peu spécifiques par rapport aux autre journaux
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Comparaison de ${htl.html`<button onclick=${() => set(viewof select_W2B, "Le Figaro (FRA)")}>Le Figaro (FRA)</button>`} et ${htl.html`<button onclick=${() => set(viewof select_W2B, "Süddeutsche Zeitung (DEU)")}>Süddeutsche Zeitung (DEU)</button>`}`
+```
+
+Comme le Figaro, le Süddeutsche Zeitung accorde une large place à l’Union Européenne et à l’OTAN mais il cite relativement moins l’Europe … sauf si on ajoute à celle-ci les nouvelles relatives au sport et en particulier à la Ligue Européenne (UEFA). On retrouve également plus de références aux Balkans et à l’Europe orientale dans le journal allemande. 
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Evolution du ${htl.html`<button onclick=${() => set(viewof select_W2B, "Le Figaro (FRA)")}>journal</button>`} de 2013 à 2023`
+```
+Même si les effectifs sont plus limités que ceux des pays et interdisent des conclusions aussi fiables, on note un glissement sémantique intéressant dans la liste des macro-regions les plus citées par le Figaro au cours du temps.
+
+```{ojs}
+md`Si l’on prend les deux dates extremes de la période d’observation, on observe qu’en ${htl.html`<button onclick=${() => set(viewof year_W2B, "2013")}>2013</button>`} l’Europe et l’Union Européenne étaient fortement mentionnées et qu’une grande diversité d’organisations regionals ou de toponyme figuraient dans l’inventaire.` 
+```
+\
+\
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof year_W2B, "2023")}>En 2023</button>`}, l’Europe et l’Union européenne demeurent importante mais relativement moins que dans la période antérieure. A contrario, l’OTAN a pris beaucoup d’importance et la diversité des lieux cites semble avoir diminué`
+```
+
+Ceci semble donc confirmer l’observation d’une reduction de la diversité internationale des pays cités ainsi que d’une contraction spatiale de l’agenda vers les territoire proches de la France et de l’Union Européenne. Une forme de “provincialisation” du journal …
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Position par rapport aux autres medias
+
+**Axe horizontal** : Cet axe oppose clairement le journal tunisien African Manager aux trois autres journaux turcs, allemande et français du corpus. L'originalité du journal tunisien est clairement lié à sa volonté de couverture de l'actualité en Afrique et au Proche-Orient qui se traduit par une moindre importance accordée aux nouvelles relatives à l'Union Européenne et au reste du Monde.
+
+**Axe vertical** : Ce deuxième axe oppose advantage le journal turc Dunya aux journaux français (Figaro) et allemands (Süddeutsche Zeitung). Cette fois-ci, c'est la focalisation plus grande du journal turc Dunya sur la Méditerranée, la Mer Noire, l'Asie et les Balkans qui instaure une difference avec les journaux français et allemands qui apparaissent très proches. A noter que la BERD est située à mi-chemin entre Tunisie et Turquie ce qui est logique au vu de sa mission.  
+::::::::
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+Le graphique d'analyse factorielle permet de voir pour chaque media les macrorégions qui lui sont les plus spécifiques et les medias qui en sont proches ou éloignés.
+:::
+
+```{r}
+{{< include ../scripts/W3B_afc_med_reg.R >}}
+```
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Réseaux de co-citations des pays et des macrorégions
+:::: 
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Analyse des co-citations des pays et macro-régions
+
+```{ojs}
+md`Les nouvelles de presses que nous avons analysé (titres et deux premières phrases) dans ${htl.html`<button onclick=${() => set(viewof select_W7A, "Le Figaro (FRA)")}>Le Figaro</button>`} associent de temps en temps des pays et des macro-regions dans une même phrase. Ces co-presences peuvent être anecdotiques mais lorsqu'elles se répètent souvent elles sont le signe d'une association. Nous avons donc relevé les paires les plus fréquentes puis établi un modèle de relation préférentielle entre certains pays et certaines regions.`
+```
+::::::::
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+-   "-":  association moins forte que prévue 
+-   "+" : association plus forte que prévu 
+-   "++" : association deux fois  plus forte que prévu
+:::
+```{ojs}
+viewof select_W7A
+plot_W7A
+```
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Graphe des co-citations pays-macrorégions les plus fréquentes
+
+Les associations les plus fréquentes entre un pays et une macro-regions concernent tout d’abord l’Union Européenne, puis l’Europe et enfin l’OTAN. Les autres organisations régonales  ou entités spatiales suptanationales ne jouent qu’un role secondaire  dans les co-citations de pays et de macro-regions. 
+
+On peut donc observer une forme de triangulation entre des pays qui sont associés fortement au trois entités (e.g. Allemagne) et d’autres qui sont associés surtout à une ou éventuellement deux d’entre elles. 
+
+L’utilisation d’un modèle d’interaction permet de filtrer le graphe initial pour repérer les associations les plus pertinentes, c’est-à-dire celles qui ne résultent pas d’un simple effet de taille [@laporte2024three]
+::::::::
+:::::::: grid-img
+::::::: grid-net
+{{< include ../scripts/W6A_net_med_reg_obs_figaro.html >}}
+:::::::
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Graphe des co-citations pays-macrorégions les plus spécifiques
+
+En ne conservant que les liens significativement plus élevés que ce que prévoyait un modèle d’association aléatoire entre pays et macror regions on voit beaucoup mieux apparaître les pays associés à chacun des poles du tryptique du Figaro.
+
+**L’Union Européenne** est particulièrement associé aux pays responsible de crises à l’intérieur de l’Union européenne. Au premier chef le Royaume-Uni (Brexit) mais aussi la Grèce (dette) et plus généralement l’ensemble des nouveaux pays membres. 
+
+**L’Europe** est plutôt associé aux anciens pays members et aux pays d’Europe de l’Ouest. Cela s’explique dans doute en partie par le contenu de nouvelles sportives et culturelles plus fréquentes dans le cas de ces pays. Ce terme “Europe” est aussi convoqué lorsqu’il est question des relations avec la Chine et les USA. L’Allemagne est associé à la fois aux deux entités.
+
+**L’OTAN** est typiquement associé à la Russie et aux Etats-Unis mais cette organisation de combine avec l’Union Européenne pour les nouvelles concernant l’Ukraine, la Turquie et la Pologne, en liaison directe avec les deux guerres de 2014 et 2022 et les débats sur l’élargissement de l’UE. 
+
+Sans discuter la position des autres entités macro regionals, on notera tout de même le role central de la Méditerranée dans le graphe, en liaison notamment avec la Libye ou la Turquie et la crise migratoire de 2015. 
+::::::::
+:::::::: grid-img
+::::::: grid-net
+{{< include ../scripts/W6B_net_med_reg_res_figaro.html >}}
+:::::::
+::::::::
+:::::::::
+::::::::::

@@ -1,0 +1,401 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+```{ojs}
+{{< include ../scripts/wgt_import.js >}}
+```
+:::::::::: section 
+::::: para
+:::: paraContent
+# Where is Germany ?
+Antoine Laporte, Claude Grasland, Elina Marveaux
+::::
+::::: 
+:::::::::: 
+<!-- --- SEC ---------- -->
+:::::::::: section
+::::: para
+:::: paraContent
+## Students Survey
+:::: 
+::::: 
+::::: para
+:::: paraContent
+### Cartes mentales 
+:::: 
+::::: 
+
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+#### Noms et échelles d'appartenance
+```{ojs}
+md`La spécificité des réponses parmi les enquêtés  ${htl.html`<button onclick=${() => set(viewof select_W2C, "Germany")}>allemands</button>`} est la prépondérance de termes renvoyant à des entités territoriales infra-nationales voire infra-régionales. La fréquence de territoires situés plutôt dans la partie centrale et méridionale du pays (Franconie, région Rhin-Main, Bavière) tient aux lieux d’enquêtes principalement situés à Francfort et Erlangen.`
+```
+
+Les noms de région évoqués laissent une très large part à l’ « Europe » et dans une moindre mesure à l’ « Europe centrale » et l’ « Europe de l’Ouest ». L’Allemagne est un périmètre de projection aussi fort que l’Europe et s’avère une forme d’espace pluri-national équivalent à une macro-région.
+::::::::
+:::::::: grid-img
+```{ojs}
+viewof select_W2C
+
+plot_W2C
+
+viewof rotate_W2C
+viewof nb_W2C
+wcd_W2C
+```
+::::::::
+:::::::::
+::: separator
+:::
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`Les macrorégions dessinées par les étudiants ${htl.html`<button onclick=${() => set(viewof select_W1A, "Germany")}>allemands</button>`} sont très variées. La partie européenne est évidemment de très loin surreprésentée mais il est intéressant de remarquer qu’aucune partie du monde, Antarctique exceptée, n’est exclue de l’ensemble des enquêtes.`
+```
+
+```{ojs}
+md`#### Focus 1 : ${htl.html`<button onclick=${() => set(viewof region_W1A, "europe")}>Europe </button>`}`
+```
+
+L’Europe dessinée par les étudiants allemands présente un dessin relativement homogène avec des points de passage utilisés par presque tous (le détroit de Gibraltar et la Mer Méditerranée jusqu’entre Grèce et Libye). L’Islande est souvent intégrée mais quasiment jamais le Groenland. Si la plupart des traits passent par le Bosphore et suivent les frontières occidentales de la Russie, quelques traits intègrent la Turquie et les quelques centaines de kilomètres du territoire russe les plus proches de la Finlande, de la Biélorussie et de l’Ukraine. 
+
+En désignant l’Europe, quelques tracés passent pourtant au sein de l’Union européenne ou dans des bordures qui semblent incongrues, excluant les Iles Britanniques, la Scandinavie voire la Pologne et les autres Etats d’Europe centrale. Bien que n’émanant pas de tracés individuels qu’on pourrait isoler, ces tracés sont statistiquement peu signifiants.
+::::::::
+:::::::: grid-img
+```{ojs}
+{{< include ../scripts/W1A_map_stu_reg.js >}}
+```
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Focus 2 ${htl.html`<button onclick=${() => set(viewof region_W1A, "europe_centr")}>Central Europe</button>`}`
+```
+
+L’Europe centrale est abordée dans un certain nombre d’enquêtes mais avec des tracés extrêmement variés. A la différence du cas de l’ « Europe », aucune limite ne fait consensus. Il existe cependant un cœur relativement commun correspondant au territoire allemand, comme si l’Europe centrale en était une sorte d’extension. 
+
+Celle-ci intègre souvent la Pologne, l’Autriche, la Tchéquie, la Slovaquie ou la France, ce qui peut paraitre plus surprenant. Les traits coupent, dans la partie sud de la zone, souvent au milieu de l’Italie et des Balkans, ce qui semble indiquer qu’à part dans le cas de l’Allemagne, cette région ne recoupe pas une liste fermée d’Etats mais une zone relative située au nord de l’Europe du sud et par contradiction avec une Europe orientale correspondant plus ou moins à l’espace post-soviétique.
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Focus 3 ${htl.html`<button onclick=${() => set(viewof region_W1A, "union_europ")}>European Union</button>`}`
+```
+L’Union européenne renvoie à une définition institutionnelle et dont les frontières sont plus faciles à établir. Dans la plupart des cas, les étudiants entourent alors les mêmes Etats. Les écarts au tracé moyen renvoient, on peut en faire l’hypothèse, à des défauts dans la connaissance de la géographie de l’institution. Ou alors, elle révèle peut-être non pas l’Union européenne réelle mais celle qu’aimerait les étudiants. 
+
+Les Etats intégrés sont en effet relativement aisés et sont souvent soit des Etats ayant refusé une candidature à l’Union qui n’auraient pas posé problème politiquement (Islande, Norvège, Suisse) ou qui bénéficie d’un large soutien dans l’opinion (comme l’Ukraine ou les Balkans occidentaux). Les rives sud de la Méditerranée sont exclues de ce découpage.
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Focus 4 ${htl.html`<button onclick=${() => set(viewof region_W1A, "western")}>The Western</button>`}`
+```
+Rare, ces tracés renvoient à une approche huntingtonienne du découpage du monde. Quand il ne vise pas à entourer l’Allemagne de manière exclusive, il joint l’Europe à l’Amérique du nord, excluant presque toujours la Russie et intégrant à une reprise la Japon, comme si le périmètre de référence était le G7. L’Afrique, tout comme l’Asie dans sa presque intégralité, en sont exclues.
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Pays visités ou attractifs
+:::: 
+::::: 
+
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+#### Pays visités par les étudiants
+
+```{ojs}
+md`De manière attendue, les pays les plus visités par les enquêtés ${htl.html`<button onclick=${() => set(viewof select_W4A, "Germany")}>allemands</button>`} sont proches de l’Allemagne (France, Italie, Espagne, Royaume-Uni). De manière générale, la Scandinavie et les Etats frontaliers de l’Allemagne et de l’Autriche ont été visités par une bonne part de la population enquêtée tout comme la Turquie et les Etats-Unis (seul cas situé à plus de deux heures de l’Allemagne à émerger).`
+```
+
+L’Asie du sud, le Moyen-Orient, l’Amérique latine et le monde post-soviétique sont souvent mal connus. La majorité des Etats d’Afrique n’ont jamais été visités par aucun des enquêtés. Cette géographie révèle aussi pour les étudiants d’Allemagne et de France un monde qui s’ouvre sur l’Europe notamment par le programme Erasmus mais qui se ferme sur certaines parties du monde où voyager est plus dangereux qu’il y a une ou deux décennies (Sahel, Ukraine, Iran) ou plus difficile à pénétrer comme la Russie notamment.
+::::::::
+:::::::: grid-img
+```{ojs}
+viewof select_W4A
+viewof indic_W4A
+map_W4A
+```
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Où les étudiants souhaitent ${htl.html`<button onclick=${() => set(viewof indic_W4A, "work")}>travailler</button>`}`
+```
+
+Les Etats où les étudiants souhaitent travailler se trouvent dans la moitié ouest de l’Europe auxquels il faut ajouter les Etats-Unis et le Canada. Les Etats, même proches, situés à l’est de l’ancient Rideau de fer, ne sont que presque jamais cités. La Turquie, l’Inde, l’Iran et la Chine sont dans une situation proche. Les Etats africains ne sont jamais cités, tout comme nombre d’Etats d’Asie centrale. 
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`#### Dissociation des lieux visités et des lieux attractifspour les ${htl.html`<button onclick=${() => set(viewof select_W4B, "Germany")}>allemands</button>`}`
+```
+
+Cette representation du monde permet de mettre en evidence un veritable gradient allant du nord-oust vers le sud-est. Le Canada, les Iles Britanniques et la Scandinavie, pourtant visités sont très souvent cites positivement comme destination pour le travail. Dans le cas des Etats-Unis, de la France, de l’Espagne, des Pays-Bas et du Danemark, l’attractivité de ces Etats est comparable à la connaissance qu’en ont les enquêtés. Dans le centre et le sud de l’Europe, les Etats font partie de l’experience des étudiants sans être véritables des espaces vers lesquels ils se projettent professionnellement. La plus grande dissonance est mesurée pour la Croatie
+::::::::
+:::::::: grid-img
+```{ojs}
+viewof select_W4B
+map_W4B
+```
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Les mots de l'Europe
+:::: 
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Fréquence et spécificité des mots utilises pour qualifier l'Europe
+```{ojs}
+md`Les mots les plus employés pour caractériser l'Europe sont présentés dans le tableau-ci-contre. La fréquence indique le nombre d'étudiants ${htl.html`<button onclick=${() => set(viewof select_W2A, "Germany")}>allemands</button>`} qui ont cite un mot. On leur a ajouté un indice de spécificité qui permet de repérer leur originalité par rapport à l'ensemble des étudiants du corpus`
+```
+::::::::
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+- : mot moins employé (ex. Union)
++ : mot plus employé  (ex. Euro)
+++ : mot deux fois  plus employé  (ex. Culture)
++++ : mots trois fois plus employé (ex. Job)
+:::
+```{ojs}
+viewof select_W2A
+plot_W2A
+
+viewof rotate_W2A
+viewof nb_W2A
+wcd_W2A
+```
+::::::::
+:::::::: grid-txt
+#### Les mots associés au terme « Europe » par les étudiants
+
+Les mots les plus utilises pour évoquer l’Europe renvoient à des termes également très utilises dans d’autres Etats de l’enquête et pourraient s’appliquer autant à l’ “Europe” qu’à “l’Union européenne” (“community”, “European union”, “cohesion”) à l’exception notable de “continent”. La spécificité des étudiants allemands tient sans doute moins aux fréquences qu’au fait qu’ils sont plus nombreux que les autres à utiliser des termes positifs très liés à la question communautaires tels “community”, “cohesion”, “prosperity”, “security”, “policy” ou “cooperation”. L’assignation de l’Europe à l’Occident apparait moins (comme dans le terme “the west” ou “history”). 
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Position de l'Allemagne par rapport aux autres lieux d'enquête
+
+**Axe horizontal :** Cet axe oppose les pays qui définissent l'Europe par les attributs propres à l'Union Européenne (à gauche) à ceux qui y voient advantage un espace d'opportunité économique et de développement caractérisé par sa modernité mais aussi son heritage colonial (à droite). Sur ce sujet, l’Allemagne s’oppose notamment à la Turquie par l’emploi recurrent du terme “democracy”, “community” et “human rights” voire “freedom” et se rapproche des Etats anciennement dans l’UE que sont l’Irlande et la France.
+
+**Axe vertical :** Ce deuxième axe oppose advantage une vision matérialiste de l'Europe (en haut) à une vision idéaliste (en bas). De ce point de vue, les étudiants allemands et turcs insistent plus sur les aspects de démocratie, liberté, modernité et progrès. Peu de termes sont en effet très concrets. Bien qu’apparemment très europhiles quand on considère la surreprésentation de certains ternes, ceux de “Brexit” ou d’ “Erasmus” sont moins représentés. 
+::::::::
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+Le graphique d'analyse factorielle permet de voir pour chaque lieu d'enquête  les mots qui lui sont les plus spécifiques et les lieux qui en sont proches ou éloignés.
+:::
+```{r}
+{{< include ../scripts/W3A_afc_stu_eur.R >}}
+```
+::::::::
+:::::::::
+::::::::::
+<!-- ____ END SEC STUDENTS______ -->
+
+:::::::::: section
+::::: para
+:::: paraContent
+## Media Analysis
+:::: 
+::::: 
+
+::::: para
+:::: paraContent
+### Pays les plus cités par le Süddeutsche Zeitung
+:::: 
+::::: 
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`Pays les plus cités par  ${htl.html`<button onclick=${() => set(viewof select_W4C, "Süddeutsche Zeitung (DEU)")}>Süddeutsche Zeitung</button>`} (2013-2023)
+`
+```
+Les pays cités par la SZ renvoient à un tropisme très orientés sur l’Europe communautaire, le Royaume-Uni, les Etats-Unis et la Russie. Par rapport aux autres journaux du corpus, on note une surreprésentation forte de la plupart des Etats européens, Royaume-Uni excepté, ainsi que de l’Ukraine, de la Russie et de la Turquie. La Chine, l’Inde, le Moyen-Orient ainsi que l’entièreté de l’Afrique sont sous-représentés.
+::::::::
+:::::::: grid-img
+```{ojs}
+viewof select_W4C
+viewof year_W4C
+map_W4C
+```
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Comparaison du ${htl.html`<button onclick=${() => set(viewof select_W4C, "Le Figaro (FRA)")}>Figaro</button>`} et du ${htl.html`<button onclick=${() => set(viewof select_W4C, "Süddeutsche Zeitung (DEU)")}>Süddeutsche Zeitung</button>`} (2013-2023)`
+```
+
+Si on compare la SZ et le Figaro, et en imaginant que ces journaux généralistes renvoient un intérêt à l’actualité relativement proche des medias de leurs pays respectifs, on voit clairement un tropisme beaucoup plus fort pour le centre de l’Europe de la part de la SZ et un intérêt plus grand pour le Royaume-Uni et le Proche-Orient.
+
+Pour la SZ, le poids de la couverture du conflit russo-ukrainien depuis 2014 explique une part importante des surreprésentations dans l’espace post-soviétique. La surreprésentation la plus forte est mesurée en Autriche, avec laquelle l’Allemagne partage la langue d’usage. Le journal étant basé à Munich, l’Autriche apparaît comme un espace très voisin et suscite sans doute l’intérêt des lecteurs comme des membres du monde économique bavarois. Traditionnellement, Londres est un lieu d’ancrage très important pour les médias français car le Royaume-Uni est un état voisin, dont la frontière a été reconfigurée par le Brexit et l’évolution des routes migratoires, ce qui explique un poids important de ce pays dans la couverture du monde côté français. La présence de militaires comme d’intérêts économiques français au Sahel tout comme au Liban, explique aussi sans doute un choix dans la couverture de l’actualité en faveur de ces zones pour un quotidien plutôt libéral comme Le Figaro.
+::::::::
+
+:::::::: grid-txt
+```{ojs}
+md` #### Evolution de la couverture du ${htl.html`<button onclick=${() => set(viewof select_W4C, "Süddeutsche Zeitung (DEU)")}>Süddeutsche Zeitung</button>`} entre 2014 et 2022`
+```
+
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof year_W4C, "2014")}>En 2014</button>`} : la SZ couvre bien plus la première partie du conflit russo-ukrainien ainsi que l’Amérique latine.` 
+```
+
+
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof year_W4C, "2022")}>En 2022</button>`} : La SZ se distinguee par une couverture extensive de l’agression militaire russe en Ukraine et de ses repercussions sur les Etats voisins (Finlande, Hongrie, Lituanie). Toutes les autres parties du monde sont sous représentées dans les titres, même les Etats-Unis, pourtant cité souvent.`
+```
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Macrorégions les plus cités par le Süddeutsche Zeitung
+:::: 
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`#### Fréquence et spécificité des macrorégions citées par ${htl.html`<button onclick=${() => set(viewof select_W2B, "Süddeutsche Zeitung (DEU)")}>Süddeutsche Zeitung</button>`}`
+```
+
+Les mots les plus employés par le Figaro pour caractériser des macrorégions sont présentés dans le tableau-ci-contre. La fréquence indique le nombre de nouvelles qui ont utilisé ce mot. On leur a ajouté un indice de spécificité qui permet de repérer leur originalité par rapport aux trois autres medias du corpus 
+::::::::
+
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+-   "-" : mot moins employé (ex. Union)
+-   "+" : mot plus employé  (ex. Euro)
+-   "++" : mot deux fois  plus employé  (ex. Culture)
+-   "+++" : mots trois fois plus employé (ex. Job)
+:::
+
+```{ojs}
+viewof select_W2B
+viewof year_W2B
+
+plot_W2B
+
+viewof rotate_W2B
+viewof nb_W2B
+wcd_W2B
+```
+::::::::
+:::::::: grid-txt
+#### Quelles sont les macrorégions les plus cités et les plus spécifiques du media 
+
+**Les macrorégions les plus cites** : L’Union européenne et l’Europe sont abondamment cites dans la SZ mais c’est la dimension communautaire de l’UE qui apparaît plus nombreuse et surreprésentée par rapport aux autres journaux.
+
+**Les plus spécifiques** : Outre l’Union européenne, les mentions relatives au centre et l’est de l’Europe (“Balkans”, “Eastern Europe”, “Alps”) sont surreprésentées tout comme l’OTAN, à laquelle l’Allemagne est très liée sur le plan militaire et du fait de la presence américaine dans des bases situées dans le pays.
+
+**Les moins spécifiques** : A l’inverse, l’Afrique tout comme la region méditerranéenne au sens large (“Mediterranean”, “North Africa”, “Mid East”, “Maghreb”) renvoie à de larges zones moins évoquées.
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Comparaison de ${htl.html`<button onclick=${() => set(viewof select_W2B, "Le Figaro (FRA)")}>Le Figaro (FRA)</button>`} et ${htl.html`<button onclick=${() => set(viewof select_W2B, "Süddeutsche Zeitung (DEU)")}>Süddeutsche Zeitung (DEU)</button>`}`
+```
+
+Comme dans le cas des pays cités, il est intéressant de comparer les macrorégions mentionnées respectivement par ces deux journaux
+
+**Points communs** : l’Europe et l’Union européenne sont surreprésentées parmi les macro-regions citées. De manière générale, il s’agit de deux journaux dont les intérêts sont hiérarchisés de manière très proche. Ils présentent des préoccupations euro-centrées et donnant une part qui décroît gloablement avec la distance. L’ “Asie”, l’ “Afrique”, les “Arab countries” ont une place intermédiaire. Les espaces lointains (“Amazon”, “South China Sea”, “Polynesia” sont peu évoqués.
+
+**Différences** : l’ “Europe”, moins présente côté SZ, pourrait renvoyer à l’idée que l’actualité “européenne” est avant tout une actualité institutionnelle et communautaire et que le qualificatif est plutôt un usage. Les surreprésentations déjà évoquées sont bien visibles de nouveau notamment concernant les Balkans et l’Europe orientale. Du côté du Figaro, la surreprésentation du Sahel et de l’Afrique de l’Ouest notamment, laisse entrevoir un intérêt plus marqué côté français pour cette region ce qui s’explique autant par le passé colonial que par la presence de militaires français dans la region.
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Evolution du ${htl.html`<button onclick=${() => set(viewof select_W2B, "Le Figaro (FRA)")}>journal</button>`} de 2013 à 2023`
+```
+
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof year_W2B, "2013")}>En 2013</button>`}  la SZ traite alors de manière extensive les questions communautaires européennes au sortir de la crise de la dette de plusieurs Etats-membres. Cette année-là, juste avant le début du conflit russo-ukrainien, les questions relatives aux alliances militaires (OTAN) ou aux régions du voisinage n’offrent pas une actualité traitée de manière extensive. D’où la sous-représentation de l’Afrique, du Moyen-Orient. L’Asie fait cependant exception.
+` 
+```
+\
+\
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof year_W2B, "2023")}>En 2023</button>`} l’Union européenne et l’Europe reste les deux noms de macro-régions les plus dominants mais l’invasion russe du territoire ukrainien tout comme l’actualité tragique sur la question migratoire active un intérêt plus importants pour le Moyen-Orient, la Méditerranée, le Sahara et l’Afrique. La surreprésentation des Balkans est plus difficile à interpréter bien qu’elle soit importante et sous-tendue par un grand nombre de nouvelles.`
+```
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Position par rapport aux autres medias
+
+**Axe horizontal** : Cet axe oppose clairement le journal tunisien African Manager aux trois autres journaux turcs, allemande et français du corpus. L'originalité du journal tunisien est clairement lié à sa volonté de couverture de l'actualité en Afrique et au Proche-Orient qui se traduit par une moindre importance accordée aux nouvelles relatives à l'Union Européenne et au reste du Monde.
+
+**Axe vertical** : Ce deuxième axe oppose advantage le journal turc Dunya aux journaux français (Figaro) et allemands (Süddeutsche Zeitung). Cette fois-ci, c'est la focalisation plus grande du journal turc Dunya sur la Méditerranée, la Mer Noire, l'Asie et les Balkans qui instaure une difference avec les journaux français et allemands qui apparaissent très proches. A noter que la BERD est située à mi-chemin entre Tunisie et Turquie ce qui est logique au vu de sa mission.  
+::::::::
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+Le graphique d'analyse factorielle permet de voir pour chaque media les macrorégions qui lui sont les plus spécifiques et les medias qui en sont proches ou éloignés.
+:::
+
+```{r}
+{{< include ../scripts/W3B_afc_med_reg.R >}}
+```
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Réseaux de co-citations des pays et des macrorégions
+:::: 
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Analyse des co-citations des pays et macro-régions
+
+```{ojs}
+md`Les nouvelles de presses que nous avons analysé (titres et deux premières phrases) dans ${htl.html`<button onclick=${() => set(viewof select_W7A, "Süddeutsche Zeitung (DEU)")}>Süddeutsche Zeitung</button>`} associent de temps en temps des pays et des macro-regions dans une même phrase. Ces co-presences peuvent être anecdotiques mais lorsqu'elles se répètent souvent ells sont le signe d'une association. Nous avons donc relevé les paires les plus fréquentes puis établi un modèle de relation préférentielle entre certains pays et certaines regions.`
+```
+::::::::
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+-   "-":  association moins forte que prévue 
+-   "+" : association plus forte que prévu 
+-   "++" : association deux fois  plus forte que prévu
+:::
+```{ojs}
+viewof select_W7A
+plot_W7A
+```
+::: grid-net
+{{< include ../scripts/W6A_net_med_reg_obs_suddeu.html >}}
+:::
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Graphe des co-citations pays-macrorégions les plus spécifiques
+
+Ce graphe permet d’illustrer la manière dont le journal allemand aborde certains Etats en lien avec une institution ou l’énonciation d’une région. C’est notamment en lien avec l’Union européenne que le Royaume-Uni est abordé, tout comme les Etats dont la situation économique a pu inquiéter les Etats proches comme la Grèce ou parce qu’ils faisaient obstacles à des décisions du conseil européen (Hongrie, Pologne, Slovaquie). De même, dans le contexte de l’invasion du territoire russe par l’Ukraine, l’évocation de la Finlande et de la Suède tout comme de l’Afghanistan ou de la Russie, s’opère dans des articles qui traitent de l’action de l’OTAN. La ligue Europa fait apparaître certains Etats dans les rubriques sportives davantage que dans les pages politiques ou économiques (Italie et Portugal).
+::::::::
+:::::::: grid-img
+::::::: grid-net
+{{< include ../scripts/W6B_net_med_reg_res_suddeu.html >}}
+:::::::
+::::::::
+:::::::::
+::::::::::

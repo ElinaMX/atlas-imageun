@@ -1,0 +1,9 @@
+---
+title: "Listing widgets"
+listing:
+  contents: 
+    - ../widgets/*.qmd
+  type: grid  
+  categories: true
+---
+

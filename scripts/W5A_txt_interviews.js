@@ -1,0 +1,5 @@
+import {viewof idText_W5A} from "f9d6ef877e2214b8"
+import {viewof nextText_W5A} from "f9d6ef877e2214b8"
+import {viewof tradOnOff_W5A} from "f9d6ef877e2214b8"
+import {textSel_W5A} from "f9d6ef877e2214b8"
+import {ID_PI_W5A} from "f9d6ef877e2214b8"

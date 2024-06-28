@@ -1,0 +1,567 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+```{ojs}
+{{< include ../scripts/wgt_import.js >}}
+```
+:::::::::: section 
+::::: para
+:::: paraContent
+# Where is Turkey ?
+Murat Guvenç, Etienne Toureille, Claude Grasland, Elina Marveaux
+::::
+::::: 
+:::::::::: 
+
+:::::::::: section 
+::::::::: grid-container
+:::::::: grid-nocol
+La question de la place de la Turquie dans son espace régional est depuis au moins une trentaine d’années au cœur des problématiques d’intégration régionale propres à l’Union européenne. Ce pays occupe, en effet, une situation unique dans l’histoire de la construction européenne. Reconnu officiellement candidat en décembre 1999, l’Etat turc bat le record de la plus longue candidature à l’UE de l’Histoire en conservant depuis lors ce stat. 
+
+Les raisons officielles de ce blocage sont multiples et changeantes dans le temps (problématique Chypriote, plus récemment question des droits de l’homme et du respect de l’Etat de loi). Mais plus généralement, le blocage de la candidature turque peut être lue comme la conséquence de son intégration complexe à une pluralité de macro-régions possibles qui en font un Etat sans doute Européen, mais sans doute aussi davantage. 
+
+Cette idée est particulièrement prégnante si l’on s’intéresse aux représentations de la Turquie vue depuis l’Union européenne et tout particulièrement si l’on prête attention au discours politique. Le pays a exprimé de manière précoce son souhait d’intégrer le camp occidental et européen au lendemain de la Seconde guerre mondiale, via notamment l’adhésion au Conseil de l’Europe (1950), à l’OTAN (1949) et une première candidature malheureuse à la CEE (1989). La Turquie entretien également des relations historique d’inégale intensité avec d’autres espaces régionaux (Moyen orient, Asie centrale, Monde Türk, par exemple). Depuis les années 1980, elle a d’ailleurs tenté de mettre à profit ces appartenances multiples en menant une politique de multilatéralisation de sa diplomatie. Cette dynamique s’est accélérée dans les années 2000 sous l’influence de l’ancien ministre des affaires étrangères A. Davutoğlu.
+
+Interroger les imaginaires régionaux dans le contexte turc soulève donc la question de l’appropriation de ces héritages multiples par les habitants du pays et de son voisinage immédiat (Allemagne, France, Tunisie).
+:::::::: 
+:::::::::
+::::::::::
+
+<!-- --- SEC ---------- -->
+:::::::::: section
+::::: para
+:::: paraContent
+## Students Survey
+:::: 
+::::: 
+::::: para
+:::: paraContent
+### Cartes mentales 
+:::: 
+::::: 
+
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+#### Noms et échelles d'appartenance
+```{ojs}
+md`La place des découpages situés à l’échelle macro-régionale est mineure dans les réponses fournies par les étudiants enquêtés en ${htl.html`<button onclick=${() => set(viewof select_W2C, "Turkey")}>Turquie.</button>`} En effet, une large majorité d’étudiants ont délimité une région d’appartenance désignée comme « Turquie » (plus de 60% des réponses) et plus encore si l’on y ajoute l’ « Anatolie » (plus de 7% des réponses).`
+```
+
+Au final, moins d’un tiers des répondant intègre le pays à un espace d’envergure supranationale, dont le plus fréquent est le Moyen orient, devant l’Europe, l’Asie et l’Eurasie. Aucun de ces découpages ne se distingue nettement des autres par la fréquence: les imaginaires macro-régionaux sont pluriels.
+
+On trouve également quelques représentations infranationales, comme « Istanbul » et, dans une certaine mesure l’ « Anatolie » qui consiste en un découpage excluant la Thrace orientale, parfois qualifiée de « Turquie européenne », de la région d’appartenance.
+
+Cette faiblesse croisée à diversité des macro-régionaux d’appartenances possibles peut trouver plusieurs explications:  une prédominance de l’échelon national dans les appartenances territoriales, mais elle peut également être l’indice d’un ancrage régional multiple qui rend, par la diversité des réponses possibles, beaucoup plus saillant l’échelon national.
+::::::::
+:::::::: grid-img
+```{ojs}
+viewof select_W2C
+
+plot_W2C
+
+viewof rotate_W2C
+viewof nb_W2C
+wcd_W2C
+```
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`#### Les macro-régions tracées par les étudiants situés en ${htl.html`<button onclick=${() => set(viewof select_W1A, "Turkey")}>Turquie.</button>`}`
+```
+
+De fait, la superposition des tracés de l’ensemble des enquêtés met en évidence la saillance de la Turquie, intégrée à différentes auréoles manifestant l’intégration à l’une des régions sus-mentionnée. 
+::::::::
+:::::::: grid-img
+```{ojs}
+{{< include ../scripts/W1A_map_stu_reg.js >}}
+```
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Le ${htl.html`<button onclick=${() => set(viewof region_W1A, "mideast")}>Moyen Orient</button>`} : une région floue`
+```
+
+Les régions désignées à travers le terme « Moyen Orient » englobent une diversité de tracés dont l’emprise peut être assez large, certains tracés intégrant au moins partiellement une partie de l’Asie centrale et du Machrek. 
+
+Un noyau régional se dégage néanmoins centré sur le territoire turc, certains tracés prenant la forme d’une grande Turquie intégrant à cet espace une partie du Caucase, du Nord de la Syrie ou de l’Irak. Ces découpages recentré sur la Turquie n’intègrent jamais l’île de Chypre, contrairement aux découpages très étendus. 
+
+On observe également une grande variété de tracés au niveau des détroits (Bosphore, Dardanelles), de la mer de Marmara et de la mer Egée. Certains découpages semblent exclure une partie de la Trace orientale, Istanbul voire toute une partie du littoral Egéen (Izmir par exemple) quand d’autre l’intègrent plus volontiers, parfois en intégrant une partie significative des Balkans (territoire Grec, sud de la Bulgarie).
+
+Au final le moyen orient semble surtout se construire à partir de la Turquie, éventuellement associée à une grande diversité d’espaces.
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### ${htl.html`<button onclick=${() => set(viewof region_W1A, "europe")}>L’Europe</button>`} deux types de tracés sous les cartes`
+```
+
+L’ « Europe » est la deuxième région la plus fréquente dans les tracés. Elle occupe une place très secondaire dans les découpages possibles. A l’exception de la mention (1 occurrence) de l’ « Europe orientale », elle constitue la seule référence à une région d’envergure européenne. En d’autres termes, aucune carte tracée ne fait référence à l’ « Union européenne » ou à l’ « Europe occidentale », comme dans d’autres cas d’étude.
+
+Les découpages européens s’organisent autour de deux noyaux spatiaux principaux, concentrant à part relativement équivalente les tracés. 
+
+Un première ensemble très variable dans son emprise, correspond à un ensemble européen allant d’une Europe réduite à l’Europe occidentale (comprenant la Turquie et excluant le Royaume-Uni) à des « Europe » au sens large, très stylisées dans les tracés, incluant l’Islande, une partie de la Méditerranée, la Biélorussie et l’ouest de la Fédération de Russie. 
+
+Un second ensemble de tracés semble encore une fois focalisé sur la Turquie. Les régions tracés vont de Turquies étendues, intégrant cette fois systématiquement les territoires de l’ouest du pays (mer Egée, Thrace orientale) voire un ensemble beaucoup plus vaste intégrant les Balkans et une partie de l’Europe centrale. 
+
+Ces tracés semblent en revanche moins systématiquement intégrer l’Anatolie ou les territoires frontaliers de l’Est du pays. Quelques découpages coupent ainsi le pays en deux, pour exclure tantôt l’Anatolie orientale et méridionale.
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### ${htl.html`<button onclick=${() => set(viewof region_W1A, "asia")}>L’Asie et l’Eurasie</button>`} : un monde *Türk* en filigrane?`
+```
+
+Les tracés de l’Asie et de l’Eurasie ont été rassemblés dans une même catégorie, l’ensemble de ces tracés représentant plus de 8% des tracés.
+
+La superposition des tracés obtenus est similaire à la structure générale de la région « Moyen orient ». Le noyau de la région dessinée (ensemble le plus souvent intégré) correspond ainsi au territoire turc, auxquels s'ajoutent une diversité d’extensions allant de grandes Turquie intégrant des portions variables du voisinage (mer Noire, bassin Méditerranéen, Balkans) à des découpages plus étendus aux logiques parfois complexes.
+
+Certains découpages étendus – peu nombreux mais très reconnaissables – associent à la Turquie un ensemble d’espaces du Caucase et d’Asie centrale (Kazakhstan, Ouzbékistan, Turkménistan, Kirghizistan). Leurs forme laissent supposer que certains des étudiants ont cherché à représenter des mondes Türks, entendu comme l’espace d’extension maximale du peuplement de langue turc très présent dans l’historiographie et les imaginaires nationalistes dans le pays. A ces découpages complexes, s’ajoutent des tracés plus stylisés beaucoup plus vastes (intégration de la Sibérie, de l’Inde), faisant plus penser à une reprise de la catégorie continentale « Asie ». 
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Pays visités ou attractifs
+:::: 
+::::: 
+
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+#### Pays visités par les étudiants
+
+```{ojs}
+md`La géographie des séjours effectués par les étudiants enquêtés en ${htl.html`<button onclick=${() => set(viewof select_W4A, "Turkey")}>Turquie</button>`} reflète les caractéristiques du pays d’étude. Peu d’étudiants ont déjà effectué une mobilité à l’international.`
+```
+
+Ces mobilités se font principalement à destination de l’Europe occidentale: Allemagne (11% des séjours), Italie (9%), France -9%), Grèce (8%), Espagne (5%).  Cette géographie correspond à la géographie des principales destinations touristiques mais également au champ migratoire turc en Europe (cas de l’Allemagne et la France). 
+
+Le Royaume Uni est faiblement représenté (4% des séjours) au regard de son poids démographique et économique, ce qui laisse supposer que les visites (qui peuvent être de courte durée) sont peut être liées aux possibilités de circulation offerte dans l’espace Schengen par l’obtention d’un visa. A la différence de la Tunisie, la Turquie fait partie du programme ERASMUS, ce qui permet aux étudiants du pays d’effectuer une mobilité universitaire dans les pays membres.
+
+Peu de séjour concernent des destinations situées hors de l’Union européenne, le Canada (5% des séjours), les Etats Unis (3%) et l’Arabie Saoudite (3%).
+::::::::
+:::::::: grid-img
+```{ojs}
+viewof select_W4A
+viewof indic_W4A
+map_W4A
+```
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Où les étudiants souhaitent ${htl.html`<button onclick=${() => set(viewof indic_W4A, "work")}>travailler</button>`}`
+```
+
+La géographie des pays où souhaiteraient travailler les étudiants est sensiblement différente de la géographie des pays visités, même si elle reste principalement focalisée sur l’Europe occidentale.
+
+En effet, les pays les plus attractifs sont le Royaume-Uni (19% des mentions), l’Allemagne, (16%), l’Italie (10%), la France (7%), suivis des Etats-Unis, du Canada et des Pays-Bas (autour de 6%). La géographie représentée ici semble davantage influencée par les aspects économiques (marché du travail, attractivité du système universitaire, maîtrise de la langue). 
+
+Cette question invitant les étudiants à se projeter dans un imaginaire proche les positionne principalement dans le voisinage européen. On note la remarquable absence de destinations telles que les Emirats Arabes Unis, ou l’Arabie Saoudite.
+::::::::
+:::::::::
+::: {.separator}
+:::
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`#### Différence entre l’attractivité pour le travail et l’attractivité pour le voyage en ${htl.html`<button onclick=${() => set(viewof select_W4B, "Turkey")}>Turquie</button>`}`
+```
+
+En combinant les deux cartes précédentes, on peut repérer des dissonances entre les pays visités (expérience)  et les pays attractifs (imaginaire)
+
+Les teintes blues représentent les pays qui ont tendance à être davantage mentionnés pour leur attractivité professionnelle mais assez peu visités. On trouve donc le Royaume Uni, les Etats-Unis, la Suisse et les Etats d’Europe septentrionale (Danemark, Norvège, Finlande, Suède). A l’inverse la majorité des Etats d’Europe orientale et des voisinages sud et est européens ne sont pas ou très peu attractifs pour des motifs professionnels. 
+
+La France, l’Italie, la Belgique, les Pays Bas et, dans une moindre mesure, la Pologne et l’Espagne semblent assez équilibrés ce qui signifie que ces pays ont tendance à être assez souvent visités et relativement attractifs.
+::::::::
+:::::::: grid-img
+```{ojs}
+viewof select_W4B
+map_W4B
+```
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Les mots de l'Europe
+:::: 
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Fréquence et spécificité des mots utilises pour qualifier l'Europe
+```{ojs}
+md`Les mots les plus employés pour caractériser l'Europe sont présentés dans le tableau-ci-contre. La fréquence indique le nombre d'étudiants ${htl.html`<button onclick=${() => set(viewof select_W2A, "Turkey")}>turcs</button>`} qui ont cite un mot. On leur a ajouté un indice de spécificité qui permet de repérer leur originalité par rapport à l'ensemble des étudiants du corpus`
+```
+::::::::
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+- : mot moins employé (ex. Union)
++ : mot plus employé  (ex. Euro)
+++ : mot deux fois  plus employé  (ex. Culture)
++++ : mots trois fois plus employé (ex. Job)
+:::
+```{ojs}
+viewof select_W2A
+plot_W2A
+
+viewof rotate_W2A
+viewof nb_W2A
+wcd_W2A
+```
+::::::::
+:::::::: grid-txt
+#### Les mots associés au terme « Europe » par les étudiants
+Le mot le plus souvent associé au terme « Europe » est le terme « liberté » (freedom) et celui de bien être/confort (walfare). Les termes les plus fréquents ont donc une connotation positive et tendent à mettre en évidence des aménités (liberté, égalité, développement). 
+La mise en évidence de ces dimensions est caractéristique des répondants en Turquie tout comme la mobilisation d’un vocabulaire beaucoup plus ambivalent, les termes de « racisme » et « hypocrisie ». 
+
+Vue de Turquie, l’Europe semble donc l’objet de représentations contrastées, avec la co-présence dans la population de représentations mobilisant des références aux valeurs promues notamment par l’Union européenne et des champs lexicaux plus critique. 
+
+Le caractère ambivalent du lexique est l’indice d’une possible polarisation des représentations de l’ « Europe » au sein de la population, entre des catégories d’étudiants investissant pour les évaluer politiquement.
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Position de la Turquie par rapport aux autres lieux d'enquête
+
+**Axe horizontal :** Cet axe oppose les pays qui définissent l'Europe par les attributs propres à l'Union Européenne (à gauche) à ceux qui y voient advantage un espace d'opportunité économique et de développement caractérisé par sa modernité mais aussi son heritage colonial (à droite). La Turquie et la Tunisie se positionnent dans cette seconde vision qui fait de l'Europe une partie du "Nord global", sans doute attractif mais aussi égoïste et refermé sur lui-même
+
+**Axe vertical :** Ce deuxième axe oppose advantage une vision matérialiste de l'Europe (en haut) à une vision idéaliste (en bas). De ce point de vue, les étudiants tunisiens se rapprochent des étudiants français qui voient d'abord dans l'Europe à travers un prisme économique et politique source de richesse et puissance. Les étudiants allemands et turcs insistent plus sur les aspects de démocratie, liberté, modernité et progrès.  
+::::::::
+:::::::: grid-img
+```{r}
+{{< include ../scripts/W3A_afc_stu_eur.R >}}
+```
+::::::::
+:::::::::
+::::::::::
+<!-- ____ END SEC STUDENTS______ -->
+:::::::::: section
+::::: para
+:::: paraContent
+## Media Analysis
+:::: 
+::::: 
+::::: para
+:::: paraContent
+### Pays les plus cités par Dunya
+:::: 
+::::: 
+
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`Les pays les plus mentionnés par le quotidien ${htl.html`<button onclick=${() => set(viewof select_W4C, "Dunya (TUR)")}>Dunya</button>`} entre 2013 et 2023 sont les Etats-Unis, la Russie, la Chine, l’Allemagne, le Royaume-Uni et l’Ukraine. Cette configuration rend compte de la structure Générale de l’actualité qui privilégie les acteurs et les événements globaux (membres du Conseil de Sécurité des Nations Unies, Etats impliqués dans la guerre russo-ukrainienne).`
+```
+
+Les pays plus cites par le quotidien turc que les autres pays sont situés dans son voisinage proche: Azerbaïdjan, République Turque de Chypre (du Nord), Géorgie, Etats des Balkans auxquels s’ajoutent un certain nombre d’Etats d’Asie centrale (monde Türk: Kazakhstan, Ouzbékistan, par exemple). Dans une moindre mesure, les Etats d’Amérique du nord (hors Mexique), asiatiques (Russie, Chine, Japon, Inde, Corée du Sud) et quelques Etats d’Europe septentrionale (Royayme-Uni, l’Allemagne, les Pays-Bas, la Suède et la Finlande) sont plus souvent mentionnés que dans les autres sources
+
+A l’inverse elle mentionne moins souvent que les quotidiens allemands, français et tunisiens les pays d’Eurorope orientale et méridionale (hors Balkans), l’Afrique du Nord les Etats d’Amérique du Sud, l’Australie et la Nouvelle Zélande.  
+
+L’Afrique Subsaharienne et dans une large mesure l’Amérique latine sont largement absents de la couverture médiatique de Dunya. 
+
+En d’autre termes, la couverture médiatique de Dunya rend compte du point de vue de la source relativement aux modèles généraux de l’agenda médiatique: une attention importante portée aux Etats dominants l’actualité internationale du fait de leur position centrale dans le système-monde aux plans économiques, politiques et culturels auxquels s’ajoute un effet de loupe sur le voisinage. Au-delà de ces caractéristiques générales, observables dans l’ensemble des sources du corpus, la Turquie se distingue par un tropisme oriental et nord-américains.
+::::::::
+
+:::::::: grid-img
+```{ojs}
+viewof select_W4C
+viewof year_W4C
+map_W4C
+```
+::::::::
+
+:::::::: grid-txt
+#### Comparaison de African Manager (TUN) et Dunya (TUR)
+
+Le journal turc Dunya présente un profil comparable au journal tunisen African Manager puisque les deux sont des medias destines aux élites économiques advantage qu'au grand public. Leur comparaison permet donc de mettre en valeur des differences de polarisation à la fois vers l'Europe et le reste du monde.
+
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof select_W4C, "African Manager (TUN)")}>African Manager</button>`} est clairement tournée vers l'Afrique et privilégie à l'intérieur de l'Europe les pays d'immigration tunisienne que sontnotamment la France, l'Italie et la Suisse.`
+```
+
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof select_W4C, "Dunya (TUR)")}>Dunya</button>`} est advantage tourné vers l'Asie et les Etats-Unis tout en privilégiant à l'intérieur de l'Europe l'Allemagne, le Royaume-Uni ou l'Ukraine.`
+```
+
+Les deux journaux partagent un intérêt privilégié pour le Proche Orient et les pays du Golfe qui constituent une destination alternative à l'Europe.
+::::::::
+
+:::::::: grid-txt
+```{ojs}
+md` #### Evolution de la couverture de ${htl.html`<button onclick=${() => set(viewof select_W4C, "Dunya (TUR)")}>Dunya</button>`}`
+```
+
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof year_W4C, "2014")}>En 2014</button>`} : L’actualité médiatique de Dunya conserve la même structure générale que sur l’ensemble de la période: les Etats centraux du système-Monde ont tendance à être largement représentés (Etats-Unis, Russie, Chine, Grande Bretagnen Allemagne, France) tout comme une pays des Etats du voisinage turc. Certains Etats impliqués dans des conflits majeurs de l’année 2014 font l’objet d’une attention particulière tel que l’Ukraine, l’Irak et la Syrie. Ces Etats sont mentionnés dans un nombre important de nouvelles comme l’indique la taille des cercles proportionnels.`
+```
+
+Ces deux derniers Etats sont d’ailleurs nettement plus souvent mentionnés par Dunya que les quotiens allemands, français et tunisiens. Ainsi, même si l’actualité relative au conflit au Proche orient (proclamation d’un Qualifat par Daech en juin 2014) constitue une actualité centrale pour l’ensemble des sources, le caractère frontalier de cet événement conduit sans doute cette source turque à le couvrir advantage, notamment relativement à d’autres événements majeurs, comme l’annexion de la Crimée par la Fédération de Russie en (février-mars 2014).
+
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof year_W4C, "2022")}>En 2022</button>`} : La situation est sensiblement différente en 2022. Les Etats du Proche et moyen orient ont tendance à être moins souvent couverts par l’actualité dans Dunya, tout comme les Etats Unis qui sont d’ailleurs sensiblement moins mentionnés pendant cette année que dans les autres sources. 
+
+A l’inverse, l’Ukraine, la Russie, Azerbaïdjan, les Etats d’Asie centrale comme le Kazakhstan, les Etats Baltes et la Finlande font l’objet d’une attention particulière pendant cette période. Cette information suggère que la couverture du conflit ukrainien, et plus généralement de l’actualité impliquant la Russie et son voisinage, ont eu un impact plus important dans le quotidien turc que dans les autres sources.`
+```
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Macrorégions les plus cités par Dunya
+:::: 
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+```{ojs}
+md`#### Fréquence et spécificité des macrorégions citées par ${htl.html`<button onclick=${() => set(viewof select_W2B, "Dunya (TUR)")}>Dunya</button>`}`
+```
+Les mots les plus employés par le media pour caractériser des macrorégions sont présentés dans le tableau-ci-contre. La **fréquence** indique le nombre de nouvelles qui ont utilisé ce mot. On leur a ajouté un **indice de spécificité** qui permet de repérer leur originalité par rapport aux autres médias du corpus
+::::::::
+
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+-   "-" : mot moins employé (ex. Union)
+-   "+" : mot plus employé  (ex. Euro)
+-   "++" : mot deux fois  plus employé  (ex. Culture)
+-   "+++" : mots trois fois plus employé (ex. Job)
+:::
+
+```{ojs}
+viewof select_W2B
+viewof year_W2B
+
+plot_W2B
+
+viewof rotate_W2B
+viewof nb_W2B
+wcd_W2B
+```
+::::::::
+:::::::: grid-txt
+#### Les macro-regions les plus mentionnées dans Dunya (Turquie)
+
+Les deux macro-regions les plus souvent mentionnées dans le quotidien Dunya durant la décennie 2013-2023 sont l’ Europe (27% des nouvelles mentionnant au moins une macro-region), l’UE (26%), l’Afrique (10%), la Méditerranée (plus de 5%) et l’Asie (5%). L’actualité européenne domine donc largement la couverture proposée par ce quotidien économique.  
+
+Relativement aux autres sources du corpus, Dunya a particularité de mentioner plus souvent la Mer Noire et dans une moindre mesure des noms de regions géographiques de son voisinage (Europe, Afrique, Asie, Moyen-rorient, Balkans).
+
+A l’inverse, cette source a tendance à moins souvent mentioner les principales organisations régionales comme l’Union Européenne – très representée mais de manière moins spécifique que dans d’autres contextes – l’OTAN, l’ASEAN, la Banque européenne pour la reconstruction et le développement (BERD). 
+
+D’une manière générale le vocabulaire utilisé reste peu spécifique. Le vocabulaire se distingue finalement assez peu des autres sources du corpus, ce qui peut s’expliquer par leur nature: la couverture régionale du journal semble comparable à celle des sources du coeur européen (France et Allemagne). 
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Comparaison de ${htl.html`<button onclick=${() => set(viewof select_W2B, "Dunya (TUR)")}>Dunya (TUR)</button>`} et ${htl.html`<button onclick=${() => set(viewof select_W2B, "African Manager (TUN)")}>African Manager (TUN)</button>`}`
+```
+
+Comme dans le cas des pays cités, il est intéressant de comparer les macrorégions mentionnées respectivement par le journal tunisien African Manager et le journal turc Dunya sur la période longue 2013-2023
+
+**Points communs :** ces deux journaux destinés aux élites économiques de leurs pays mentionnent souvent l'Union Européenne mais avec une intensité relativement plus faible que les journaux français et allemands. ils couvrent advantage l'actualité des espaces marginaux de l'Europe où ils sont localisés.
+
+**Différences :** Dunya cite fréquemment l'Europe, dans une large mesure en relation avec des événements sportifs tels que la coupe de l'UEFA.  Ce n'est pas le cas de l'a Tunisie plus tournée vers l'Afrique en matière sportive. La Méditerranée et la Mer Noire sont nettement plus présentes dans Dunya. Les deux pays s'intéressent spécifiquement à l'Afrique mais seul Dunya couvre davantage l'Asie. 
+::::::::
+:::::::: grid-txt
+```{ojs}
+md`#### Evolution du ${htl.html`<button onclick=${() => set(viewof select_W2B, "Dunya (TUR)")}>journal (TUR)</button>`} de 2013 à 2023`
+```
+
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof year_W2B, "2013")}>En 2013</button>`}, Dunya a tendance à davantage mentioner la Méditerranée, l’Asie et la ligue Europa (coupe de l’UEFA). Même si elle reste mentionnée dans des proportions comparables, l’UE est également légèrement plus souvent mentionnée dans le quotidien à cette époque que l’Union européenne, qui restent les deux termes les plus mentionnés. La domination de l’actualité européenne semble ainsi être une constante de la période d’étude.` 
+```
+\
+\
+```{ojs}
+md`${htl.html`<button onclick=${() => set(viewof year_W2B, "2023")}>En 2023</button>`}, les principales regions restent identiques avec une augmentation relative du nombre de mention du Moyen orient, à l’Afrique à la mer Noire et aux Balkans. A l’exception de l’Afrique, ces regions tendent d’ailleurs à être spécifiques de la Turquie dans cette période d’étude. Dunya semble ainsi avoir accentué la couverture de régions extra-européennes situées dans son environnement proche. Les évolutions de la diplomatie turque en direction de Nouvelles opportunités complémentaires au partenariat européen depuis 2013 peut expliquer l’augmentation de l’intérêt porté à ces regions en plus de l’UE et l’Europe, qui restent les regions les plus présentes dans l’actualité.`
+```
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Position par rapport aux autres medias
+
+**Axe horizontal** : Cet axe oppose clairement le journal tunisien African Manager aux trois autres journaux turcs, allemande et français du corpus. L'originalité du journal tunisien est clairement lié à sa volonté de couverture de l'actualité en Afrique et au Proche-Orient qui se traduit par une moindre importance accordée aux nouvelles relatives à l'Union Européenne et au reste du Monde.
+
+**Axe vertical** : Ce deuxième axe oppose advantage le journal turc Dunya aux journaux français (Figaro) et allemands (Süddeutsche Zeitung). Cette fois-ci, c'est la focalisation plus grande du journal turc Dunya sur la Méditerranée, la Mer Noire, l'Asie et les Balkans qui instaure une difference avec les journaux français et allemands qui apparaissent très proches. A noter que la BERD est située à mi-chemin entre Tunisie et Turquie ce qui est logique au vu de sa mission. 
+::::::::
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+Le graphique d'analyse factorielle permet de voir pour chaque media les macrorégions qui lui sont les plus spécifiques et les medias qui en sont proches ou éloignés.
+:::
+
+```{r}
+{{< include ../scripts/W3B_afc_med_reg.R >}}
+```
+::::::::
+:::::::::
+
+::::: para
+:::: paraContent
+### Réseaux de co-citations des pays et des macrorégions
+:::: 
+:::::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Analyse des co-citations des pays et macro-régions
+
+```{ojs}
+md`Les nouvelles de presses que nous avons analysé (titres et deux premières phrases) dans ${htl.html`<button onclick=${() => set(viewof select_W7A, "Dunya (TUR)")}>Dunya</button>`} associent de temps en temps des pays et des macro-regions dans une même phrase. Ces co-presences peuvent être anecdotiques mais lorsqu'elles se répètent souvent elles sont le signe d'une association. Nous avons donc relevé les paires les plus fréquentes puis établi un modèle de relation préférentielle entre certains pays et certaines regions. Par exemple la paire EU-Royaume Uni est particulièrement importante en raison du Brexit (960 occurrence) et plus forte que ce prévoirait un modèle d'association au hazard (618).`
+```
+::::::::
+:::::::: grid-img
+::: {.callout-tip appearance="minimal" title="About the data" collapse=true}
+-   "-":  association moins forte que prévue 
+-   "+" : association plus forte que prévu 
+-   "++" : association deux fois  plus forte que prévu
+:::
+```{ojs}
+viewof select_W7A
+plot_W7A
+```
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Graphe des co-citations pays-macrorégions les plus fréquentes
+
+Si l'on retient comme premier critère la fréquence des associations, on voit apparaître un graphe très dense organisé autour des deux poles majeurs que constituent l’Europe et l'Union Européenne. La plupart des pays sont en effet associés à l'un ou l'autre de ces poles et parfois aux deux. 
+
+A côté de ce couple central on trouve un ensemble d’ensembles macro-régionaux secondaires tells que la Méditerranée et l’OTAN qui occupent un espace d’entre deux entre l’UE et l’Europe et un ensemble de macro-regions situéees dans le voisinage européen: Asie, Afrique, Mer noire. L’organisation du graphe semble donc reprendre une organisation géographique, la Méditerranée notamment connectant les espaces des rives sud et Est ; l’OTAN faisant le lien avec des dimensions plus éloignées du voisinage (cas de l’Occident). Dans cette partie centrale du graphe, on note la presence centrale de certains Etats jouant un role central entre l’ensemble des centralités: les Etats-Unis, la Chine, la Russie, le Royaume Uni. Ce graphe met ainsi en avant des acteurs globaux qui semblent se positioner à equivalence avec les macro-régions. En terms de centralité.
+\
+\
+Deux composantes isolées s’organisent autour de l’Asie centrale et l’Amérique centrale qui ne semblent pas véritablement reliées au reste du graphe. Elles permettent d’identifier des marges de la couverture médiatique: ces régions sont traitées globalement à part du reste du monde dans la vision turque du Monde propose par Dunya.
+
+Dans l’ensemble, la vision du monde propose par Dunya met en evidence une géographie polarisée par le couple Europe / Union européenne et ses voisinages au mileu desquels un ensemble de grandes puissances semblent jouer un role central dans l’actualité. Cette representations met en evidence le role pivot de la Turquie dans l’espace regional, situé entre Europe et les différentes dimensions de son voisinage. Tout en donnant une place centrale au couple Europe et Union européenne, cette representation met en evidence le caractère multi-dimentionnel du voisinage turc – entre Europe, Moyen Orient, Asie, Mer Noire, Afrique et Occident. 
+::::::::
+:::::::: grid-img
+::::::: grid-net
+{{< include ../scripts/W6A_net_med_reg_obs_dunya.html >}}
+:::::::
+::::::::
+:::::::::
+
+::: separator
+:::
+
+::::::::: grid-container
+:::::::: grid-txt
+#### Graphe des co-citations pays-macrorégions les plus spécifiques
+
+Si l'on examine non plus les liaisons les plus fréquentes mais les liaisons les plus spécifiques, on obtient un graphe beaucoup plus clair où n'apparaissent plus que les liaisons entre états et regions qui ne sont pas le fait du hasard mais la consequence de proximités géographiques, politiques économiques ou culturelles se traduisant par des événements récurrents. 
+
+Les régions representee par les liens entre macro-régions et pays mentionnés confirme une organisation géographique en sous ensembles régionaux. L’UE, l’Europe et la Méditerranée semblent organiser un premier ensemble, connecté aux autres régions du monde par un acteur global: les Etats Unis. Là encore, l’Amérique centrale et l’Asie centrale jouent le role de marge.
+
+Il est intéressant de noter que même en 2023, la Chine et la Russie restent limités à un role de centralité secondaire chacune située dans un espace sématique précis: entre Asie et occident dans le premier cas, entre Occident, OTAN et Mer noire dans le second.
+::::::::
+:::::::: grid-img
+::::::: grid-net
+{{< include ../scripts/W6B_net_med_reg_res_dunya.html >}}
+:::::::
+::::::::
+:::::::::
+::::::::::
+<!-- ____ END SEC MEDIAS ______ -->
+
+:::::::::: section
+::::: para
+:::: paraContent
+## Public Figures
+:::: 
+::::: 
+
+:::: paraContent
+### Discours sur les frontières de l'Union Européenne et la politique de voisinage
+:::: 
+::::: 
+<!-- ------------- -->
+::::::::: grid-container
+:::::::: grid-txt
+#### Exemples d'avis de tunisiens sur le voisinage de l’UE
+
+```{ojs}
+md`Les discours des personnalités politiques tunisiennes interrogées reprend les critiques généralement adressées par les responsables politiques des pays membres à l’égard de la candidature turque à l’UE. La Turquie est par exemple renvoyée à une situation d’altérité, par exemple saisie à travers ses caractéristiques culturelles (« pays musulman ») qui la renvoieraient automatiquement à d’autres appartenances régionales (« Moyen orient »). L’exemple ci-contredu discours d’un ${htl.html`<button onclick=${() => set(viewof idText_W5A, 2)}>fonctionnaire tunisien</button>`}  ajoute à cette critique la question de la taille du pays jugé « trop grosse » pour intégrer l’Europe.\
+Ces arguments articulant logiques démographiques et culturelle fut un élément central de la critique de la candidature turque, notamment lors du Référendum sur l’adoption du projet Constitutionnel de 2005. Dans un contexte francophone, n’est pas exclu que l’onde de choc de ce débat ait dépassé les frontières pour irriguer les représentations tunisiennes sur ce sujet.`
+```
+
+```{ojs}
+md`Comme dans les pays membres, le discours sur la place de la Turquie dans l’UE n’est pas monolithique. C’est ce que révèle par exemple le discours d’une ${htl.html`<button onclick=${() => set(viewof idText_W5A, 4)}>responsable d’ONG</button>`}, qui oppose la Turquie – membre d’une région européenne – à la Russie et à l’Ukraine renvoyées pour leur part à l’ « empire russe ». La régionalisation effectuée dans le discours propose donc une dialectique qui met en évidence une autre forme d’altérité à l’ensemble européen (ici l’opposition à la sphère d’influence russe).`
+```
+
+```{ojs}
+md`Certains discours sortent de la logique d’essentialisation pour mettre davantage les logiques d’acteurs dans le gel de la candidature turque. Dans ${htl.html`<button onclick=${() => set(viewof idText_W5A, 3)}>l’extrait suivant</button>`}, les responsabilités des autorités turques et des pays membres sont mobilisées pour expliquer l’ « opportunité manquée » de l’adhésion turque à l’UE.`
+```
+
+Ces deux extraits mettent en évidence la polarisation du discours politique sur la question de l’intégration de la Turquie à une région européenne. D’une manière générale le discours tunisien, pays voisin de l’UE, s’assimile au discours des responsables français ou allemands sur le sujet. Les discours sont complexes et mettent souvent en relation le cas turc avec celui d’autres Etats, comme la Russie et bien sûr en filigrane des discours la Tunisie elle-même.
+::::::::
+:::::::: grid-img
+
+```{ojs}
+viewof idText_W5A
+viewof nextText_W5A
+viewof tradOnOff_W5A
+```
+
+::::::: grid-W5A
+#### <i class="bi bi-chat-left-text"></i> **Verbatim** 
+```{ojs}
+ID_PI_W5A
+```
+----
+***Extrait de l'interview***
+
+${tradOnOff_W5A}
+:::::::
+::::::::
+:::::::: grid-txt
+#### Exemples d'avis d'allemands sur le voisinage de l’UE
+
+```{ojs}
+md`De leur côté les responsables politiques allemands ont tendance à insister sur les qualités de « voisin » ou de « partenaires » de la Turquie, plutôt que comme membre potentiel de l’UE. Comme dans le cas tunisien, l’opportunité de la candidature semble passé, puisque l’intégration s’est poursuivie sans la Turquie (mention du cas croate) et que le cas de la candidature turque semble être tombé dans l’oubli. ${htl.html`<button onclick=${() => set(viewof idText_W5A, 5)}>Par exemple</button>`}`
+```
+
+```{ojs}
+md`Cette définition extensive du champ des partenaires et voisins est par ailleurs critiquée par d’autres acteurs, comme on peut le lire ${htl.html`<button onclick=${() => set(viewof idText_W5A, 7)}>ci-dessous</button>`}. La Turquie est reconnue comme candidate officielle mais cette candidature est décrite comme « une chimère » même si le sujet notamment des relations avec la Turquie, notamment sur le plan migratoire est ressenti comme un sujet important vu d’Allemagne, premier pays d’immigration turque dans la seconde moitié du XXe siècle.`
+```
+
+```{ojs}
+md`De nouveau, les réponses sont contrastées et peuvent donner lieu à un certain niveau de complexité. Ce ${htl.html`<button onclick=${() => set(viewof idText_W5A, 8)}>dernier extrait</button>`} suggère que la Turquie est indéniablement membre d’un « continent européen », mais que la Turquie se serait éloigné des possibilités d’intégrer l’Union européenne, compte tenu de sa trajectoire politique récente. A travers la mention de la modernité, de ce qui est qualifié d’un retour en « arrière du pays » ou du blocage autour de la question chypriote c’est ici aussi la question des acteurs qui est ici mise en exergue dans le blocage de la candidature et la marginalisation du pays par rapport au processus d’intégration politique.`
+```
+::::::::
+:::::::: grid-txt
+#### Exemples d'avis de français sur le voisinage de l’UE
+
+```{ojs}
+md`Cette dissociation entre la Turquie comme Etat inscrit dans un temps long et son gouvernement est d’ailleurs assez presente dans le discours des hommes politiques français qui n’excluent pas des changements dans l’évolution des relations entre le pays et l’UE si le contexte politique tend à changer. ${htl.html`<button onclick=${() => set(viewof idText_W5A, 14)}>Par exemple</button>`}`
+```
+
+```{ojs}
+md`Comme dans ${htl.html`<button onclick=${() => set(viewof idText_W5A, 13)}>cet extrait</button>`}, la plupart des responsables politiques français semblent mobiliser des representations géopolitiques sur le sujet. Il est donc question d’influence régionale, de preserver les intérêts de la France et de l’UE à long terme dans son voisinage.`
+```
+
+```{ojs}
+md`C’est peut être cette vision géopolitique et pragmatique qui pousse les acteurs politiques à considerer la Turquie dans le jeu de l’integration régionale. Cependant, comme on le lit dans ${htl.html`<button onclick=${() => set(viewof idText_W5A, 12)}>l’extrait suivant</button>`}, les relations avec la Turquie ne conduisent pas, pas non-plus, nécessairement à la considerer comme candidate mais peut-être surtout comme un acteur clef dans le voisinage (Méditerranéen ici).`
+```
+::::::::
+:::::::::
+::::::::::

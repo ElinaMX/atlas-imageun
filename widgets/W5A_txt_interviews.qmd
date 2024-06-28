@@ -1,0 +1,41 @@
+---
+title: Extraits d'interviews
+image: ../figures/widgets/W5A.png
+categories: [Workshop PIs, texts]
+about:
+  template: jolla
+  image-width: 18em
+  image-shape: rounded
+title-block-categories: false
+
+format: html
+---
+
+Visualiser des extraits d'interview dans leur langue d'origine, en anglais ou en allemand
+
+:::::::::: section
+::::::::: grid-container 
+:::::::: grid-nocol
+
+```{ojs}
+{{< include ../scripts/W5A_txt_interviews.js >}}
+```
+
+```{ojs}
+viewof idText_W5A
+viewof nextText_W5A
+viewof tradOnOff_W5A
+```
+
+```{ojs}
+ID_PI_W5A
+```
+
+***Extrait de l'interview***
+
+${tradOnOff_W5A}
+
+
+:::::::: 
+:::::::::
+::::::::::
