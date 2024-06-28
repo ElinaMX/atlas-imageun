@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
           <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../documents/macroregion.html"> 
+    <a class="nav-link" href="../docs/macroregion.html"> 
 <span class="menu-text">Imaginaires macrorégionaux</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -127,23 +127,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-terrains-denquêtes">    
         <li>
-    <a class="dropdown-item" href="../documents/france.html">
+    <a class="dropdown-item" href="../docs/france.html">
  <span class="dropdown-text">Where is France</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../documents/germany.html">
+    <a class="dropdown-item" href="../docs/germany.html">
  <span class="dropdown-text">Where is Germany</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../documents/antilles.html">
+    <a class="dropdown-item" href="../docs/antilles.html">
  <span class="dropdown-text">Where is French Caribbean</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../documents/tunisia.html">
+    <a class="dropdown-item" href="../docs/tunisia.html">
  <span class="dropdown-text">Where is Tunisia</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../documents/turkey.html">
+    <a class="dropdown-item" href="../docs/turkey.html">
  <span class="dropdown-text">Where is Turkey</span></a>
   </li>  
     </ul>
@@ -154,7 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-sur-leurope-et-lue">    
         <li>
-    <a class="dropdown-item" href="../documents/whereEurope.html">
+    <a class="dropdown-item" href="../docs/whereEurope.html">
  <span class="dropdown-text">Where is Europe</span></a>
   </li>  
     </ul>
@@ -166,11 +166,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
           <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../documents/legal.html"> 
+    <a class="nav-link" href="../docs/legal.html"> 
 <span class="menu-text">Mentions légales</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../documents/usage.html"> 
+    <a class="nav-link" href="../docs/usage.html"> 
 <span class="menu-text">Conditions d’utilisation</span></a>
   </li>  
 </ul>
@@ -261,10 +261,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> layer <span class="op">=</span> L<span class="op">.</span><span class="fu">geoJSON</span>(macroreg_filtered<span class="op">,</span> {</span>
 <span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="dt">onEachFeature</span><span class="op">:</span> onEachFeature<span class="op">,</span></span>
 <span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>    <span class="dt">opacity</span><span class="op">:</span> opacity_W1A <span class="op">+</span> <span class="fl">0.1</span><span class="op">,</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>    <span class="dt">opacity</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
 <span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fillOpacity</span><span class="op">:</span> opacity_W1A<span class="op">,</span></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"#FFBC50"</span><span class="op">,</span></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>    <span class="dt">weight</span><span class="op">:</span> opacity_W1A <span class="op">+</span> <span class="fl">0.5</span>}</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"#d13f0f"</span><span class="op">,</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>    <span class="dt">weight</span><span class="op">:</span> stroke_W1A }</span>
 <span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>  })<span class="op">.</span><span class="fu">addTo</span>(map)<span class="op">;</span></span>
 <span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="co">// fit map to geom bounds  </span></span>
@@ -302,18 +302,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>opacity_W1A <span class="op">=</span> {<span class="kw">let</span> opacity</span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(macroreg_filtered<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="at">length</span> <span class="op">&gt;</span> <span class="dv">30</span>) { </span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> opacity <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> { </span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> opacity <span class="op">=</span> <span class="fl">0.06</span></span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="co">// ---------------------------------------------------------------------------</span></span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="co">//                        LIBS</span></span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="co">// ---------------------------------------------------------------------------</span></span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>geo <span class="op">=</span> <span class="pp">require</span>(<span class="st">"geotoolbox@2.0.3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(macroreg_filtered<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="at">length</span> <span class="op">&gt;</span> <span class="dv">60</span>) { </span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> opacity <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span>(macroreg_filtered<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="at">length</span> <span class="op">&lt;</span> <span class="dv">60</span> <span class="op">&amp;&amp;</span> macroreg_filtered<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="at">length</span> <span class="op">&gt;</span> <span class="dv">20</span>) {</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> opacity <span class="op">=</span> <span class="fl">0.02</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> { </span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> opacity <span class="op">=</span> <span class="fl">0.06</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>stroke_W1A <span class="op">=</span> {<span class="kw">let</span> stroke</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(macroreg_filtered<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="at">length</span> <span class="op">&gt;</span> <span class="dv">30</span>) { </span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> stroke <span class="op">=</span> <span class="fl">0.2</span></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> { </span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> stroke <span class="op">=</span> <span class="fl">0.5</span></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a><span class="co">// ---------------------------------------------------------------------------</span></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="co">//                        LIBS</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="co">// ---------------------------------------------------------------------------</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>geo <span class="op">=</span> <span class="pp">require</span>(<span class="st">"geotoolbox@2.0.3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -368,6 +376,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-10" data-nodetype="declaration">
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -378,7 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
  <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxyXG4vLyAgICAgICAgICAgICAgICAgICAgICAgIElOUFVUU1xyXG4vLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cclxuXHJcbnZpZXdvZiBzZWxlY3RfVzFBID0gSW5wdXRzLnNlbGVjdChbXCJBbGxcIiwgXCJHZXJtYW55XCIsIFwiRnJhbmNlIE1ldHJvcG9saXRhblwiLCBcIkZyYW5jZSBBbnRpbGxlc1wiLCBcIklyZWxhbmRcIiwgXCJUdXJrZXlcIiwgXCJUdW5pc2lhXCJdLCB7bGFiZWw6IFwiU3VydmV5IHNhbXBsZVwifSlcclxuXHJcbnZpZXdvZiByZWdpb25fVzFBID0gSW5wdXRzLnNlbGVjdChuZXcgTWFwKFtbXCJBbGxcIiwnQWxsJ10sW1wiRXVyb3BlXCIsXCJldXJvcGVcIl0sW1wiV2VzdGVybiBFdXJvcGVcIixcImV1cm9wZV9vdWVzdFwiXSxcclxuICAgICAgICAgICAgICAgIFtcIkNlbnRyYWwgRXVyb3BlXCIsXCJldXJvcGVfY2VudHJcIl0sXHJcbiAgICAgICAgICAgICAgICBbXCJFdXJvcGVhbiBVbmlvblwiLFwidW5pb25fZXVyb3BcIl0sXHJcbiAgICAgICAgICAgICAgICBbXCJBZnJpY2FcIixcImFmcmljYVwiXSxcclxuICAgICAgICAgICAgICAgIFtcIk5vcnRoZXJuIEFmcmljYVwiLFwiYWZyaWNhX25vcmRcIl0sXHJcbiAgICAgICAgICAgICAgICBbXCJBbWVyaWNhXCIsXCJhbWVyaWNhXCJdLFxyXG4gICAgICAgICAgICAgICAgW1wiQ2VudHJhbCBBbWVyaWNhXCIsXCJhbWVyaWNhX2N0clwiXSxcclxuICAgICAgICAgICAgICAgIFtcIkFzaWEvRXVyYXNpYVwiLFwiYXNpYVwiXSxcclxuICAgICAgICAgICAgICAgIFtcIk1lZGl0ZXJyYW5lYW5cIixcIm1lZGl0XCJdLFxyXG4gICAgICAgICAgICAgICAgW1wiTWlkICYgTmVhciBFYXN0XCIsXCJtaWRlYXN0XCJdLFxyXG4gICAgICAgICAgICAgICAgW1wiQ2FycmliZWFuXCIsXCJjYXJyaWJcIl0sXHJcbiAgICAgICAgICAgICAgICBbXCJBbnRpbGxlc1wiLFwiYW50aWxcIl0sXHJcbiAgICAgICAgICAgICAgICBbXCJUaGUgV2VzdC9PY2lkZW50XCIsXCJ3ZXN0ZXJuXCJdXHJcbiAgICAgICAgICAgICAgICBdKSwge2xhYmVsOiBcIk5hbWUgb2YgbWFjcm9yZWdpb24gY29udGFpbnMgLi4uXCJ9KVxyXG5cclxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXHJcbi8vICAgICAgICAgICAgICAgICAgICAgICAgTUFQXHJcbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxyXG5cclxubWFwX1cxQSA9IHtcclxuICAvLyBTZXQgaGlnaGxpZ2h0XHJcbmZ1bmN0aW9uIGhpZ2hsaWdodEZlYXR1cmUoZSkge1xyXG4gICAgdmFyIGxheWVyID0gZS50YXJnZXQ7XHJcbiAgICBsYXllci5zZXRTdHlsZSh7XHJcbiAgICAgICAgd2VpZ2h0OiAxLFxyXG4gICAgICAgIGNvbG9yOiAnI2JhNjZhOScsXHJcbiAgICAgICAgZGFzaEFycmF5OiAnJyxcclxuICAgICAgICBmaWxsT3BhY2l0eTogMC41ICAgIFxyXG4gICAgfSk7XHJcbn1cclxuXHJcbiAgLy8gUmVzZXQgSGlnaGxpZ2h0XHJcbiAgZnVuY3Rpb24gcmVzZXRIaWdobGlnaHQoZSkge1xyXG4gICAgbGF5ZXIucmVzZXRTdHlsZShlLnRhcmdldCk7XHJcbn1cclxuXHJcbiAgLy8gT25FYWNoIGZlYXR1clxyXG5mdW5jdGlvbiBvbkVhY2hGZWF0dXJlKGZlYXR1cmUsIGxheWVyKSB7XHJcbiAgICBsYXllci5iaW5kUG9wdXAoZnVuY3Rpb24gKExheWVyKSB7XHJcbiAgICByZXR1cm4gXCI8Yj5Db3VudHJ5IDogPC9iPlwiICsgTGF5ZXIuZmVhdHVyZS5wcm9wZXJ0aWVzLmNvdW50cnkgKyBcIjxicj5cIiArXHJcbiAgICAgIFwiPGI+U2V4IDogPC9iPlwiICsgTGF5ZXIuZmVhdHVyZS5wcm9wZXJ0aWVzLnNleCArIFwiPGJyPlwiICtcclxuICAgICAgXCI8Yj5GaWVsZHMgb2Ygc3R1ZHkgOiA8L2I+XCIgKyBMYXllci5mZWF0dXJlLnByb3BlcnRpZXMuZmllbGQgKyBcIjxicj5cIiArXHJcbiAgICAgIFwiPGI+T3BpbmlvbiBhYm91dCBFVSA6IDwvYj5cIiArIExheWVyLmZlYXR1cmUucHJvcGVydGllcy5vcGlFVSArIFwiPGJyPlwiICtcclxuICAgICAgXCI8Yj5NYWNybyByZWdpb24gOiA8L2I+XCIgKyBMYXllci5mZWF0dXJlLnByb3BlcnRpZXMubWFjcm8gKyBcIjxicj5cIiArXHJcbiAgICAgIExheWVyLmZlYXR1cmUucHJvcGVydGllcy5YMDAwMV9tZXRfcmVzcElEX2F1dCArICcgLSBcIicgKyBMYXllci5mZWF0dXJlLnByb3BlcnRpZXMuSURfZ2VvbSArICdcIiA8YnI+JztcclxuICB9KVxyXG4gICAgbGF5ZXIub24oe1xyXG4gICAgICAgIG1vdXNlb3ZlcjogaGlnaGxpZ2h0RmVhdHVyZSxcclxuICAgICAgICBtb3VzZW91dDogcmVzZXRIaWdobGlnaHQsXHJcbiAgICB9KTtcclxufVxyXG5cclxuICAvLyBNQVBcclxuY29uc3QgY29udGFpbmVyID0geWllbGQgaHRsLmh0bWxgPGRpdiBzdHlsZT1cImhlaWdodDogNTB2aDsgd2lkdGg6IDUwdmhcIj5gO1xyXG5jb25zdCBtYXAgPSBMLm1hcChjb250YWluZXIpO1xyXG5jb25zdCBsYXllciA9IEwuZ2VvSlNPTihtYWNyb3JlZ19maWx0ZXJlZCwge1xyXG5vbkVhY2hGZWF0dXJlOiBvbkVhY2hGZWF0dXJlLFxyXG4gIHN0eWxlOiB7XHJcbiAgICBvcGFjaXR5OiBvcGFjaXR5X1cxQSArIDAuMSxcclxuICAgIGZpbGxPcGFjaXR5OiBvcGFjaXR5X1cxQSxcclxuICAgIGNvbG9yOiBcIiNGRkJDNTBcIixcclxuICAgIHdlaWdodDogb3BhY2l0eV9XMUEgKyAwLjV9XHJcbiAgfSkuYWRkVG8obWFwKTtcclxuXHJcbi8vIGZpdCBtYXAgdG8gZ2VvbSBib3VuZHMgIFxyXG5tYXAuZml0Qm91bmRzKGxheWVyLmdldEJvdW5kcygpLCB7bWF4Wm9vbTogMTV9KTtcclxuXHJcbi8vIFRpbGUgTGF5ZXIgIFxyXG5MLnRpbGVMYXllcignaHR0cHM6Ly97c30uYmFzZW1hcHMuY2FydG9jZG4uY29tL3Jhc3RlcnRpbGVzL3ZveWFnZXIve3p9L3t4fS97eX17cn0ucG5nJyxcclxuICAgIHthdHRyaWJ1dGlvbjogJyZjb3B5OyA8YSBocmVmPVwiaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvY29weXJpZ2h0XCI+T3BlblN0cmVldE1hcDwvYT4gY29udHJpYnV0b3JzICZjb3B5OyA8YSBocmVmPVwiaHR0cHM6Ly9jYXJ0by5jb20vYXR0cmlidXRpb25zXCI+Q0FSVE88L2E+JyxcclxuICAgICAgc3ViZG9tYWluczogXCJhYmNkXCIsXHJcbiAgICAgIG1heFpvb206IDIwXHJcbiAgICB9KS5hZGRUbyhtYXApO1xyXG59XHJcblxyXG5cclxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXHJcbi8vICAgICAgICAgICAgICAgICAgICAgICAgVEFCTEVcclxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXHJcblxyXG5cclxuXHJcbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxyXG4vLyAgICAgICAgICAgICAgICAgICAgICAgIERBVEFcclxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXHJcblxyXG5tYWNyb3JlZ19zdHVkZW50cyA9IEZpbGVBdHRhY2htZW50KFwiLi4vZGF0YS9XMUFfQkRHX21hY3JvcmVnLkdlb0pTT05cIikuanNvbigpXHJcblxyXG5tYWNyb3JlZyA9IGdlby5zaW1wbGlmeShtYWNyb3JlZ19zdHVkZW50cywge2s6MC4yNX0pXHJcblxyXG5tYWNyb3JlZ19zb3J0ZWQgPSBnZW8uZmVhdHVyZWNvbGxlY3Rpb24obWFjcm9yZWcuZmVhdHVyZXMuc29ydCgoYSwgYikgPT4gZDMuZGVzY2VuZGluZyhhLnByb3BlcnRpZXMuYXJlYV8zODU3LCBiLnByb3BlcnRpZXMuYXJlYV8zODU3KSkpXHJcblxyXG5tYWNyb3JlZ19maWx0ZXJlZCA9IHtcclxuICBsZXQgZmlsdGVyZWQgPSAgcmVnaW9uX1cxQSA9PSBcIkFsbFwiID8gbWFjcm9yZWcgOiBnZW8uZmlsdGVyKG1hY3JvcmVnX3NvcnRlZCwgKGQpID0+IGRbcmVnaW9uX1cxQV0gPT0gMSlcclxuICBmaWx0ZXJlZCA9IHNlbGVjdF9XMUEgPT0gXCJBbGxcIiA/IGZpbHRlcmVkIDogZ2VvLmZpbHRlcihmaWx0ZXJlZCwgKGQpID0+IGQuY291bnRyeSA9PSBzZWxlY3RfVzFBKVxyXG4gIHJldHVybiBnZW8ucmV3aW5kKGZpbHRlcmVkKVxyXG59XHJcblxyXG5vcGFjaXR5X1cxQSA9IHtsZXQgb3BhY2l0eVxyXG4gIGlmKG1hY3JvcmVnX2ZpbHRlcmVkLmZlYXR1cmVzLmxlbmd0aCA+IDMwKSB7IFxyXG4gICAgcmV0dXJuIG9wYWNpdHkgPSAwXHJcbiAgfSBlbHNlIHsgXHJcbiAgICByZXR1cm4gb3BhY2l0eSA9IDAuMDZcclxuICB9XHJcbn1cclxuXHJcbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxyXG4vLyAgICAgICAgICAgICAgICAgICAgICAgIExJQlNcclxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXHJcblxyXG5nZW8gPSByZXF1aXJlKFwiZ2VvdG9vbGJveEAyLjAuM1wiKVxuXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdF9XMUEnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgncmVnaW9uX1cxQScpIn1dfQ==
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxyXG4vLyAgICAgICAgICAgICAgICAgICAgICAgIElOUFVUU1xyXG4vLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cclxuXHJcbnZpZXdvZiBzZWxlY3RfVzFBID0gSW5wdXRzLnNlbGVjdChbXCJBbGxcIiwgXCJHZXJtYW55XCIsIFwiRnJhbmNlIE1ldHJvcG9saXRhblwiLCBcIkZyYW5jZSBBbnRpbGxlc1wiLCBcIklyZWxhbmRcIiwgXCJUdXJrZXlcIiwgXCJUdW5pc2lhXCJdLCB7bGFiZWw6IFwiU3VydmV5IHNhbXBsZVwifSlcclxuXHJcbnZpZXdvZiByZWdpb25fVzFBID0gSW5wdXRzLnNlbGVjdChuZXcgTWFwKFtbXCJBbGxcIiwnQWxsJ10sW1wiRXVyb3BlXCIsXCJldXJvcGVcIl0sW1wiV2VzdGVybiBFdXJvcGVcIixcImV1cm9wZV9vdWVzdFwiXSxcclxuICAgICAgICAgICAgICAgIFtcIkNlbnRyYWwgRXVyb3BlXCIsXCJldXJvcGVfY2VudHJcIl0sXHJcbiAgICAgICAgICAgICAgICBbXCJFdXJvcGVhbiBVbmlvblwiLFwidW5pb25fZXVyb3BcIl0sXHJcbiAgICAgICAgICAgICAgICBbXCJBZnJpY2FcIixcImFmcmljYVwiXSxcclxuICAgICAgICAgICAgICAgIFtcIk5vcnRoZXJuIEFmcmljYVwiLFwiYWZyaWNhX25vcmRcIl0sXHJcbiAgICAgICAgICAgICAgICBbXCJBbWVyaWNhXCIsXCJhbWVyaWNhXCJdLFxyXG4gICAgICAgICAgICAgICAgW1wiQ2VudHJhbCBBbWVyaWNhXCIsXCJhbWVyaWNhX2N0clwiXSxcclxuICAgICAgICAgICAgICAgIFtcIkFzaWEvRXVyYXNpYVwiLFwiYXNpYVwiXSxcclxuICAgICAgICAgICAgICAgIFtcIk1lZGl0ZXJyYW5lYW5cIixcIm1lZGl0XCJdLFxyXG4gICAgICAgICAgICAgICAgW1wiTWlkICYgTmVhciBFYXN0XCIsXCJtaWRlYXN0XCJdLFxyXG4gICAgICAgICAgICAgICAgW1wiQ2FycmliZWFuXCIsXCJjYXJyaWJcIl0sXHJcbiAgICAgICAgICAgICAgICBbXCJBbnRpbGxlc1wiLFwiYW50aWxcIl0sXHJcbiAgICAgICAgICAgICAgICBbXCJUaGUgV2VzdC9PY2lkZW50XCIsXCJ3ZXN0ZXJuXCJdXHJcbiAgICAgICAgICAgICAgICBdKSwge2xhYmVsOiBcIk5hbWUgb2YgbWFjcm9yZWdpb24gY29udGFpbnMgLi4uXCJ9KVxyXG5cclxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXHJcbi8vICAgICAgICAgICAgICAgICAgICAgICAgTUFQXHJcbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxyXG5cclxubWFwX1cxQSA9IHtcclxuICAvLyBTZXQgaGlnaGxpZ2h0XHJcbmZ1bmN0aW9uIGhpZ2hsaWdodEZlYXR1cmUoZSkge1xyXG4gICAgdmFyIGxheWVyID0gZS50YXJnZXQ7XHJcbiAgICBsYXllci5zZXRTdHlsZSh7XHJcbiAgICAgICAgd2VpZ2h0OiAxLFxyXG4gICAgICAgIGNvbG9yOiAnI2JhNjZhOScsXHJcbiAgICAgICAgZGFzaEFycmF5OiAnJyxcclxuICAgICAgICBmaWxsT3BhY2l0eTogMC41ICAgIFxyXG4gICAgfSk7XHJcbn1cclxuXHJcbiAgLy8gUmVzZXQgSGlnaGxpZ2h0XHJcbiAgZnVuY3Rpb24gcmVzZXRIaWdobGlnaHQoZSkge1xyXG4gICAgbGF5ZXIucmVzZXRTdHlsZShlLnRhcmdldCk7XHJcbn1cclxuXHJcbiAgLy8gT25FYWNoIGZlYXR1clxyXG5mdW5jdGlvbiBvbkVhY2hGZWF0dXJlKGZlYXR1cmUsIGxheWVyKSB7XHJcbiAgICBsYXllci5iaW5kUG9wdXAoZnVuY3Rpb24gKExheWVyKSB7XHJcbiAgICByZXR1cm4gXCI8Yj5Db3VudHJ5IDogPC9iPlwiICsgTGF5ZXIuZmVhdHVyZS5wcm9wZXJ0aWVzLmNvdW50cnkgKyBcIjxicj5cIiArXHJcbiAgICAgIFwiPGI+U2V4IDogPC9iPlwiICsgTGF5ZXIuZmVhdHVyZS5wcm9wZXJ0aWVzLnNleCArIFwiPGJyPlwiICtcclxuICAgICAgXCI8Yj5GaWVsZHMgb2Ygc3R1ZHkgOiA8L2I+XCIgKyBMYXllci5mZWF0dXJlLnByb3BlcnRpZXMuZmllbGQgKyBcIjxicj5cIiArXHJcbiAgICAgIFwiPGI+T3BpbmlvbiBhYm91dCBFVSA6IDwvYj5cIiArIExheWVyLmZlYXR1cmUucHJvcGVydGllcy5vcGlFVSArIFwiPGJyPlwiICtcclxuICAgICAgXCI8Yj5NYWNybyByZWdpb24gOiA8L2I+XCIgKyBMYXllci5mZWF0dXJlLnByb3BlcnRpZXMubWFjcm8gKyBcIjxicj5cIiArXHJcbiAgICAgIExheWVyLmZlYXR1cmUucHJvcGVydGllcy5YMDAwMV9tZXRfcmVzcElEX2F1dCArICcgLSBcIicgKyBMYXllci5mZWF0dXJlLnByb3BlcnRpZXMuSURfZ2VvbSArICdcIiA8YnI+JztcclxuICB9KVxyXG4gICAgbGF5ZXIub24oe1xyXG4gICAgICAgIG1vdXNlb3ZlcjogaGlnaGxpZ2h0RmVhdHVyZSxcclxuICAgICAgICBtb3VzZW91dDogcmVzZXRIaWdobGlnaHQsXHJcbiAgICB9KTtcclxufVxyXG5cclxuICAvLyBNQVBcclxuY29uc3QgY29udGFpbmVyID0geWllbGQgaHRsLmh0bWxgPGRpdiBzdHlsZT1cImhlaWdodDogNTB2aDsgd2lkdGg6IDUwdmhcIj5gO1xyXG5jb25zdCBtYXAgPSBMLm1hcChjb250YWluZXIpO1xyXG5jb25zdCBsYXllciA9IEwuZ2VvSlNPTihtYWNyb3JlZ19maWx0ZXJlZCwge1xyXG5vbkVhY2hGZWF0dXJlOiBvbkVhY2hGZWF0dXJlLFxyXG4gIHN0eWxlOiB7XHJcbiAgICBvcGFjaXR5OiAxLFxyXG4gICAgZmlsbE9wYWNpdHk6IG9wYWNpdHlfVzFBLFxyXG4gICAgY29sb3I6IFwiI2QxM2YwZlwiLFxyXG4gICAgd2VpZ2h0OiBzdHJva2VfVzFBIH1cclxuICB9KS5hZGRUbyhtYXApO1xyXG5cclxuLy8gZml0IG1hcCB0byBnZW9tIGJvdW5kcyAgXHJcbm1hcC5maXRCb3VuZHMobGF5ZXIuZ2V0Qm91bmRzKCksIHttYXhab29tOiAxNX0pO1xyXG5cclxuLy8gVGlsZSBMYXllciAgXHJcbkwudGlsZUxheWVyKCdodHRwczovL3tzfS5iYXNlbWFwcy5jYXJ0b2Nkbi5jb20vcmFzdGVydGlsZXMvdm95YWdlci97en0ve3h9L3t5fXtyfS5wbmcnLFxyXG4gICAge2F0dHJpYnV0aW9uOiAnJmNvcHk7IDxhIGhyZWY9XCJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9jb3B5cmlnaHRcIj5PcGVuU3RyZWV0TWFwPC9hPiBjb250cmlidXRvcnMgJmNvcHk7IDxhIGhyZWY9XCJodHRwczovL2NhcnRvLmNvbS9hdHRyaWJ1dGlvbnNcIj5DQVJUTzwvYT4nLFxyXG4gICAgICBzdWJkb21haW5zOiBcImFiY2RcIixcclxuICAgICAgbWF4Wm9vbTogMjBcclxuICAgIH0pLmFkZFRvKG1hcCk7XHJcbn1cclxuXHJcblxyXG4vLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cclxuLy8gICAgICAgICAgICAgICAgICAgICAgICBUQUJMRVxyXG4vLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cclxuXHJcblxyXG5cclxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXHJcbi8vICAgICAgICAgICAgICAgICAgICAgICAgREFUQVxyXG4vLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cclxuXHJcbm1hY3JvcmVnX3N0dWRlbnRzID0gRmlsZUF0dGFjaG1lbnQoXCIuLi9kYXRhL1cxQV9CREdfbWFjcm9yZWcuR2VvSlNPTlwiKS5qc29uKClcclxuXHJcbm1hY3JvcmVnID0gZ2VvLnNpbXBsaWZ5KG1hY3JvcmVnX3N0dWRlbnRzLCB7azowLjI1fSlcclxuXHJcbm1hY3JvcmVnX3NvcnRlZCA9IGdlby5mZWF0dXJlY29sbGVjdGlvbihtYWNyb3JlZy5mZWF0dXJlcy5zb3J0KChhLCBiKSA9PiBkMy5kZXNjZW5kaW5nKGEucHJvcGVydGllcy5hcmVhXzM4NTcsIGIucHJvcGVydGllcy5hcmVhXzM4NTcpKSlcclxuXHJcbm1hY3JvcmVnX2ZpbHRlcmVkID0ge1xyXG4gIGxldCBmaWx0ZXJlZCA9ICByZWdpb25fVzFBID09IFwiQWxsXCIgPyBtYWNyb3JlZyA6IGdlby5maWx0ZXIobWFjcm9yZWdfc29ydGVkLCAoZCkgPT4gZFtyZWdpb25fVzFBXSA9PSAxKVxyXG4gIGZpbHRlcmVkID0gc2VsZWN0X1cxQSA9PSBcIkFsbFwiID8gZmlsdGVyZWQgOiBnZW8uZmlsdGVyKGZpbHRlcmVkLCAoZCkgPT4gZC5jb3VudHJ5ID09IHNlbGVjdF9XMUEpXHJcbiAgcmV0dXJuIGdlby5yZXdpbmQoZmlsdGVyZWQpXHJcbn1cclxuXHJcbm9wYWNpdHlfVzFBID0ge2xldCBvcGFjaXR5XHJcbiAgaWYobWFjcm9yZWdfZmlsdGVyZWQuZmVhdHVyZXMubGVuZ3RoID4gNjApIHsgXHJcbiAgICByZXR1cm4gb3BhY2l0eSA9IDAuMFxyXG4gIH0gZWxzZSBpZihtYWNyb3JlZ19maWx0ZXJlZC5mZWF0dXJlcy5sZW5ndGggPCA2MCAmJiBtYWNyb3JlZ19maWx0ZXJlZC5mZWF0dXJlcy5sZW5ndGggPiAyMCkge1xyXG4gICAgcmV0dXJuIG9wYWNpdHkgPSAwLjAyXHJcbiAgfSBlbHNlIHsgXHJcbiAgICByZXR1cm4gb3BhY2l0eSA9IDAuMDZcclxuICB9XHJcbn1cclxuc3Ryb2tlX1cxQSA9IHtsZXQgc3Ryb2tlXHJcbiAgaWYobWFjcm9yZWdfZmlsdGVyZWQuZmVhdHVyZXMubGVuZ3RoID4gMzApIHsgXHJcbiAgICByZXR1cm4gc3Ryb2tlID0gMC4yXHJcbiAgfSBlbHNlIHsgXHJcbiAgICByZXR1cm4gc3Ryb2tlID0gMC41XHJcbiAgfVxyXG59XHJcbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxyXG4vLyAgICAgICAgICAgICAgICAgICAgICAgIExJQlNcclxuLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXHJcblxyXG5nZW8gPSByZXF1aXJlKFwiZ2VvdG9vbGJveEAyLjAuM1wiKVxuXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdF9XMUEnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgncmVnaW9uX1cxQScpIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Atlas Intéractif IMAGEUN – Wordcloud students region names</title>
+<title>Atlas Intéractif IMAGEUN – usage</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -67,6 +33,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -99,8 +66,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 </head>
@@ -170,7 +135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Mentions légales</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../docs/usage.html"> 
+    <a class="nav-link active" href="../docs/usage.html" aria-current="page"> 
 <span class="menu-text">Conditions d’utilisation</span></a>
   </li>  
 </ul>
@@ -186,113 +151,54 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla column-page">
-  <img src="../figures/widgets/W2C.png" class="about-image
-  rounded " style="width: 18em;">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Wordcloud students region names</h1>
-  </div>
-<div class="quarto-title-meta column-page">
-  </div>
-</header><main class="content column-page" id="quarto-document-content">
-<p>Wordcloud des noms de régions dessinées par les étudiants.</p>
-<section>
+<main class="content column-page" id="quarto-document-content">
+
+
+
+
 <div class="grid-container">
-<div class="grid-nocol">
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="23" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 22;"><span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> {viewof select_W2C} <span class="im">from</span> <span class="st">"dac79a00d1b1c9db"</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> {viewof rotate_W2C} <span class="im">from</span> <span class="st">"dac79a00d1b1c9db"</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> {viewof nb_W2C} <span class="im">from</span> <span class="st">"dac79a00d1b1c9db"</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> {plot_W2C} <span class="im">from</span> <span class="st">"dac79a00d1b1c9db"</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> {wcd_W2C} <span class="im">from</span> <span class="st">"dac79a00d1b1c9db"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-1" data-nodetype="declaration">
+<section id="conditions-dutilisation" class="level2 grid-nocol">
+<h2 class="anchored" data-anchor-id="conditions-dutilisation">Conditions d’utilisation</h2>
+<section id="conditions-générales" class="level3">
+<h3 class="anchored" data-anchor-id="conditions-générales">Conditions générales</h3>
+<p>L’ensemble des ressources présentées sur ce site web (visualisastions interactives, images, textes, bases de données) peuvent être librement utilisées dans les conditions prévues par la licence <strong>Creative Commons CC BY-SA 4.0 Deed</strong></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vous êtes libre de
 </div>
 </div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-2" data-nodetype="declaration">
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-3" data-nodetype="declaration">
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-4" data-nodetype="declaration">
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-5" data-nodetype="declaration">
-</div>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="27" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 26;"><span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>viewof select_W2C</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-1" data-nodetype="expression">
-</div>
-</div>
-</div>
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="28" data-source-offset="-19"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 27;"><span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>plot_W2C</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-2" data-nodetype="expression">
-</div>
-</div>
-</div>
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="29" data-source-offset="-29"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 28;"><span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>viewof rotate_W2C</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-3" data-nodetype="expression">
-</div>
-</div>
-</div>
-<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="30" data-source-offset="-48"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 29;"><span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>viewof nb_W2C</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-4" data-nodetype="expression">
-</div>
-</div>
-</div>
-<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="31" data-source-offset="-63"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 30;"><span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>wcd_W2C</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-5" data-nodetype="expression">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div class="callout-body-container callout-body">
+<p><strong>Partager</strong> - copier, distribuer et communiquer le matériel par tous moyens et sous tous formats pour toute utilisation, y compris commerciale.</p>
+<p><strong>Adapter</strong> - remixer, transformer et créer à partir du matériel pour toute utilisation, y compris commerciale.</p>
+<p>L’Offrant ne peut retirer les autorisations concédées par la licence tant que vous appliquez les termes de cette licence.</p>
+<section id="sous-les-conditions-suivantes" class="level4">
+<h4 class="anchored" data-anchor-id="sous-les-conditions-suivantes">Sous les conditions suivantes :</h4>
+<p><strong>Attribution</strong> - Vous devez créditer l’Œuvre, intégrer un lien vers la licence et indiquer si des modifications ont été effectuées à l’œuvre. Vous devez indiquer ces informations par tous les moyens raisonnables, sans toutefois suggérer que l’Offrant vous soutient ou soutient la façon dont vous avez utilisé son Oeuvre.</p>
+<p><strong>Partage dans les Mêmes Conditions</strong> - Dans le cas où vous effectuez un remix, que vous transformez, ou créez à partir du matériel composant l’œuvre originale, vous devez diffuser l’œuvre modifiée dans les même conditions, c’est à dire avec la même licence avec laquelle l’œuvre originale a été diffusée.</p>
+<p><strong>Pas de restrictions complémentaires</strong> - Vous n’êtes pas autorisé à appliquer des conditions légales ou des mesures techniques qui restreindraient légalement autrui à utiliser l’œuvre dans les conditions décrites par la licence.</p>
 </section>
-
-
-</main>  
+<section id="notes" class="level4">
+<h4 class="anchored" data-anchor-id="notes">Notes :</h4>
+<p>Vous n’êtes pas dans l’obligation de respecter la licence pour les éléments ou matériel appartenant au domaine public ou dans le cas où l’utilisation que vous souhaitez faire est couverte par une exception .</p>
+<p>Aucune garantie n’est donnée. Il se peut que la licence ne vous donne pas toutes les permissions nécessaires pour votre utilisation. Par exemple, certains droits comme les droits moraux, le droit des données personnelles et le droit à l’image sont susceptibles de limiter votre utilisation.</p>
+</section>
 </div>
- <!-- /main -->
-<script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImltcG9ydCB7dmlld29mIHNlbGVjdF9XMkN9IGZyb20gXCJkYWM3OWEwMGQxYjFjOWRiXCJcclxuaW1wb3J0IHt2aWV3b2Ygcm90YXRlX1cyQ30gZnJvbSBcImRhYzc5YTAwZDFiMWM5ZGJcIlxyXG5pbXBvcnQge3ZpZXdvZiBuYl9XMkN9IGZyb20gXCJkYWM3OWEwMGQxYjFjOWRiXCJcclxuaW1wb3J0IHtwbG90X1cyQ30gZnJvbSBcImRhYzc5YTAwZDFiMWM5ZGJcIlxyXG5pbXBvcnQge3djZF9XMkN9IGZyb20gXCJkYWM3OWEwMGQxYjFjOWRiXCJcclxuXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ2aWV3b2Ygc2VsZWN0X1cyQ1xyXG5wbG90X1cyQ1xyXG52aWV3b2Ygcm90YXRlX1cyQ1xyXG52aWV3b2YgbmJfVzJDXHJcbndjZF9XMkNcclxuIn1dfQ==
-</script>
-<script type="module">
-if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-window._ojs.paths.runtimeToDoc = "../../widgets";
-window._ojs.paths.runtimeToRoot = "../..";
-window._ojs.paths.docToRoot = "..";
-window._ojs.selfContained = false;
-window._ojs.runtime.interpretFromScriptTags();
-</script>
+</div>
+<p>Pour citer le site-internet : <em>Citation à venir…</em></p>
+</section>
+<section id="propriété-intellectuelle" class="level3">
+<h3 class="anchored" data-anchor-id="propriété-intellectuelle">Propriété intellectuelle</h3>
+</section>
+</section>
+</div>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -313,6 +219,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
